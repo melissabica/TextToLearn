@@ -24,12 +24,17 @@ app = Flask(__name__)
 
 # PostgreSQL connection
 import psycopg2
-conn = psycopg2.connect(database="test",
-                        user=dotcloud_env['DOTCLOUD_DB_SQL_LOGIN'],
-                        password=dotcloud_env['DOTCLOUD_DB_SQL_PASSWORD'],
-                        host=dotcloud_env['DOTCLOUD_DB_SQL_HOST'],
-                        port=int(dotcloud_env['DOTCLOUD_DB_SQL_PORT']))
-cur = conn.cursor()
+
+try:
+    conn = psycopg2.connect(database="test",
+                            user=dotcloud_env['DOTCLOUD_DB_SQL_LOGIN'],
+                            password=dotcloud_env['DOTCLOUD_DB_SQL_PASSWORD'],
+                            host=dotcloud_env['DOTCLOUD_DB_SQL_HOST'],
+                            port=int(dotcloud_env['DOTCLOUD_DB_SQL_PORT']))
+    cur = conn.cursor()
+except Exception as e:
+    print e
+    exit(1)
 
 @app.route("/")
 def hello():

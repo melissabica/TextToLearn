@@ -4,6 +4,7 @@ import psycopg2
 from os import path
 from time import sleep
 from sys import stdout as out
+import sys
 
 dotcloud_env_file_path = path.expanduser('~/environment.json')
 if path.exists(dotcloud_env_file_path):
@@ -21,7 +22,8 @@ dbname = "test"
 
 out.write("Creating the database...")
 out.flush()
-for i in xrange(1,30):
+i = 60
+while True:
     try:
         conn = psycopg2.connect(
                                 user=env['DOTCLOUD_DB_SQL_LOGIN'],
@@ -36,6 +38,9 @@ for i in xrange(1,30):
         out.flush()
         break
     except Exception as e:
+        i -= 1
+        if i <= 0 :
+            sys.exit(1)
         sleep(1)
         out.write(".")
         out.flush()
