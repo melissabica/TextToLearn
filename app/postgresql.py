@@ -22,7 +22,7 @@ dbname = "test"
 
 out.write("Creating the database...")
 out.flush()
-i = 60
+i = 120
 while True:
     try:
         conn = psycopg2.connect(
@@ -41,7 +41,7 @@ while True:
         i -= 1
         if i <= 0 :
             sys.exit(1)
-        sleep(1)
+        sleep(2)
         out.write(".")
         out.flush()
 
