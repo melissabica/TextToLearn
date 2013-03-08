@@ -33,11 +33,20 @@ while True:
                                 database='postgres')
         conn.set_isolation_level(0)
         cur = conn.cursor()
+
         cur.execute("CREATE DATABASE %s" % dbname)
         out.write("\n")
         out.flush()
         break
     except Exception as e:
+        # This exception gets thrown if the db already exists.
+        # That's good! We can exit nicely (0).
+        if e.pgcode == '42P04' :
+            out.write(e.pgerror)
+            out.flush()
+            sys.exit(0)
+
+        # Else count down and try again...
         i -= 1
         if i <= 0 :
             sys.exit(1)
