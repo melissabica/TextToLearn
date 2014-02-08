@@ -18,6 +18,7 @@ urlpatterns = patterns('',
     (r'^messaging/', include('rapidsms.contrib.messaging.urls')),
     (r'^registration/', include('rapidsms.contrib.registration.urls')),
     (r'^analytics/', include('analytics.urls')),
+	(r'^training_materials/', include('training_materials.urls')),
 
     # Third party URLs
     (r'^selectable/', include('selectable.urls')),
