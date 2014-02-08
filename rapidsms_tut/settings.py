@@ -203,6 +203,7 @@ INSTALLED_APPS = (
     "rapidsms.contrib.messagelog",
     "rapidsms.contrib.messaging",
     "rapidsms.contrib.registration",
+    "analytics",
     #"rapidsms.contrib.echo",
     "tut",
     "voting",
