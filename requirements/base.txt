@@ -1,0 +1,4 @@
+Django>=1.5,<1.6
+RapidSMS==0.16.0
+South==0.7.6
+rapidsms-tropo>=0.2.0
