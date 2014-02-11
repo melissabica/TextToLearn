@@ -77,3 +77,30 @@
 2014-02-08 13:29:32,862 rapidsms.router.blocking.router DEBUG    Out <app: messagelog> app
 2014-02-08 13:29:32,884 rapidsms.router.blocking.router DEBUG    Out <app: handlers> app
 2014-02-08 13:29:32,884 rapidsms.backends.database.outgoing INFO     Storing message: Valid commands: VOTE <>
+2014-02-08 15:56:24,197 rapidsms.contrib.handlers.app INFO     Registered: EchoHandler, HelpHandler, SumHandler, ResultsHandler, VoteHandler
+2014-02-08 15:56:24,315 rapidsms.router.blocking.router INFO     Incoming (851228 via message_tester): ping
+2014-02-08 15:56:24,316 rapidsms.router.blocking.router DEBUG    In filter phase
+2014-02-08 15:56:24,316 rapidsms.router.blocking.router DEBUG    In <app: handlers> app
+2014-02-08 15:56:24,316 rapidsms.router.blocking.router DEBUG    In <app: messagelog> app
+2014-02-08 15:56:24,316 rapidsms.router.blocking.router DEBUG    In <app: tut> app
+2014-02-08 15:56:24,316 rapidsms.router.blocking.router DEBUG    In <app: default> app
+2014-02-08 15:56:24,318 rapidsms.router.blocking.router DEBUG    In parse phase
+2014-02-08 15:56:24,318 rapidsms.router.blocking.router DEBUG    In <app: handlers> app
+2014-02-08 15:56:24,318 rapidsms.router.blocking.router DEBUG    In <app: messagelog> app
+2014-02-08 15:56:24,339 rapidsms.router.blocking.router DEBUG    In <app: tut> app
+2014-02-08 15:56:24,341 rapidsms.router.blocking.router DEBUG    In <app: default> app
+2014-02-08 15:56:24,341 rapidsms.router.blocking.router DEBUG    In handle phase
+2014-02-08 15:56:24,341 rapidsms.router.blocking.router DEBUG    In <app: handlers> app
+2014-02-08 15:56:24,349 rapidsms.router.blocking.router DEBUG    In <app: messagelog> app
+2014-02-08 15:56:24,349 rapidsms.router.blocking.router DEBUG    In <app: tut> app
+2014-02-08 15:56:24,349 rapidsms.router.blocking.router DEBUG    Short-circuited
+2014-02-08 15:56:24,349 rapidsms.router.blocking.router DEBUG    In default phase
+2014-02-08 15:56:24,351 rapidsms.router.blocking.router DEBUG    Skipping phase
+2014-02-08 15:56:24,354 rapidsms.contrib.handlers.app INFO     Registered: EchoHandler, HelpHandler, SumHandler, ResultsHandler, VoteHandler
+2014-02-08 15:56:24,355 rapidsms.router.blocking.router INFO     Outgoing: <OutgoingMessage: pong>
+2014-02-08 15:56:24,355 rapidsms.router.blocking.router DEBUG    Out outgoing phase
+2014-02-08 15:56:24,357 rapidsms.router.blocking.router DEBUG    Out <app: default> app
+2014-02-08 15:56:24,357 rapidsms.router.blocking.router DEBUG    Out <app: tut> app
+2014-02-08 15:56:24,357 rapidsms.router.blocking.router DEBUG    Out <app: messagelog> app
+2014-02-08 15:56:24,374 rapidsms.router.blocking.router DEBUG    Out <app: handlers> app
+2014-02-08 15:56:24,374 rapidsms.backends.database.outgoing INFO     Storing message: pong
