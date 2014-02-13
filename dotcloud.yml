@@ -1,5 +1,5 @@
 www:
     type: python
-    postinstall: ./app/postgresql.py
+#    postinstall: ./app/postgresql.py
 db:
     type: postgresql
