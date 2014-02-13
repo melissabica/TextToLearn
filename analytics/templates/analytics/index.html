@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load django_tables2 %}
+
+{% block title %}Analytics - {{ block.super }}{% endblock %}
+
+{% block extra_stylesheets %}
+    <link type="text/css" rel="stylesheet" href="{{ STATIC_URL }}analytics/stylesheets/analytics.css" />
+{% endblock %}
+
+{% block content %}
+    <div class="page-header">
+        <h1>Analytics</h1>
+    </div>
+{% endblock %}

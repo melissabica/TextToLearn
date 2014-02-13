@@ -2,4 +2,7 @@ Django>=1.5,<1.6
 RapidSMS==0.16.0
 South==0.7.6
 rapidsms-tropo>=0.2.0
+<<<<<<< HEAD
 psycopg2==2.4.6
+=======
+>>>>>>> 326eb7e859b00f13a8ca4735da2d97b15e539403

@@ -21,18 +21,6 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-"""DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'rapidsms_tut.db',
-        'USER': '',
-        'PASSWORD':'',
-        'HOST': '',
-        'PORT': '',
-    }
-}
-
-"""
 import json
 with open('/home/dotcloud/environment.json') as f:
 	env = json.load(f)
