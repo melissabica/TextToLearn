@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #Boiler plate stack Python & PostgreSQL
 
 ##What is this ?
@@ -10,9 +9,4 @@ In this boiler plate you will find the basic to get a Python and PostgreSQL stac
 * Communication with a database, PostgreSQL
 * wsgi setup
 * Advanced `dotCloud.yml` option: `postinstall script to create a new database.
-=======
 TextToLearn
-===========
-
-Senior design project
->>>>>>> 326eb7e859b00f13a8ca4735da2d97b15e539403
