@@ -213,7 +213,7 @@ INSTALLED_APPS = (
     #"rapidsms.contrib.echo",
     "tut",
     "voting",
-    "rapidsms.contrib.default",  # Must be last
+    "default",  # Must be last
 )
 
 INSTALLED_BACKENDS = {
