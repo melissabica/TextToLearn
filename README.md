@@ -1,12 +1,10 @@
-#Boiler plate stack Python & PostgreSQL
+#Text to Learn
 
 ##What is this ?
-It is super easy to deploy any-stack on dotCloud, here is a tiny boiler plate to show you how simple and frustration-less dotCloud experience is.  
+Text to Learn is a training tool, made with Social Enterprises in mind, that uses SMS to distribute training materials and to test users on their learning. Our goal is to give social enterprises a way to train employees and customers digitally and remotely. We will create an online dashboard, using RapidSMS and a cloud storage service, for social enterprises to upload and send training materials, manage users, and create SMS-based quizzes to assess users’ progress.
 
-##What you get
-In this boiler plate you will find the basic to get a Python and PostgreSQL stack running:
-* Use of the dotCoud environment
-* Communication with a database, PostgreSQL
-* wsgi setup
-* Advanced `dotCloud.yml` option: `postinstall script to create a new database.
-TextToLearn
+##Technologies Used
+-Django
+--RapidSMS
+-DotCloud
+-PostgreSQL
