@@ -15,7 +15,6 @@ class TrainingMaterial(models.Model):
     )
 
     title = models.TextField()
-    contact = models.ForeignKey(Contact, null=True)
-    connection = models.ForeignKey(Connection, null=True)
-    direction = models.CharField(max_length=1, choices=DIRECTION_CHOICES)
-    date = models.DateTimeField()
+	date = models.DateTimeField()
+    assigned_users = models.ForeignKey(Contact, null=True)
+
