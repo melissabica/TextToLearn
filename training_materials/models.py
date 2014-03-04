@@ -13,8 +13,8 @@ class TrainingMaterial(models.Model):
         (INCOMING, "Incoming"),
         (OUTGOING, "Outgoing"),
     )
-
+	
     title = models.TextField()
-	date = models.DateTimeField()
+    date = models.DateTimeField()
     assigned_users = models.ForeignKey(Contact, null=True)
 
