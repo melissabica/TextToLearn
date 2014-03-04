@@ -4,7 +4,7 @@
 {% block title %}Training Materials - {{ block.super }}{% endblock %}
 
 {% block extra_stylesheets %}
-    <link type="text/css" rel="stylesheet" href="{{ STATIC_URL }}messagelog/stylesheets/messagelog.css" />
+    <link type="text/css" rel="stylesheet" href="{{ STATIC_URL }}training_materials/stylesheets/training_materials.css" />
 {% endblock %}
 
 {% block content %}
@@ -12,6 +12,6 @@
         <h1>Training Materials</h1>
     </div>
     <div class="messages module">
-        {% render_table messages_table %}
+        {% render_table training_materials_table %}
     </div>
 {% endblock %}

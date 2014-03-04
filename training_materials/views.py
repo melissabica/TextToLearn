@@ -7,8 +7,8 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 
-from rapidsms.contrib.messagelog.tables import MessageTable
-from rapidsms.contrib.messagelog.models import Message
+from tables import TrainingMaterialTable
+from models import TrainingMaterial
 from rapidsms import settings
 
 from django_tables2 import RequestConfig
@@ -16,15 +16,15 @@ from django_tables2 import RequestConfig
 
 @login_required
 def training_materials(request):
-    qset = Message.objects.all()
+    qset = TrainingMaterial.objects.all()
     qset = qset.select_related('contact', 'connection__backend')
     template = "django_tables2/bootstrap-tables.html"
 
-    messages_table = MessageTable(qset, template=template)
+    training_materials_table = TrainingMaterialTable(qset, template=template)
 
     paginate = {"per_page": settings.PAGINATOR_OBJECTS_PER_PAGE}
-    RequestConfig(request, paginate=paginate).configure(messages_table)
+    RequestConfig(request, paginate=paginate).configure(training_materials_table)
 
     return render(request, "training_materials/index.html", {
-        "messages_table": messages_table,
+        "training_materials_table": training_materials_table,
     })
