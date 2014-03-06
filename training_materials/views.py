@@ -32,6 +32,8 @@ def training_materials_add(request, pk=None):
         tm = get_object_or_404(TrainingMaterial, pk=pk)
     else:
         tm = TrainingMaterial()
+    tm_form = TMForm(instance=tm)
+
     if request.method == 'POST':
         data = {}
         for key in request.POST:
