@@ -13,6 +13,8 @@ class ConnectionFormSetBase(forms.models.BaseInlineFormSet):
             if not form.initial:
                 form.fields['DELETE'].widget = forms.widgets.HiddenInput()
 
+TMForm = forms.models.modelform_factory(TrainingMaterial)
+
 
 
 # the built-in FileField doesn't specify the 'size' attribute, so the
