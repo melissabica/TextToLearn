@@ -14,15 +14,6 @@ class ConnectionFormSetBase(forms.models.BaseInlineFormSet):
                 form.fields['DELETE'].widget = forms.widgets.HiddenInput()
 
 
-ContactForm = forms.models.modelform_factory(Contact, exclude=("connections", ))
-
-ConnectionFormSet = forms.models.inlineformset_factory(
-    Contact,
-    Connection,
-    extra=1,
-    formset=ConnectionFormSetBase,
-)
-
 
 # the built-in FileField doesn't specify the 'size' attribute, so the
 # widget is rendered at its default width -- which is too wide for our
@@ -30,12 +21,3 @@ ConnectionFormSet = forms.models.inlineformset_factory(
 class SmallFileField(forms.FileField):
     def widget_attrs(self, widget):
         return {"size": 10}
-
-
-class BulkRegistrationForm(forms.Form):
-    bulk = SmallFileField(
-        label="Upload CSV file",
-        required=False,
-        help_text="Upload a <em>plain text file</em> " +
-                  "containing a single contact per line, for example: <br/>" +
-                  "<em>firstname lastname, backend_name, identity</em>")
