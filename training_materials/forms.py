@@ -2,7 +2,7 @@
 # vim: ai ts=4 sts=4 et sw=4
 
 from django import forms
-from rapidsms.models import Contact, Connection
+from models import TrainingMaterial
 
 
 class ConnectionFormSetBase(forms.models.BaseInlineFormSet):
@@ -12,6 +12,7 @@ class ConnectionFormSetBase(forms.models.BaseInlineFormSet):
         for form in self.forms:
             if not form.initial:
                 form.fields['DELETE'].widget = forms.widgets.HiddenInput()
+
 
 TMForm = forms.models.modelform_factory(TrainingMaterial)
 
