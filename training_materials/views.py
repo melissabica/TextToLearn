@@ -50,19 +50,12 @@ def training_materials_add(request, pk=None):
                 tm.delete()
                 messages.add_message(request, messages.INFO, "Deleted training material")
                 return HttpResponseRedirect(reverse(registration))
-            contact_form = ContactForm(request.POST, instance=tm)
+            tm_form = ContactForm(request.POST, instance=tm)
         else:
-            contact_form = ContactForm(request.POST)
-        if contact_form.is_valid():
-            tm = contact_form.save(commit=False)
-            connection_formset = ConnectionFormSet(request.POST, instance=tm)
-            if connection_formset.is_valid():
-                tm.save()
-                connection_formset.save()
-                messages.add_message(request, messages.INFO, "Added training material")
-                return HttpResponseRedirect(reverse(registration))
-    return render(request, 'registration/contact_form.html', {
+            tm_form = ContactForm(request.POST)
+        if tm_form.is_valid():
+            tm = tm_form.save(commit=False)
+    return render(request, 'registration/tm_form.html', {
         "tm": tm,
-        "contact_form": contact_form,
-        "connection_formset": connection_formset,
+        "tm_form": tm_form,
     })
