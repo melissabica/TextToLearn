@@ -6,6 +6,7 @@ from django.shortcuts import render
 
 from tables import TrainingMaterialTable
 from models import TrainingMaterial
+from forms import TMForm
 from rapidsms import settings
 
 from django_tables2 import RequestConfig
