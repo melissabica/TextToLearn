@@ -16,6 +16,8 @@
             {% csrf_token %}
             <div class="submit">
                 <input type="submit" name="submit" class="btn btn-primary" value="Save Training Material" />
+                <input type="submit" name="submit" class="btn btn-primary" value="Preview Training Material" />
+
                 {% if tm %}
                     <input type="submit" name="submit" class="btn btn-primary" value="Delete Training Material" />
                 {% endif %}

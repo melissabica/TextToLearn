@@ -16,6 +16,11 @@ class ConnectionFormSetBase(forms.models.BaseInlineFormSet):
 
 TMForm = forms.models.modelform_factory(TrainingMaterial)
 
+TMFormSet = forms.models.inlineformset_factory(
+    TrainingMaterial,
+    extra=1,
+    formset=ConnectionFormSetBase,
+)
 
 
 # the built-in FileField doesn't specify the 'size' attribute, so the
