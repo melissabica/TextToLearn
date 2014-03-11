@@ -63,5 +63,4 @@ def training_materials_add(request, pk=None):
     return render(request, 'training_materials/tm_form.html', {
         "tm": tm,
         "tm_form": tm_form,
-        "tm_formset" : tm_formset,
     })
