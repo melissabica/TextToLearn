@@ -12,8 +12,7 @@ class TrainingMaterial(models.Model):
     DIRECTION_CHOICES = (
         (INCOMING, "Incoming"),
         (OUTGOING, "Outgoing"),
-    )
-	
+    )	
     title = models.TextField()
     tag = models.TextField()
     text = models.TextField()
