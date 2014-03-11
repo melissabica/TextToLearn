@@ -5,22 +5,21 @@ from django import forms
 from models import TrainingMaterial
 
 
-class TMFormSetBase(forms.models.BaseInlineFormSet):
+"""class TMFormSetBase(forms.models.BaseInlineFormSet):
     def __init__(self, *args, **kwargs):
         super(TMFormSetBase, self).__init__(*args, **kwargs)
         self.forms[0].empty_permitted = False
         for form in self.forms:
             if not form.initial:
                 form.fields['DELETE'].widget = forms.widgets.HiddenInput()
-                
+"""                
 
 
 TMForm = forms.models.modelform_factory(TrainingMaterial)
 
-TMFormSet = forms.models.inlineformset_factory(
+"""TMFormSet = forms.models.inlineformset_factory(
     TrainingMaterial,
     formset = TMFormSetBase,
- 
 )
 
 
@@ -30,3 +29,4 @@ TMFormSet = forms.models.inlineformset_factory(
 class SmallFileField(forms.FileField):
     def widget_attrs(self, widget):
         return {"size": 10}
+"""

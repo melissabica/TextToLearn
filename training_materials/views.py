@@ -34,7 +34,6 @@ def training_materials_add(request, pk=None):
     else:
         tm = TrainingMaterial()
     tm_form = TMForm(instance=tm)
-    tm_formset = TMFormSet(instance=tm)
     if request.method == 'POST':
         data = {}
         for key in request.POST:
@@ -58,12 +57,9 @@ def training_materials_add(request, pk=None):
             tm_form = TMForm(request.POST)
         if tm_form.is_valid():
             tm = tm_form.save(commit=False)
-            tm_formset = TMFormSet(request.POST, instance=contact)
-            if tm_formset.is_valid():
-                tm.save()
-                tm_formset.save()
-                messages.add_message(request, messages.INFO, "Added contact")
-                return HttpResponseRedirect(reverse(registration))
+            tm.save()
+            messages.add_message(request, messages.INFO, "Added contact")
+            return HttpResponseRedirect(reverse(registration))
     return render(request, 'training_materials/tm_form.html', {
         "tm": tm,
         "tm_form": tm_form,
