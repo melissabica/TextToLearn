@@ -4,7 +4,11 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 from django.contrib import messages
-
+from django.core.urlresolvers import reverse
+from django.db import transaction
+from django.http import HttpResponseRedirect
+from django.shortcuts import render, get_object_or_404
+from django_tables2 import RequestConfig
 from tables import TrainingMaterialTable
 from models import TrainingMaterial
 from forms import TMForm
