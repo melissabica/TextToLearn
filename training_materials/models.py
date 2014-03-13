@@ -8,7 +8,7 @@ from rapidsms.models import Contact, Connection
 
 class TrainingMaterial(models.Model):
     title = models.TextField()
-    #tag = models.TextField()
+    tag = models.TextField()
     text = models.TextField()
     date = models.DateTimeField(auto_now=True)
     assigned_users = models.ForeignKey(Contact, null=True)
