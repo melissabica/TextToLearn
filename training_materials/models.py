@@ -12,6 +12,7 @@ class TrainingMaterial(models.Model):
     tag = models.TextField()
     text = models.TextField()
     date = models.DateTimeField(auto_now=True)
-    assigned_users = forms.ModelMultipleChoiceField(queryset=Contact.objects.all())
+    assigned_users = models.ManyToManyField(Contact)
+    #forms.ModelMultipleChoiceField(queryset=Contact.objects.all())
                     #models.ForeignKey(Contact, null=True)
 
