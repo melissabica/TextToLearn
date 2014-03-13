@@ -3,6 +3,7 @@
 
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
+from django.contrib import messages
 
 from tables import TrainingMaterialTable
 from models import TrainingMaterial
