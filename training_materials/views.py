@@ -20,7 +20,6 @@ from django_tables2 import RequestConfig
 @login_required
 def training_materials(request):
     qset = TrainingMaterial.objects.all()
-    #qset = qset.select_related('contact', 'connection__backend')
     template = "django_tables2/bootstrap-tables.html"
 
     training_materials_table = TrainingMaterialTable(qset, template=template)
@@ -64,7 +63,7 @@ def training_materials_add(request, pk=None):
             tm = tm_form.save(commit=False)
             tm.save()
             messages.add_message(request, messages.INFO, "Added contact")
-            return HttpResponseRedirect(reverse(registration))
+            return HttpResponseRedirect(reverse(training_materials_add))
     return render(request, 'training_materials/tm_form.html', {
         "tm": tm,
         "tm_form": tm_form,
