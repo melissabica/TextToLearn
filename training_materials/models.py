@@ -2,7 +2,8 @@
 # vim: ai ts=4 sts=4 et sw=4
 
 from django.core.exceptions import ValidationError
-from django.db import models, forms
+from django.db import models
+from django import forms
 from rapidsms.models import Contact, Connection
 
 
