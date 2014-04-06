@@ -44,8 +44,8 @@
 \newlength{\@marginright}
 \setlength{\@marginright}{1.0in}
 
-\newlength{\@bindingoffset}
-\setlength{\@bindingoffset}{0.5in}
+%\newlength{\@bindingoffset}
+%\setlength{\@bindingoffset}{0.5in}
 
 
 % \textwidth = \paperwidth - \@marginleft - \@marginright - \@bindingoffset
@@ -53,7 +53,7 @@
 \setlength{\textwidth}{\paperwidth}
 \addtolength{\textwidth}{-\@marginleft}
 \addtolength{\textwidth}{-\@marginright}
-\addtolength{\textwidth}{-\@bindingoffset}
+%\addtolength{\textwidth}{-\@bindingoffset}
 
 
 % \textheight = \paperheight - \@margintop - \@marginbottom
@@ -69,7 +69,7 @@
 \setlength{\evensidemargin}{\@marginleft}
 \addtolength{\evensidemargin}{-1in}
 \setlength{\oddsidemargin}{\evensidemargin}
-\addtolength{\oddsidemargin}{\@bindingoffset}
+%\addtolength{\oddsidemargin}{\@bindingoffset}
 
 
 % \topmargin = \@margintop - \headheight - \headsep - 1in

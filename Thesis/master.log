@@ -1,9 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.4.6)  6 APR 2014 14:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.4.6)  6 APR 2014 14:37
 entering extended mode
 **master.tex
-
-("C:\Users\MelissaB\Desktop\scu-thesis (1).tar\scu-thesis (1)\scu-thesis\master
-.tex"
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\master.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -15,9 +13,7 @@ german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
-
-("C:\Users\MelissaB\Desktop\scu-thesis (1).tar\scu-thesis (1)\scu-thesis\scu-th
-esis.cls"
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\scu-thesis.cls
 Document Class: scu-thesis 2013/10/01 SCU Thesis class
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\report.cls"
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
@@ -44,7 +40,6 @@ Package: setspace 2011/12/19 v6.7a set line spacing
 \@marginbottom=\skip44
 \@marginleft=\skip45
 \@marginright=\skip46
-\@bindingoffset=\skip47
 \c@@authorcount=\count88
 \c@@degreecount=\count89
 \c@@departmentcount=\count90
@@ -128,70 +123,70 @@ LaTeX Info: Redefining \not on input line 1043.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\parskip.sty"
 Package: parskip 2001/04/09 non-zero parskip adjustments
 )
-("C:\Users\MelissaB\Desktop\scu-thesis (1).tar\scu-thesis (1)\scu-thesis\master
-.aux"
-("C:\Users\MelissaB\Desktop\scu-thesis (1).tar\scu-thesis (1)\scu-thesis\abstra
-ct.aux")
-("C:\Users\MelissaB\Desktop\scu-thesis (1).tar\scu-thesis (1)\scu-thesis\introd
-uction.aux")
-("C:\Users\MelissaB\Desktop\scu-thesis (1).tar\scu-thesis (1)\scu-thesis\projec
-tdesc.aux"))
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 26.
-LaTeX Font Info:    Try loading font information for OML+txmi on input line 26.
+
+LaTeX Warning: Unused global option(s):
+    [letter].
+
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\master.aux
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\abstract.aux)
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\introduction.aux)
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\projectdesc.aux))
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 27.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 27.
 
 
 (C:\Users\MelissaB\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 26.
-LaTeX Font Info:    Try loading font information for OMS+txsy on input line 26.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 27.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 27.
 
 
 (C:\Users\MelissaB\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 26.
-LaTeX Font Info:    Try loading font information for OMX+txex on input line 26.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 27.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 27.
 
 
 (C:\Users\MelissaB\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 26.
-LaTeX Font Info:    Try loading font information for U+txexa on input line 26.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 27.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 27.
 
 (C:\Users\MelissaB\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 26.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 27.
 
 (C:\Users\MelissaB\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 27.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 28.
 
 (C:\Users\MelissaB\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 27.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 28.
 
 (C:\Users\MelissaB\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 27.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 28.
 
 (C:\Users\MelissaB\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 27.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 28.
 
 (C:\Users\MelissaB\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
@@ -199,37 +194,33 @@ File: utxsyc.fd 2000/12/15 v3.1
 [1
 
 
-{C:/Users/MelissaB/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-[2]
-("C:\Users\MelissaB\Desktop\scu-thesis (1).tar\scu-thesis (1)\scu-thesis\abstra
-ct.tex"
+Non-PDF special ignored!
+
+{C:/Users/MelissaB/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\abstract.tex
 Missing character: There is no â in font txr!
 Missing character: There is no € in font txr!
 Missing character: There is no ™ in font txr!
  [3
 
 ])
-("C:\Users\MelissaB\Desktop\scu-thesis (1).tar\scu-thesis (1)\scu-thesis\master
-.toc")
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\master.toc)
 \tf@toc=\write3
  [4
 
 
 ]
-("C:\Users\MelissaB\Desktop\scu-thesis (1).tar\scu-thesis (1)\scu-thesis\master
-.lof")
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\master.lof)
 \tf@lof=\write4
  [5
 
 ]
-("C:\Users\MelissaB\Desktop\scu-thesis (1).tar\scu-thesis (1)\scu-thesis\master
-.lot")
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\master.lot)
 \tf@lot=\write5
  [6
 
 ]
-("C:\Users\MelissaB\Desktop\scu-thesis (1).tar\scu-thesis (1)\scu-thesis\introd
-uction.tex"
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\introduction.tex
 Chapter 1.
 [1
 
@@ -239,9 +230,7 @@ Chapter 1.
 Missing character: There is no â in font txr!
 Missing character: There is no € in font txr!
 Missing character: There is no ™ in font txr!
-) [2]
-("C:\Users\MelissaB\Desktop\scu-thesis (1).tar\scu-thesis (1)\scu-thesis\projec
-tdesc.tex"
+) [2] (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\projectdesc.tex
 Chapter 2.
 Missing character: There is no â in font txr!
 Missing character: There is no € in font txr!
@@ -308,27 +297,24 @@ Missing character: There is no â in font txr!
 Missing character: There is no € in font txr!
 Missing character: There is no ™ in font txr!
 ) [6]
-("C:\Users\MelissaB\Desktop\scu-thesis (1).tar\scu-thesis (1)\scu-thesis\master
-.aux"
-("C:\Users\MelissaB\Desktop\scu-thesis (1).tar\scu-thesis (1)\scu-thesis\abstra
-ct.aux")
-("C:\Users\MelissaB\Desktop\scu-thesis (1).tar\scu-thesis (1)\scu-thesis\introd
-uction.aux")
-("C:\Users\MelissaB\Desktop\scu-thesis (1).tar\scu-thesis (1)\scu-thesis\projec
-tdesc.aux")) ) 
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\master.aux
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\abstract.aux)
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\introduction.aux)
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\projectdesc.aux)) ) 
 Here is how much of TeX's memory you used:
  1099 strings out of 493921
- 15514 string characters out of 3144868
- 54700 words of memory out of 3000000
+ 14948 string characters out of 3144868
+ 53748 words of memory out of 3000000
  4386 multiletter control sequences out of 15000+200000
  24373 words of font info for 61 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  29i,6n,22p,1128b,192s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.en
-c}<C:/Users/MelissaB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/rtxr
-.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on master.pdf (12 pages, 54797 bytes).
+{C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Users/Melissa
+B/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/rtxr.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
+Output written on master.pdf (12 pages, 54628 bytes).
 PDF statistics:
  54 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
