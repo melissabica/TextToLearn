@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.4.6)  6 APR 2014 22:37
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.4.6)  6 APR 2014 22:47
 entering extended mode
 **master.tex
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\master.tex
@@ -158,7 +158,10 @@ Package: parskip 2001/04/09 non-zero parskip adjustments
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\master.aux
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\abstract.aux)
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\introduction.aux)
-(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\projectdesc.aux))
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\projectdesc.aux)
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\projectmgmt.aux)
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\societalissues.aux)
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\conclusions.aux))
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 27.
 LaTeX Font Info:    Try loading font information for OML+txmi on input line 27.
 
@@ -366,15 +369,36 @@ Missing character: There is no â in font txr!
 Missing character: There is no € in font txr!
 Missing character: There is no ™ in font txr!
  [6]) [7]
-(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\master.aux
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\projectmgmt.tex
+Chapter 3.
+) [8
+
+
+
+] (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\societalissues.tex
+Chapter 4.
+) [9
+
+
+
+] (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\conclusions.tex
+Chapter 5.
+) [10
+
+
+
+] (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\master.aux
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\abstract.aux)
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\introduction.aux)
-(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\projectdesc.aux)) ) 
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\projectdesc.aux)
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\projectmgmt.aux)
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\societalissues.aux)
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\conclusions.aux)) ) 
 Here is how much of TeX's memory you used:
- 1643 strings out of 493921
- 23210 string characters out of 3144868
- 69518 words of memory out of 3000000
- 4904 multiletter control sequences out of 15000+200000
+ 1667 strings out of 493921
+ 24551 string characters out of 3144868
+ 70501 words of memory out of 3000000
+ 4907 multiletter control sequences out of 15000+200000
  25747 words of font info for 63 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  29i,6n,22p,1128b,192s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -385,9 +409,9 @@ ssaB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/txsy.pfb><C:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86
 )/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.
 9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on master.pdf (13 pages, 65896 bytes).
+Output written on master.pdf (16 pages, 68599 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
+ 75 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
