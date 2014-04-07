@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.4.6)  6 APR 2014 14:37
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.4.6)  6 APR 2014 22:37
 entering extended mode
 **master.tex
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\master.tex
@@ -44,7 +44,39 @@ Package: setspace 2011/12/19 v6.7a set line spacing
 \c@@degreecount=\count89
 \c@@departmentcount=\count90
 \c@@itemcount=\count91
-) (C:\Users\MelissaB\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\txfonts.sty
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count92
+\Gm@cntv=\count93
+\c@Gm@tempcnt=\count94
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+(C:\Users\MelissaB\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\txfonts.sty
 Package: txfonts 2008/01/22 v3.2.1
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 21.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -123,10 +155,6 @@ LaTeX Info: Redefining \not on input line 1043.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\parskip.sty"
 Package: parskip 2001/04/09 non-zero parskip adjustments
 )
-
-LaTeX Warning: Unused global option(s):
-    [letter].
-
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\master.aux
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\abstract.aux)
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\introduction.aux)
@@ -171,8 +199,35 @@ LaTeX Font Info:    Try loading font information for OT1+txr on input line 27.
 (C:\Users\MelissaB\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 28.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* pass: disregarded the geometry package!
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=61.26999pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+LaTeX Font Info:    Try loading font information for U+txmia on input line 28.
 (C:\Users\MelissaB\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
@@ -194,23 +249,21 @@ File: utxsyc.fd 2000/12/15 v3.1
 [1
 
 
-Non-PDF special ignored!
-
-{C:/Users/MelissaB/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
-(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\abstract.tex
+{C:/Users/MelissaB/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+[2] (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\abstract.tex
 Missing character: There is no ‚ in font txr!
 Missing character: There is no Ä in font txr!
 Missing character: There is no ô in font txr!
- [3
 
-])
-(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\master.toc)
+[3
+
+]) (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\master.toc)
 \tf@toc=\write3
- [4
+
+[4
 
 
-]
-(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\master.lof)
+] (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\master.lof)
 \tf@lof=\write4
  [5
 
@@ -235,20 +288,37 @@ Chapter 2.
 Missing character: There is no ‚ in font txr!
 Missing character: There is no Ä in font txr!
 Missing character: There is no ô in font txr!
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+txr on input line 12.
+(C:\Users\MelissaB\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\omstxr.fd
+File: omstxr.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <10> not available
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 12.
 Missing character: There is no ‚ in font txr!
 Missing character: There is no Ä in font txr!
 Missing character: There is no ô in font txr!
+
 [3
 
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
+
+ []
+
 Missing character: There is no ‚ in font txr!
 Missing character: There is no Ä in font txr!
 Missing character: There is no ú in font txr!
 Missing character: There is no ‚ in font txr!
 Missing character: There is no Ä in font txr!
 Missing character: There is no ù in font txr!
+[4]
 Missing character: There is no ‚ in font txr!
 Missing character: There is no Ä in font txr!
 Missing character: There is no ú in font txr!
@@ -276,16 +346,6 @@ Missing character: There is no ú in font txr!
 Missing character: There is no ‚ in font txr!
 Missing character: There is no Ä in font txr!
 Missing character: There is no ù in font txr!
-Missing character: There is no ‚ in font txr!
-Missing character: There is no Ä in font txr!
-Missing character: There is no ú in font txr!
-Missing character: There is no ‚ in font txr!
-Missing character: There is no Ä in font txr!
-Missing character: There is no ù in font txr!
- [4]
-Missing character: There is no ‚ in font txr!
-Missing character: There is no Ä in font txr!
-Missing character: There is no ô in font txr!
 Missing character: There is no ‚ in font txr!
 Missing character: There is no Ä in font txr!
 Missing character: There is no ú in font txr!
@@ -296,27 +356,38 @@ Missing character: There is no ù in font txr!
 Missing character: There is no ‚ in font txr!
 Missing character: There is no Ä in font txr!
 Missing character: There is no ô in font txr!
-) [6]
+Missing character: There is no ‚ in font txr!
+Missing character: There is no Ä in font txr!
+Missing character: There is no ú in font txr!
+Missing character: There is no ‚ in font txr!
+Missing character: There is no Ä in font txr!
+Missing character: There is no ù in font txr!
+Missing character: There is no ‚ in font txr!
+Missing character: There is no Ä in font txr!
+Missing character: There is no ô in font txr!
+ [6]) [7]
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\master.aux
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\abstract.aux)
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\introduction.aux)
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\projectdesc.aux)) ) 
 Here is how much of TeX's memory you used:
- 1099 strings out of 493921
- 14948 string characters out of 3144868
- 53748 words of memory out of 3000000
- 4386 multiletter control sequences out of 15000+200000
- 24373 words of font info for 61 fonts, out of 3000000 for 9000
+ 1643 strings out of 493921
+ 23210 string characters out of 3144868
+ 69518 words of memory out of 3000000
+ 4904 multiletter control sequences out of 15000+200000
+ 25747 words of font info for 63 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  29i,6n,22p,1128b,192s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/P
 rogram Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Users/Melissa
-B/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/rtxr.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on master.pdf (12 pages, 54628 bytes).
+B/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/Meli
+ssaB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/txsy.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on master.pdf (13 pages, 65896 bytes).
 PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
+ 66 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
