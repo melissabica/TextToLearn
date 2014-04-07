@@ -67,7 +67,7 @@ def contact(request, pk=None):
             if connection_formset.is_valid():
                 contact.save()
                 connection_formset.save()
-                messages.add_message(request, messages.INFO, "Added contact")
+                messages.add_message(request, messages.INFO, "Saved contact.")
                 return HttpResponseRedirect(reverse(registration))
     return render(request, 'registration/contact_form.html', {
         "contact": contact,

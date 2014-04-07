@@ -63,7 +63,7 @@ def training_materials_add(request, pk=None):
             #tm = tm_form.save(commit=False)
             tm.save()
             #tm.save_m2m()
-            messages.add_message(request, messages.INFO, "Added contact")
+            messages.add_message(request, messages.INFO, "Saved training material.")
             return HttpResponseRedirect(reverse(training_materials_add))
     return render(request, 'training_materials/tm_form.html', {
         "tm": tm,
