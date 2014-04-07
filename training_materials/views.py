@@ -11,7 +11,7 @@ from django.shortcuts import render, get_object_or_404
 from django_tables2 import RequestConfig
 from tables import TrainingMaterialTable
 from models import TrainingMaterial
-from forms import TMForm
+from forms import TMForm, AssignTMForm
 from rapidsms import settings
 
 from django_tables2 import RequestConfig
@@ -62,6 +62,7 @@ def training_materials_add(request, pk=None):
         if tm_form.is_valid():
             tm = tm_form.save(commit=False)
             tm.save()
+			tm.save_m2m()
             messages.add_message(request, messages.INFO, "Added contact")
             return HttpResponseRedirect(reverse(training_materials_add))
     return render(request, 'training_materials/tm_form.html', {

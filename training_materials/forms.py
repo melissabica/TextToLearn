@@ -15,7 +15,14 @@ from models import TrainingMaterial
 """                
 
 
-TMForm = forms.models.modelform_factory(TrainingMaterial)
+class TMForm(forms.ModelForm):
+	type = forms.models.modelform_factory(TrainingMaterial)
+	class Meta:
+		model = TrainingMaterial
+		widgets = {'assigned_users': forms.CheckboxSelectMultiple()}
+
+
+#	= forms.ModelMultipleChoiceField(widget=forms.CheckboxSelectMultiple, queryset=Category.objects.all())
 
 """TMFormSet = forms.models.inlineformset_factory(
     TrainingMaterial,
