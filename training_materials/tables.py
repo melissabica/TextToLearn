@@ -6,11 +6,12 @@ from training_materials.models import TrainingMaterial
 
 
 class TrainingMaterialTable(tables.Table):
-    id = tables.LinkColumn('training_materials_add', args=[tables.utils.A('pk')])
+    #id = tables.LinkColumn('training_materials_add', args=[tables.utils.A('pk')])
+    title = tables.LinkColumn('training_materials_add', args=[tables.utils.A('pk')])
 
     class Meta:
         model = TrainingMaterial
-        exclude = ('tag', 'text', )
+        exclude = ('tag', 'text','id', )
         order_by = ('-date', )
         attrs = {
             'class': 'table table-striped table-bordered table-condensed'
