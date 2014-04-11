@@ -4,10 +4,10 @@
 
 {% block page %}
     <div class="page_header">
-        {% if tm %}
-            <h2>Edit Training Material</h2>
-        {% else %}
+        {% if request.get_full_path = "/training_materials/training_materials/add/" %}
             <h2>Add Training Material</h2>
+        {% else %}
+            <h2>Edit Training Material</h2>
         {% endif %}
     </div>
     <div class="span8">
