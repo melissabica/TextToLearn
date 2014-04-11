@@ -21,12 +21,12 @@ class TMForm(forms.ModelForm):
 		model = TrainingMaterial
 		widgets = {'assigned_users': forms.CheckboxSelectMultiple()}
 
-	def save(self):
+"""	def save(self):
 		instance = forms.ModelForm.save(self)
 		instance.trainingmaterial_set.clear()
 		for trainingmaterial in self.cleaned_data['trainingmaterials']:
 		    instance.trainingmaterial_set.add(trainingmaterial)
-	
+	"""
 #	= forms.ModelMultipleChoiceField(widget=forms.CheckboxSelectMultiple, queryset=Category.objects.all())
 
 """TMFormSet = forms.models.inlineformset_factory(
