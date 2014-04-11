@@ -11,6 +11,7 @@ class TrainingMaterialTable(tables.Table):
 
 
 
+
     class Meta:
         model = TrainingMaterial
         exclude = ('tag', 'text', )
