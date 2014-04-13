@@ -8,6 +8,7 @@ from training_materials.models import TrainingMaterial
 class TrainingMaterialTable(tables.Table):
     #id = tables.LinkColumn('training_materials_add', args=[tables.utils.A('pk')])
     title = tables.LinkColumn('training_materials_add', args=[tables.utils.A('pk')])
+    assign = tables.LinkColumn('training_materials_add', args=[tables.utils.A('pk')])
 
     class Meta:
         model = TrainingMaterial
