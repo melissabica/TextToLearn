@@ -13,7 +13,7 @@ class TrainingMaterial(models.Model):
     text = models.TextField()
     date = models.DateTimeField(auto_now=True)
     assigned_users = models.ManyToManyField(Contact)
-    assign = models.CharField(max_length=8, default='Assign', editable=false)
+    assign = models.CharField(max_length=8, default='Assign', editable=False)
     #forms.ModelMultipleChoiceField(queryset=Contact.objects.all())
                     #models.ForeignKey(Contact, null=True)
     
