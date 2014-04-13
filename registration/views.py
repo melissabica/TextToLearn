@@ -10,7 +10,7 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404
 from django_tables2 import RequestConfig
 from rapidsms.models import Contact, Connection, Backend
-from rapidsms.contrib.registration.tables import ContactTable
+from tables import ContactTable
 from rapidsms.contrib.registration.forms import (
     BulkRegistrationForm,
     ContactForm, ConnectionFormSet)
