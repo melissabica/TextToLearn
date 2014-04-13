@@ -19,6 +19,7 @@ class TMForm(forms.ModelForm):
 	type = forms.models.modelform_factory(TrainingMaterial)
 	class Meta:
 		model = TrainingMaterial
+		exclude = ('assign',)
 		widgets = {'assigned_users': forms.CheckboxSelectMultiple()}
 
 """	def save(self):
