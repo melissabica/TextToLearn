@@ -14,7 +14,7 @@ class ContactTable(tables.Table):
     class Meta:
         model = Contact
         order_by = ('id')
-        exclude = ('id')
+        exclude = ('id','created_on',)
         attrs = {
             'class': 'table table-striped table-bordered table-condensed'
         }
