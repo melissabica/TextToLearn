@@ -15,3 +15,8 @@ class TrainingMaterial(models.Model):
     assigned_users = models.ManyToManyField(Contact)
     #forms.ModelMultipleChoiceField(queryset=Contact.objects.all())
                     #models.ForeignKey(Contact, null=True)
+    
+    def users(self):
+	    return ', '.join([a.name for a in self.assigned_users.all()])
+	
+	
