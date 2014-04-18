@@ -33,7 +33,10 @@ class AssignForm(forms.ModelForm):
 		widgets = {'assigned_users': forms.CheckboxSelectMultiple()}
 	def send(self):
 		message = self.cleaned_data['text']
-		connections = self.cleaned_data['assigned_users']
+		assigned_users = self.cleaned_data['assigned_users']
+		connections = []
+		for user in assigned_users:
+		    connections 
 		return send(message, connections)
 		
 		
