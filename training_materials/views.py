@@ -60,9 +60,6 @@ def training_materials_add(request, pk=None):
             tm_form = TMForm(request.POST, instance=tm)
         else:
             tm_form = TMForm(request.POST)
-'''
-SAVE TRAINING MATERIAL
-'''
         if tm_form.is_valid():
             #tm = tm_form.save(commit=False)
             tm.save()
