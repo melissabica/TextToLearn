@@ -56,6 +56,58 @@ def training_materials_add(request, pk=None):
                 tm.delete()
                 messages.add_message(request, messages.INFO, "Deleted training material")
                 return HttpResponseRedirect(reverse(training_materials))
+            if request.POST["submit"] == "Preview Training Material":
+
+            tm_form = TMForm(request.POST, instance=tm)
+        else:
+            tm_form = TMForm(request.POST)
+'''
+SAVE TRAINING MATERIAL
+'''
+        if tm_form.is_valid():
+            #tm = tm_form.save(commit=False)
+            tm.save()
+            #tm.save_m2m()
+            messages.add_message(request, messages.INFO, "Saved training material.")
+            return HttpResponseRedirect(reverse(training_materials_add))
+    return render(request, 'training_materials/tm_form.html', {
+        "tm": tm,
+        "tm_form": tm_form,
+    })
+	
+
+@login_required
+def training_materials_preview(request, pk=None):
+    if pk:
+        tm = get_object_or_404(TrainingMaterial, pk=pk)
+    else:
+        tm = TrainingMaterial()
+    return render(request, 'training_materials/tm_preview.html', {
+        "tm": tm,
+    })
+
+		
+	
+@login_required
+def training_materials_assign(request, pk=None):
+    if pk:
+        tm = get_object_or_404(TrainingMaterial, pk=pk)
+    else:
+        tm = TrainingMaterial()
+    tm_form = TMForm(instance=tm)
+    if request.method == 'POST':
+        data = {}
+        for key in request.POST:
+            val = request.POST[key]
+            if isinstance(val, basestring):
+                data[key] = val
+            else:
+                try:
+                    data[key] = val[0]
+                except (IndexError, TypeError):
+                    data[key] = val
+        del data
+        if pk:
             tm_form = TMForm(request.POST, instance=tm)
         else:
             tm_form = TMForm(request.POST)
