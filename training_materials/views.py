@@ -105,7 +105,7 @@ def training_materials_assign(request, pk=None):
         del data
         if pk:
             if request.POST["submit"] == "Assign and Send Notification":
-			    tm_form.send()
+                tm_form.send()
                 return HttpResponseRedirect(reverse(training_materials_add))
             tm_form = AssignForm(request.POST, instance=tm)
         else:
