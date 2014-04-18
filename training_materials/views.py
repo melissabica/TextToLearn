@@ -104,6 +104,8 @@ def training_materials_assign(request, pk=None):
                     data[key] = val
         del data
         if pk:
+            if request.POST["submit"] == "Back to Edit":
+                return HttpResponseRedirect(reverse(training_materials_add))
             tm_form = TMForm(request.POST, instance=tm)
         else:
             tm_form = TMForm(request.POST)
@@ -114,7 +116,7 @@ def training_materials_assign(request, pk=None):
             #tm.save_m2m()
             messages.add_message(request, messages.INFO, "Saved training material.")
             return HttpResponseRedirect(reverse(training_materials))
-    return render(request, 'training_materials/tm_form.html', {
+    return render(request, 'training_materials/tm_preview.html', {
         "tm": tm,
         "tm_form": tm_form,
     })
