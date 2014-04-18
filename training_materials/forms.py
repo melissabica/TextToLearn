@@ -22,6 +22,22 @@ class TMForm(forms.ModelForm):
 		exclude = ('assign',)
 		widgets = {'assigned_users': forms.CheckboxSelectMultiple()}
 
+
+class AssignForm(forms.ModelForm):
+	type = forms.models.modelform_factory(TrainingMaterial)
+	
+	class Meta:
+		model = TrainingMaterial
+		exclude = ('assign',)
+		widgets = {'assigned_users': forms.CheckboxSelectMultiple()}
+
+    def send(self):
+        message = self.cleaned_data['text']
+        connections = self.cleaned_data['assigned_users']
+        return send(message, connections)
+		
+		
+
 """	def save(self):
 		instance = forms.ModelForm.save(self)
 		instance.trainingmaterial_set.clear()

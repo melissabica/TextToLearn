@@ -90,7 +90,7 @@ def training_materials_assign(request, pk=None):
         tm = get_object_or_404(TrainingMaterial, pk=pk)
     else:
         tm = TrainingMaterial()
-    tm_form = TMForm(instance=tm)
+    tm_form = AssignForm(instance=tm)
     if request.method == 'POST':
         data = {}
         for key in request.POST:
@@ -105,10 +105,11 @@ def training_materials_assign(request, pk=None):
         del data
         if pk:
             if request.POST["submit"] == "Assign and Send Notification":
+			    tm_form.send()
                 return HttpResponseRedirect(reverse(training_materials_add))
-            tm_form = TMForm(request.POST, instance=tm)
+            tm_form = AssignForm(request.POST, instance=tm)
         else:
-            tm_form = TMForm(request.POST)
+            tm_form = AssignForm(request.POST)
         if tm_form.is_valid():
             #tm = tm_form.save(commit=False)
             tm = tm_form.save()
@@ -120,3 +121,22 @@ def training_materials_assign(request, pk=None):
         "tm": tm,
         "tm_form": tm_form,
     })
+	
+'''
+@login_required
+@require_POST
+def send(request):
+    try:
+        form = MessageForm(request.POST)
+        if form.is_valid():
+            message = form.send()
+            if len(message.connections) == 1:
+                return HttpResponse('Your message was sent to 1 recipient.')
+            else:
+                msg = 'Your message was sent to {0} recipients.'.format(len(message.connections))
+                return HttpResponse(msg)
+        else:
+            return HttpResponseBadRequest(unicode(form.errors))
+    except:
+        return HttpResponse("Unable to send message.", status=500)
+'''
