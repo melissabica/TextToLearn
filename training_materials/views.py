@@ -104,17 +104,13 @@ def training_materials_assign(request, pk=None):
                     data[key] = val
         del data
         if pk:
-            if request.POST["submit"] == "Assign and Send Notification":
-                tm_form.send()
-                return HttpResponseRedirect(reverse(training_materials_add))
             tm_form = AssignForm(request.POST, instance=tm)
         else:
             tm_form = AssignForm(request.POST)
         if tm_form.is_valid():
-            #tm = tm_form.save(commit=False)
+            tm_form.send()
             tm = tm_form.save()
             tm.save()
-            #tm.save_m2m()
             messages.add_message(request, messages.INFO, "Saved training material.")
             return HttpResponseRedirect(reverse(training_materials))
     return render(request, 'training_materials/tm_assign.html', {
