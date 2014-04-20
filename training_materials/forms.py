@@ -6,6 +6,7 @@ from models import TrainingMaterial
 from rapidsms.router import send
 from selectable.forms import AutoCompleteSelectMultipleField
 from .lookups import ConnectionLookup
+from rapidsms.models import Contact, Connection
 
 
 
@@ -36,7 +37,10 @@ class AssignForm(forms.ModelForm):
         widgets = {'assigned_users': forms.CheckboxSelectMultiple()}
     def send(self):
         message = self.cleaned_data['text']
-        connections = self.cleaned_data['assigned_users']
+        connections = []
+        for user in assigned_users:
+            connections.append(user.Connection)
+        #connections = self.cleaned_data['assigned_users']
         return send(message, connections)
 		
 		

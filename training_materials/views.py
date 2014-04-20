@@ -65,7 +65,7 @@ def training_materials_add(request, pk=None):
             tm.save()
             #tm.save_m2m()
             messages.add_message(request, messages.INFO, "Saved training material.")
-            return HttpResponseRedirect(reverse(training_materials_add))
+            return HttpResponseRedirect(reverse(training_materials))
     return render(request, 'training_materials/tm_form.html', {
         "tm": tm,
         "tm_form": tm_form,
