@@ -38,6 +38,7 @@ class AssignForm(forms.ModelForm):
     def send(self):
         message = self.cleaned_data['text']
         connections = []
+        assigned_users = self.cleaned_data['assigned_users']
         for user in assigned_users:
             connections.append(user.Connection)
         #connections = self.cleaned_data['assigned_users']
