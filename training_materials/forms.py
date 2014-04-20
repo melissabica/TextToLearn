@@ -28,7 +28,7 @@ class TMForm(forms.ModelForm):
 
 
 class AssignForm(forms.ModelForm):
-	type = forms.models.modelform_factory(TrainingMaterial)
+    type = forms.models.modelform_factory(TrainingMaterial)
     connections = AutoCompleteSelectMultipleField(lookup_class=ConnectionLookup)
 	
 	class Meta:
