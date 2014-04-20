@@ -4,6 +4,8 @@
 from django import forms
 from models import TrainingMaterial
 from rapidsms.router import send
+from selectable.forms import AutoCompleteSelectMultipleField
+from messaging.lookups import ConnectionLookup
 
 
 
@@ -22,22 +24,21 @@ class TMForm(forms.ModelForm):
 	class Meta:
 		model = TrainingMaterial
 		exclude = ('assign',)
-		widgets = {'assigned_users': forms.CheckboxSelectMultiple()}
+		#widgets = {'assigned_users': forms.CheckboxSelectMultiple()}
 
 
 class AssignForm(forms.ModelForm):
 	type = forms.models.modelform_factory(TrainingMaterial)
+    connections = AutoCompleteSelectMultipleField(lookup_class=ConnectionLookup)
+	
 	class Meta:
 		model = TrainingMaterial
 		exclude = ('assign',)
-		widgets = {'assigned_users': forms.CheckboxSelectMultiple()}
-	def send(self):
-		message = self.cleaned_data['text']
-		assigned_users = self.cleaned_data['assigned_users']
-		connections = []
-		for user in assigned_users:
-		    connections 
-		return send(message, connections)
+		#widgets = {'assigned_users': forms.CheckboxSelectMultiple()}
+    def send(self):
+        message = self.cleaned_data['text']
+        connections = self.cleaned_data['connections']
+        return send(message, connections)
 		
 		
 
