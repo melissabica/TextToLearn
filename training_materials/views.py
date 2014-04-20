@@ -113,7 +113,7 @@ def training_materials_assign(request, pk=None):
             tm.save()
             messages.add_message(request, messages.INFO, "Saved training material.")
             return HttpResponseRedirect(reverse(training_materials))
-    return render(request, 'training_materials/tm_assign.html', {
+    return render(request, 'training_materials/tm_assign1.html', {
         "tm": tm,
         "tm_form": tm_form,
     })
