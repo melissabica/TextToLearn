@@ -5,7 +5,7 @@ from django import forms
 from models import TrainingMaterial
 from rapidsms.router import send
 from selectable.forms import AutoCompleteSelectMultipleField
-from messaging.lookups import ConnectionLookup
+from .lookups import ConnectionLookup
 
 
 
