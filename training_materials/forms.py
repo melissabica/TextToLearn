@@ -30,10 +30,10 @@ class TMForm(forms.ModelForm):
 class AssignForm(forms.ModelForm):
     type = forms.models.modelform_factory(TrainingMaterial)
     connections = AutoCompleteSelectMultipleField(lookup_class=ConnectionLookup)
-	class Meta:
-		model = TrainingMaterial
-		exclude = ('assign',)
-		#widgets = {'assigned_users': forms.CheckboxSelectMultiple()}
+    class Meta:
+        model = TrainingMaterial
+        exclude = ('assign',)
+        #widgets = {'assigned_users': forms.CheckboxSelectMultiple()}
     def send(self):
         message = self.cleaned_data['text']
         connections = self.cleaned_data['connections']
