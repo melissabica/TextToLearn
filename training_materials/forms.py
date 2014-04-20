@@ -24,13 +24,12 @@ class TMForm(forms.ModelForm):
 	class Meta:
 		model = TrainingMaterial
 		exclude = ('assign',)
-		#widgets = {'assigned_users': forms.CheckboxSelectMultiple()}
+        #widgets = {'assigned_users': forms.CheckboxSelectMultiple()}
 
 
 class AssignForm(forms.ModelForm):
     type = forms.models.modelform_factory(TrainingMaterial)
     connections = AutoCompleteSelectMultipleField(lookup_class=ConnectionLookup)
-	
 	class Meta:
 		model = TrainingMaterial
 		exclude = ('assign',)
