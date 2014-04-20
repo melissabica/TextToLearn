@@ -1,8 +1,10 @@
 /* vim:set et ts=4 sw=4 */
 
+/*
 #notifications {max-width:767px;}
 
-#send-message-form {border:0px;padding-left:0px;} /* Override RapidSMS styles */
+
+#send-message-form {border:0px;padding-left:0px;} /* Override RapidSMS styles *//*
 #send-message-form .group {margin-bottom:10px;min-width:300px;max-width:767px;}
 #send-message-form .count {font-style:italic;}
 #send-message-form .ui-widget {font-family:inherit;font-size:inherit;}
@@ -12,7 +14,7 @@
 #send-message-form #recipients {display:inline-block;}
 #send-message-form #recipients .label {margin:5px;padding:4px;}
 #notes {margin-top:20px;}
-
+*/
 
 #inner .col-1 { width: 60%; }
 #inner .col-2 { width: 40%; }
