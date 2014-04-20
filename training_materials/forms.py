@@ -40,8 +40,7 @@ class AssignForm(forms.ModelForm):
         connections = []
         assigned_users = self.cleaned_data['assigned_users']
         for user in assigned_users:
-            #connections.append(user.default_connection())
-            user.default_connection
+            connections.append(user.default_connection)
         #connections = self.cleaned_data['assigned_users']
         return send(message, connections)
 		
