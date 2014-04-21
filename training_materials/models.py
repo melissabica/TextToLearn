@@ -19,9 +19,19 @@ class TrainingMaterial(models.Model):
     
     def users(self):
 	    return ', '.join([a.name for a in self.assigned_users.all()])
+    def __unicode__(self):
+        return "%s" % (self.title)
 
         
 class QuizQuestion(models.Model):
-    question = models.TextField(max_length=140)
-    answer = models.TextField(max_length=140)
+    question_1 = models.TextField(max_length=140)
+    answer_1 = models.TextField(max_length=140)
+    question_2 = models.TextField(max_length=140)
+    answer_2 = models.TextField(max_length=140)
+    question_3 = models.TextField(max_length=140)
+    answer_3 = models.TextField(max_length=140)
+    question_4 = models.TextField(max_length=140)
+    answer_4 = models.TextField(max_length=140)
+    question_5 = models.TextField(max_length=140)
+    answer_5 = models.TextField(max_length=140)
     tm = models.ForeignKey(TrainingMaterial)

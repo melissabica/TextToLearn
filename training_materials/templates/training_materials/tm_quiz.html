@@ -1,0 +1,21 @@
+{% extends "training_materials/base.html" %}
+{% load url from future %}
+{% load forms_tags %}
+
+{% block page %}
+    <div class="page_header">
+        <h2>Create Quiz</h2>
+    </div>
+    <div class="span8">
+        <form action="" method="post">
+            {% render_form tm_form %}
+            {% csrf_token %}
+            <div class="submit">
+                <input type="submit" name="submit" class="btn btn-primary" value="Save Quiz" />
+                <input type="submit" name="submit" class="btn btn-primary" value="Preview" />
+                <input type="submit" name="submit" class="btn btn-primary" value="Delete Quiz" />
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
