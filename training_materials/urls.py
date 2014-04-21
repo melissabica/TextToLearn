@@ -10,5 +10,4 @@ urlpatterns = patterns (' ',
     url(r'^(?P<pk>\d+)/assign/$', views.training_materials_assign, name="training_materials_assign"),
 
 
-
 )
