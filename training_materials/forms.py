@@ -27,6 +27,12 @@ class TMForm(forms.ModelForm):
 		exclude = ('assign','assigned_users',)
         #widgets = {'assigned_users': forms.CheckboxSelectMultiple()}
 
+class QuizForm(forms.ModelForm):
+ 	type = forms.models.modelform_factory(QuizQuestion)
+	class Meta:
+		model = QuizQuestion
+		#exclude = ('assign','assigned_users',)
+
 
 class AssignForm(forms.ModelForm):
     type = forms.models.modelform_factory(TrainingMaterial)
