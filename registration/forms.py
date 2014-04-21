@@ -14,7 +14,16 @@ class ConnectionFormSetBase(forms.models.BaseInlineFormSet):
                 form.fields['DELETE'].widget = forms.widgets.HiddenInput()
 
 
-ContactForm = forms.models.modelform_factory(Contact, exclude=("connections", ))
+FIELD_NAME_MAPPING = {
+    'identity': 'phone_number'
+}
+
+class ContactForm(forms.ModelForm):
+    type = forms.models.modelform_factory(Contact, exclude=("connections", ))
+    def add_prefix(self, field_name)
+        field_name = FIELD_NAME_MAPPING.get(field_name, field_name)
+        return super(ContactForm, self).add_prefix(field_name)
+ 
 
 ConnectionFormSet = forms.models.inlineformset_factory(
     Contact,
