@@ -19,3 +19,9 @@ class TrainingMaterial(models.Model):
     
     def users(self):
 	    return ', '.join([a.name for a in self.assigned_users.all()])
+
+        
+class QuizQuestion(models.Model):
+    question = models.TextField(max_length=140)
+    answer = models.TextField(max_length=140)
+    tm = models.ForeignKey(TrainingMaterial)

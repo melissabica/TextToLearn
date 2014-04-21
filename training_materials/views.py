@@ -82,7 +82,17 @@ def training_materials_preview(request, pk=None):
         "tm": tm,
     })
 
-		
+
+@login_required
+def training_materials_quiz(request, pk=None):
+    if pk:
+        tm = get_object_or_404(TrainingMaterial, pk=pk)
+    else:
+        tm = TrainingMaterial()
+    return render(request, 'training_materials/tm_preview.html', {
+        "tm": tm,
+    })
+    
 	
 @login_required
 def training_materials_assign(request, pk=None):
