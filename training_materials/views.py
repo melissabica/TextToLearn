@@ -10,8 +10,8 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404
 from django_tables2 import RequestConfig
 from tables import TrainingMaterialTable
-from models import TrainingMaterial
-from forms import TMForm, AssignForm
+from models import TrainingMaterial, QuizQuestion
+from forms import TMForm, AssignForm, QuizForm
 from rapidsms import settings
 
 from django_tables2 import RequestConfig
