@@ -88,11 +88,13 @@ def training_materials_preview(request, pk=None):
 @login_required
 def training_materials_quiz(request, pk=None):
     if pk:
-        tm = get_object_or_404(TrainingMaterial, pk=pk)
+        quiz = get_object_or_404(QuizQuestion, pk=pk)
     else:
-        tm = TrainingMaterial()
+        quiz = QuizQuestion()
+    quiz_form = QuizForm(instance=tm)
     return render(request, 'training_materials/tm_quiz.html', {
-        "tm": tm,
+        "quiz": quiz,
+        "quiz_form": quiz_form,
     })
     
 	
