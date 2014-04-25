@@ -2,7 +2,7 @@
 
 from rapidsms.contrib.handlers import KeywordHandler
 from rapidsms.contrib.handlers import PatternHandler
-from training_material.models import TrainingMaterial
+from training_materials.models import TrainingMaterial
 
 help_text = {
     'training': 'To start, reply START training. Example, START INTRO. To continue, reply NEXT training. To see your training, reply PROGRESS',
