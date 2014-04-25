@@ -2,12 +2,19 @@
 
 from rapidsms.contrib.handlers import KeywordHandler
 from rapidsms.contrib.handlers import PatternHandler
+from training_material.models import TrainingMaterial
 
 help_text = {
     'training': 'To start, reply START training. Example, START INTRO. To continue, reply NEXT training. To see your training, reply PROGRESS',
     'quiz': 'To start, reply QUIZ training. Example, QUIZ INTRO. To continue, respond only with quiz answers. Do not use other commands during quiz',
 }
-
+"""
+class TMHandler(KeywordHandler):
+    heyword = "start"
+    
+    if(tag == Training
+    self.respond("TrainingMaterial.me")
+"""
 class HelpHandler(KeywordHandler):
     keyword = "help"
 
