@@ -56,8 +56,6 @@ def training_materials_add(request, pk=None):
                 tm.delete()
                 messages.add_message(request, messages.INFO, "Deleted training material")
                 return HttpResponseRedirect(reverse(training_materials))
-            if request.POST["submit"] == "Create/Edit Quiz":
-                return HttpResponseRedirect(reverse(training_materials_quiz, args=(tm.id,)))
             #if request.POST["submit"] == "Preview Training Material":
             tm_form = TMForm(request.POST, instance=tm)
         else:
@@ -84,19 +82,6 @@ def training_materials_preview(request, pk=None):
         "tm": tm,
     })
 
-
-@login_required
-def training_materials_quiz(request, pk=None):
-    if pk:
-        quiz = get_object_or_404(QuizQuestion, pk=pk)
-    else:
-        quiz = QuizQuestion()
-    quiz_form = QuizForm(instance=tm)
-    return render(request, 'training_materials/tm_quiz.html', {
-        "quiz": quiz,
-        "quiz_form": quiz_form,
-    })
-    
 	
 @login_required
 def training_materials_assign(request, pk=None):

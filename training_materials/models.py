@@ -14,16 +14,6 @@ class TrainingMaterial(models.Model):
     text = models.TextField()
     date = models.DateTimeField(auto_now=True)
     assign = models.CharField(max_length=8, default='Assign', editable=False)
-    #forms.ModelMultipleChoiceField(queryset=Contact.objects.all())
-                    #models.ForeignKey(Contact, null=True)
-    
-    def users(self):
-	    return ', '.join([a.name for a in self.assigned_users.all()])
-    def __unicode__(self):
-        return "%s" % (self.title)
-
-        
-class QuizQuestion(models.Model):
     question_1 = models.TextField(max_length=140)
     answer_1 = models.TextField(max_length=140)
     question_2 = models.TextField(max_length=140)
@@ -34,4 +24,13 @@ class QuizQuestion(models.Model):
     answer_4 = models.TextField(max_length=140)
     question_5 = models.TextField(max_length=140)
     answer_5 = models.TextField(max_length=140)
-    tm = models.ForeignKey(TrainingMaterial)
+
+
+    #forms.ModelMultipleChoiceField(queryset=Contact.objects.all())
+                    #models.ForeignKey(Contact, null=True)
+    
+    def users(self):
+	    return ', '.join([a.name for a in self.assigned_users.all()])
+    def __unicode__(self):
+        return "%s" % (self.title)
+
