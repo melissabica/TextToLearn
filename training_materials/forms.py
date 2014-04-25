@@ -25,6 +25,9 @@ class TMForm(forms.ModelForm):
 	class Meta:
 		model = TrainingMaterial
 		exclude = ('assign','assigned_users',)
+        widgets = {
+            'question_1': forms.Textarea(attrs={'rows':2, 'cols':20}),
+        }
         #widgets = {'assigned_users': forms.CheckboxSelectMultiple()}
 
 
