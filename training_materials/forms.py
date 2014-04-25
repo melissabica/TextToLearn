@@ -46,7 +46,21 @@ class TMForm(forms.ModelForm):
 
 
 class AssignForm(forms.ModelForm):
+    c = 20
+    r = 2
     type = forms.models.modelform_factory(TrainingMaterial)
+    
+    question_1 = forms.CharField(widget=forms.Textarea(attrs={'cols': c, 'rows': r}), required=False)
+    question_2 = forms.CharField(widget=forms.Textarea(attrs={'cols': c, 'rows': r}), required=False)
+    question_3 = forms.CharField(widget=forms.Textarea(attrs={'cols': c, 'rows': r}), required=False)
+    question_4 = forms.CharField(widget=forms.Textarea(attrs={'cols': c, 'rows': r}), required=False)
+    question_5 = forms.CharField(widget=forms.Textarea(attrs={'cols': c, 'rows': r}), required=False)
+    
+    answer_1 = forms.CharField(widget=forms.Textarea(attrs={'cols': c, 'rows': r}), required=False)
+    answer_2 = forms.CharField(widget=forms.Textarea(attrs={'cols': c, 'rows': r}), required=False)
+    answer_3 = forms.CharField(widget=forms.Textarea(attrs={'cols': c, 'rows': r}), required=False)
+    answer_4 = forms.CharField(widget=forms.Textarea(attrs={'cols': c, 'rows': r}), required=False)
+    answer_5 = forms.CharField(widget=forms.Textarea(attrs={'cols': c, 'rows': r}), required=False)
     #connections = AutoCompleteSelectMultipleField(lookup_class=ConnectionLookup)
     class Meta:
         model = TrainingMaterial
