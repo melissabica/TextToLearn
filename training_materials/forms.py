@@ -21,12 +21,11 @@ from rapidsms.models import Contact, Connection
 
 
 class TMForm(forms.ModelForm):
-	type = forms.models.modelform_factory(TrainingMaterial)
-    question_1 = forms.TextField(widget=forms.Textarea(attrs={'cols': 10, 'rows': 2})
-
-	class Meta:
-		model = TrainingMaterial
-		exclude = ('assign','assigned_users',)
+    type = forms.models.modelform_factory(TrainingMaterial)
+    question_1 = forms.TextField(widget=forms.Textarea(attrs={'cols': 10, 'rows': 2})    
+    class Meta:
+        model = TrainingMaterial
+        exclude = ('assign','assigned_users',)
         # widgets = {
             # 'question_1': forms.Textarea(attrs={'rows':2, 'cols':20}, required=False),
         # }
