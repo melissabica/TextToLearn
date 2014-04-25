@@ -22,7 +22,7 @@ from rapidsms.models import Contact, Connection
 
 class TMForm(forms.ModelForm):
     type = forms.models.modelform_factory(TrainingMaterial)
-    question_1 = forms.CharField(widget=forms.Textarea(attrs={'cols': 10, 'rows': 2}))
+    question_1 = forms.CharField(widget=forms.Textarea(attrs={'cols': 20, 'rows': 2}))
     class Meta:
         model = TrainingMaterial
         exclude = ('assign','assigned_users',)
