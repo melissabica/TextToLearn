@@ -14,7 +14,7 @@ class TrainingMaterial(models.Model):
     text = models.TextField()
     date = models.DateTimeField(auto_now=True)
     assign = models.CharField(max_length=8, default='Assign', editable=False)
-    question_1 = models.TextField(max_length=140, required=False)
+    question_1 = models.TextField(max_length=140)
     answer_1 = models.TextField(max_length=140)
     question_2 = models.TextField(max_length=140)
     answer_2 = models.TextField(max_length=140)
