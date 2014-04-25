@@ -67,13 +67,14 @@ class AssignForm(forms.ModelForm):
         exclude = ('assign',)
         widgets = {'assigned_users': forms.CheckboxSelectMultiple()}
     def send(self):
-        message = self.cleaned_data['text']
+        notification = 'You have been assigned %s. To begin, reply with START %s.' % self.cleaned_data['title'], self.cleaned_data['tag']
+        #self.cleaned_data['text']
         connections = []
         assigned_users = self.cleaned_data['assigned_users']
         for user in assigned_users:
             connections.append(user.default_connection)
         #connections = self.cleaned_data['assigned_users']
-        return send(message, connections)
+        return send(notification, connections)
 		
 		
 
