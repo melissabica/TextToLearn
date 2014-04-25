@@ -2,7 +2,7 @@
 # vim: ai ts=4 sts=4 et sw=4
 
 from django import forms
-from models import TrainingMaterial, QuizQuestion
+from models import TrainingMaterial
 from rapidsms.router import send
 from selectable.forms import AutoCompleteSelectMultipleField
 from .lookups import ConnectionLookup
