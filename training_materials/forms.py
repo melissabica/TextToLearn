@@ -53,7 +53,7 @@ class TMForm(forms.ModelForm):
             message = text
         while(l > msgLen):
             message +=text[msgLen*i:msgLen+msgLen*i]
-            message += " -Reply NEXT %s" % self.cleaned_data['tag'].upper().replace(" ", "")
+            message += " -Reply NEXT %s" % self.cleaned_data['tag']
             l -= msgLen
             i += 1
         message += text[msgLen*i:]
@@ -84,7 +84,7 @@ class AssignForm(forms.ModelForm):
         exclude = ('assign', 'messages', 'messagenum')
         widgets = {'assigned_users': forms.CheckboxSelectMultiple()}
     def send(self):
-        notification = 'You have been assigned %s. To begin, reply with START %s.' % (self.cleaned_data['title'], self.cleaned_data['tag'].upper())
+        notification = 'You have been assigned %s. To begin, reply with START %s.' % (self.cleaned_data['title'], self.cleaned_data['tag'])
         #self.cleaned_data['text']
         connections = []
         assigned_users = self.cleaned_data['assigned_users']
