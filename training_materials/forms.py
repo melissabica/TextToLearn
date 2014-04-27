@@ -43,6 +43,23 @@ class TMForm(forms.ModelForm):
         # widgets = {
             # 'question_1': forms.Textarea(attrs={'rows':2, 'cols':20}, required=False),
         # }
+    def createMessages(self):
+        i = 0
+        text = self.cleaned_data['text']
+        message = ""
+        l = len(text)
+        if(l < msgLen):
+            #if(self.cleaned_data['question_1'] != "")
+            message = text
+        while(l > msgLen):
+            message +=text[msgLen*i:msgLen+msgLen*i]
+            message += " -Reply NEXT %s" % self.cleaned_data['tag'].upper()
+            l -= msgLen
+            i += 1
+        message += text[msgLen*i:]
+        message += " (end)"
+        return (message, i+1)
+        
 
 
 class AssignForm(forms.ModelForm):
@@ -75,23 +92,7 @@ class AssignForm(forms.ModelForm):
             connections.append(user.default_connection)
         #connections = self.cleaned_data['assigned_users']
         return send(notification, connections)
-    def createMessages(self):
-        i = 0
-        text = self.cleaned_data['text']
-        message = ""
-        l = len(text)
-        if(l < msgLen):
-            #if(self.cleaned_data['question_1'] != "")
-            message = text
-        while(l > msgLen):
-            message.append(text[msgLen*i:msgLen+msgLen*i])
-            message.append(" -Reply NEXT %s" % self.cleaned_data['tag'].upper())
-            l -= msgLen
-            i += 1
-        message.append(text[msgLen*i:])
-        message.append(" (end)")
-        return (message, i+1)
-        
+
 
 """	def save(self):
 		instance = forms.ModelForm.save(self)
