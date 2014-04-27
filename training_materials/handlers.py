@@ -69,12 +69,13 @@ class NextHandler(KeywordHandler):
         else:
             try:
                 msgt = MessageTracker.objects.get(self.msg.contact)
+            except:
+                self.respond("blah")
+            else:
                 msgt.tmorquiz = "tm"
                 msgt.msgnum += 1
                 if tm.messagenum == msgt.msgnum:
                     self.respond("%s" % tm.messages[160*(msgt.msgnum-1):])
                 else:
                     self.respond("%s" % tm.messages[160*(msgt.msgnum-1):160*msgt.msgnum])
-            except:
-                self.help()
            
