@@ -53,7 +53,7 @@ class TMForm(forms.ModelForm):
             message = text
         while(l > msgLen):
             message +=text[msgLen*i:msgLen+msgLen*i]
-            message += " -Reply NEXT %s" % self.cleaned_data['tag'].upper()
+            message += " -Reply NEXT %s" % self.cleaned_data['tag'].upper().replace(" ", "")
             l -= msgLen
             i += 1
         message += text[msgLen*i:]
