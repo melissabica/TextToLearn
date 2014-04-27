@@ -108,7 +108,9 @@ def training_materials_assign(request, pk=None):
             tm_form = AssignForm(request.POST)
         if tm_form.is_valid():
                 tm = tm_form.save(commit=False)
-                
+                message = tm_form.createMessages()
+                tm.messages = message[0]
+                tm.messagenum = message[1]
                 tm_form.send()
                 tm.save()
             messages.add_message(request, messages.INFO, "Saved and sent training material.")

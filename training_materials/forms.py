@@ -8,7 +8,7 @@ from selectable.forms import AutoCompleteSelectMultipleField
 from .lookups import ConnectionLookup
 from rapidsms.models import Contact, Connection
 
-
+msgLen = 139
 
 """class TMFormSetBase(forms.models.BaseInlineFormSet):
     def __init__(self, *args, **kwargs):
@@ -80,16 +80,17 @@ class AssignForm(forms.ModelForm):
         text = self.cleaned_data['text']
         message = ""
         l = len(text)
-        if(l < 140):
+        if(l < msgLen):
             #if(self.cleaned_data['question_1'] != "")
             message = text
-        while(l > 140):
-            message.append(text[140*i:140+140*i])
-            message.append(" Reply NEXT %s" % self.cleaned_data['tag'].upper())
-            l -= 140
+        while(l > msgLen):
+            message.append(text[msgLen*i:msgLen+msgLen*i])
+            message.append(" -Reply NEXT %s" % self.cleaned_data['tag'].upper())
+            l -= msgLen
             i += 1
-        message.append(text[140*i:])
+        message.append(text[msgLen*i:])
         message.append(" (end)")
+        return (message, i+1)
         
 
 """	def save(self):
