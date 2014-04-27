@@ -41,15 +41,15 @@ class StartHandler(KeywordHandler):
         # look for a choice that matches the attempted vote
         try:
             tm = TrainingMaterial.objects.get(tag__iexact=tag)
-        except tm.DoesNotExist:
+        except TrainingMaterial.DoesNotExist:
             # Send help
             self.help()
         else:
             try:
                 contact = MessageTracker.objects.get(self.msg.contact)
             except:
-                MessageTracker.objects.create(contact=contact, tmorquiz = "tm", msgnum = 1))
+                MessageTracker.objects.create(contact=contact, tmorquiz = "tm", msgnum = 1)
             if tm.messagenum == 1:
                 self.respond("%s" % tm.messages)
             else:
-            self.respond("%s" % tm.messages[:160])
+                self.respond("%s" % tm.messages[:160])
