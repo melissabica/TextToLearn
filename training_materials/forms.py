@@ -8,7 +8,6 @@ from selectable.forms import AutoCompleteSelectMultipleField
 from .lookups import ConnectionLookup
 from rapidsms.models import Contact, Connection
 
-msgLen = 139
 
 """class TMFormSetBase(forms.models.BaseInlineFormSet):
     def __init__(self, *args, **kwargs):
@@ -44,6 +43,7 @@ class TMForm(forms.ModelForm):
             # 'question_1': forms.Textarea(attrs={'rows':2, 'cols':20}, required=False),
         # }
     def createMessages(self):
+        msgLen = 160 - len(self.cleaned_data['tag']) - len(" -Reply NEXT ")
         i = 0
         text = self.cleaned_data['text']
         message = ""

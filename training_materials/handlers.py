@@ -31,9 +31,6 @@ class StartHandler(KeywordHandler):
     keyword = "start"
 
     def help(self):
-        """Respond with the valid commands.  Example response:
-        ``Valid commands: VOTE <Moe|Larry|Curly>``
-        """
         self.respond("Invalid training material tag")
 
     def handle(self, text):
@@ -46,10 +43,37 @@ class StartHandler(KeywordHandler):
             self.help()
         else:
             try:
-                contact = MessageTracker.objects.get(self.msg.contact)
+                msgt = MessageTracker.objects.get(self.msg.contact)
             except:
-                MessageTracker.objects.create(contact=contact, tmorquiz = "tm", msgnum = 1)
+                msgt = MessageTracker.objects.create(contact=self.msg.contact, tmorquiz = "tm", msgnum = 1)
+            msgt.tmorquiz = "tm"
+            msgt.msgnum = 1
             if tm.messagenum == 1:
                 self.respond("%s" % tm.messages)
             else:
                 self.respond("%s" % tm.messages[:160])
+
+class NextHandler(KeywordHandler):
+    keyword = "next"
+    
+    def help(self):
+        self.respond("You have not started this training material")
+    
+    def handle(self, text):
+        text = text.strip()
+        try:
+            tm = TrainingMaterial.objects.get(tag__iexact=text)
+        except TrainingMaterial.DoesNotExist:
+            # Send help
+            self.help()
+        else:
+            try:
+                msgt = MessageTracker.objects.get(self.msg.contact)
+            except:
+                self.help()
+            msgt.tmorquiz = "tm"
+            msgt.msgnum += 1
+            if tm.messagenum == msgt.msgnum:
+                self.respond("%s" % tm.messages[160*(msgt.msgnum-1):])
+            else:
+                self.respond("%s" % tm.messages[160*(msgt.msgnum-1):160*msgt.msgnum])

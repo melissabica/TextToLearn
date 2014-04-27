@@ -12,7 +12,7 @@ class TrainingMaterialTable(tables.Table):
 
     class Meta:
         model = TrainingMaterial
-        exclude = ('tag', 'text', 'id', 'question_1', 'answer_1', 'question_2', 'answer_2', 'question_3', 'answer_3', 'question_4', 'answer_4', 'question_5', 'answer_5',)
+        exclude = ('tag', 'text', 'id', 'messages', 'messagenum', 'question_1', 'answer_1', 'question_2', 'answer_2', 'question_3', 'answer_3', 'question_4', 'answer_4', 'question_5', 'answer_5',)
         order_by = ('-date', )
         attrs = {
             'class': 'table table-striped table-bordered table-condensed'
