@@ -52,7 +52,7 @@ def training_materials_add(request, pk=None):
         # print repr(data)
         del data
         if pk:
-            if request.POST["submit"] == "Delete Training Material":
+            if request.POST["submit"] == "Delete":
                 tm.delete()
                 messages.add_message(request, messages.INFO, "Deleted training material")
                 return HttpResponseRedirect(reverse(training_materials))
