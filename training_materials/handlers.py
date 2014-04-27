@@ -43,7 +43,7 @@ class StartHandler(KeywordHandler):
             self.help()
         else:
             try: #is this user assigned to this training material?
-                tm.assigned_users_set.filter(contact = self.msg.contact).exists()
+                tm.assigned_users_set.filter(id = self.msg.contact.id)
             except:
                 self.respond("You have not been assigned this training")
             else: 
