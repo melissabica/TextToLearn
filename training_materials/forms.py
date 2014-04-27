@@ -64,7 +64,7 @@ class AssignForm(forms.ModelForm):
     #connections = AutoCompleteSelectMultipleField(lookup_class=ConnectionLookup)
     class Meta:
         model = TrainingMaterial
-        exclude = ('assign',)
+        exclude = ('assign', 'messages', 'messagenum')
         widgets = {'assigned_users': forms.CheckboxSelectMultiple()}
     def send(self):
         notification = 'You have been assigned %s. To begin, reply with START %s.' % (self.cleaned_data['title'], self.cleaned_data['tag'].upper())
@@ -75,8 +75,22 @@ class AssignForm(forms.ModelForm):
             connections.append(user.default_connection)
         #connections = self.cleaned_data['assigned_users']
         return send(notification, connections)
-		
-		
+    def createMessages(self):
+        i = 0
+        text = self.cleaned_data['text']
+        message = ""
+        l = len(text)
+        if(l < 140):
+            #if(self.cleaned_data['question_1'] != "")
+            message = text
+        while(l > 140):
+            message.append(text[140*i:140+140*i])
+            message.append(" Reply NEXT %s" % self.cleaned_data['tag'].upper())
+            l -= 140
+            i += 1
+        message.append(text[140*i:])
+        message.append(" (end)")
+        
 
 """	def save(self):
 		instance = forms.ModelForm.save(self)

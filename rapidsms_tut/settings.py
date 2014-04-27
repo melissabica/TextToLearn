@@ -232,12 +232,13 @@ INSTALLED_BACKENDS = {
 LOGIN_REDIRECT_URL = '/'
 
 RAPIDSMS_HANDLERS = (
+    "myhandlers.HelpHandler",
     'rapidsms.contrib.echo.handlers.echo.EchoHandler',
     #'rapidsms.contrib.echo.handlers.ping.PingHandler',
     "training_materials.handlers.StartHandler",
     "myhandlers.SumHandler",
-    "handlers.ResultsHandler",
-    "voting.handlers.VoteHandler",
-    "myhandlers.HelpHandler",
+    #"handlers.ResultsHandler",
+    #"voting.handlers.VoteHandler",
+    
 
 )

@@ -107,9 +107,10 @@ def training_materials_assign(request, pk=None):
         else:
             tm_form = AssignForm(request.POST)
         if tm_form.is_valid():
-            tm_form.send()
-            tm = tm_form.save()
-            tm.save()
+                tm = tm_form.save(commit=False)
+                
+                tm_form.send()
+                tm.save()
             messages.add_message(request, messages.INFO, "Saved and sent training material.")
             return HttpResponseRedirect(reverse(training_materials))
     return render(request, 'training_materials/tm_assign1.html', {
