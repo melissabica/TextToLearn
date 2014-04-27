@@ -43,7 +43,7 @@ class StartHandler(KeywordHandler):
             self.help()
         else:
             try: #is this user assigned to this training material?
-                tm.assigned_users.objects.get(contact = self.msg.contact.id)
+                tm.assigned_users_set.filter(contact = self.msg.contact).exists()
             except:
                 self.respond("You have not been assigned this training")
             else: 
@@ -58,7 +58,7 @@ class StartHandler(KeywordHandler):
                     self.respond("%s" % tm.messages)
                 else:
                     self.respond("%s" % tm.messages[:160])
-
+                
 class NextHandler(KeywordHandler):
     keyword = "next"
     
@@ -90,7 +90,7 @@ class NextHandler(KeywordHandler):
                         self.respond("%s" % tm.messages[160*(msgt.msgnum-1):160*msgt.msgnum])
                 else:
                     self.help()
-
+"""
 class QuizHandler(KeywordHandler):
     keyword = "quiz"
     
@@ -102,9 +102,9 @@ class QuizHandler(KeywordHandler):
         try:
             tm = TrainingMaterial.objects.get(tag__iexact=text)
         except:
-           """ if text is "":
+            if text is "":
                 self.respond("You must enter QUIZ <TAG>")
-            else:"""
+            else:
             self.help()
         else:
             try:
@@ -119,3 +119,4 @@ class QuizHandler(KeywordHandler):
                     msgt.msgnum = 1
                     msgt.save()
                     self.respond("%s" % tm.question_1)
+"""
