@@ -98,9 +98,13 @@ class QuizHandler(KeywordHandler):
         self.respond("Quiz is not available");
     
     def handle(self, text):
+        text = text.strip()
         try:
             tm = TrainingMaterial.objects.get(tag__iexact=text)
         except:
+           """ if text is "":
+                self.respond("You must enter QUIZ <TAG>")
+            else:"""
             self.help()
         else:
             try:
@@ -108,7 +112,7 @@ class QuizHandler(KeywordHandler):
             except:
                 self.respond("You are not a registered user")
             else:
-                if tm.question_1 is None:
+                if tm.question_1 is "":
                     self.help()
                 else:
                     msgt.tmorquiz = "quiz"
