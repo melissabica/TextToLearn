@@ -236,7 +236,7 @@ RAPIDSMS_HANDLERS = (
     'rapidsms.contrib.echo.handlers.echo.EchoHandler',
     #'rapidsms.contrib.echo.handlers.ping.PingHandler',
     "training_materials.handlers.StartHandler",
-    "training_materials.handlers.StartHandler",
+    "training_materials.handlers.NextHandler",
     "myhandlers.SumHandler",
     #"handlers.ResultsHandler",
     #"voting.handlers.VoteHandler",
