@@ -51,4 +51,5 @@ class StartHandler(KeywordHandler):
                 MessageTracker.objects.create(contact=contact, tmorquiz = "tm", msgnum = 1))
             if tm.messagenum == 1:
                 self.respond("%s" % tm.messages)
+            else:
             self.respond("%s" % tm.messages[:160])
