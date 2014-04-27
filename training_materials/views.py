@@ -63,6 +63,7 @@ def training_materials_add(request, pk=None):
         if tm_form.is_valid():
             tm = tm_form.save(commit=False)
             tm.tag = tm_form.cleaned_data['tag'].upper().replace(" ", "") #tag w/o whitespace, uppercase
+            tm.save()
             message = tm_form.createMessages()
             tm.messages = message[0] #block of formatted texts
             tm.messagenum = message[1] #total number of formatted texts in TM
