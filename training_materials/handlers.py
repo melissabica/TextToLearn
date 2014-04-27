@@ -40,7 +40,7 @@ class StartHandler(KeywordHandler):
         text = text.strip()
         # look for a choice that matches the attempted vote
         try:
-            tm = TrainingMaterial.objects.get(tag__iexact=tag)
+            tm = TrainingMaterial.objects.get(tag__iexact=text)
         except TrainingMaterial.DoesNotExist:
             # Send help
             self.help()

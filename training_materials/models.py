@@ -31,7 +31,7 @@ class TrainingMaterial(models.Model):
 
 class MessageTracker(models.Model):
     contact = models.ForeignKey(Contact)
-    tmorquiz = models.CharField()
+    tmorquiz = models.CharField(max_length=8)
     msgnum =  models.IntegerField()
     #forms.ModelMultipleChoiceField(queryset=Contact.objects.all())
                     #models.ForeignKey(Contact, null=True)
