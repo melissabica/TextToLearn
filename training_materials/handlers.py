@@ -43,11 +43,12 @@ class StartHandler(KeywordHandler):
             self.help()
         else:
             try:
-                msgt = MessageTracker.objects.get(self.msg.contact.id)
+                msgt = MessageTracker.objects.get(contact =self.msg.contact.id)
             except:
                 msgt = MessageTracker.objects.create(contact=self.msg.contact, tmorquiz = "tm", msgnum = 1)
             msgt.tmorquiz = "tm"
             msgt.msgnum = 1
+            msgt.save()
             if tm.messagenum == 1:
                 self.respond("%s" % tm.messages)
             else:
@@ -68,14 +69,21 @@ class NextHandler(KeywordHandler):
             self.help()
         else:
             try:
-                msgt = MessageTracker.objects.get(self.msg.contact.id)
+                msgt = MessageTracker.objects.get(contact = self.msg.contact.id)
             except:
-                self.respond("blah")
+                self.respond("You are not a registered user")
             else:
-                msgt.tmorquiz = "tm"
-                msgt.msgnum += 1
-                if tm.messagenum == msgt.msgnum:
-                    self.respond("%s" % tm.messages[160*(msgt.msgnum-1):])
+                if(msgt.tmorquiz == "tm"):
+                    msgt.tmorquiz = "tm"
+                    msgt.msgnum = msgt.msgnum + 1
+                    msgt.save()
+                    if tm.messagenum == msgt.msgnum:
+                        self.respond("%s" % tm.messages[160*(msgt.msgnum-1):])
+                        msgt.tmorquiz = ""
+                        msgt.msgnum = 0
+                        msgt.save()
+                    else:
+                        self.respond("%s" % tm.messages[160*(msgt.msgnum-1):160*msgt.msgnum])
                 else:
-                    self.respond("%s" % tm.messages[160*(msgt.msgnum-1):160*msgt.msgnum])
+                    self.help()
            
