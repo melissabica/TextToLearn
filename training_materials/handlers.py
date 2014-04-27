@@ -43,7 +43,7 @@ class StartHandler(KeywordHandler):
             self.help()
         else:
             try:
-                msgt = MessageTracker.objects.get(self.msg.contact)
+                msgt = MessageTracker.objects.get(self.msg.contact.id)
             except:
                 msgt = MessageTracker.objects.create(contact=self.msg.contact, tmorquiz = "tm", msgnum = 1)
             msgt.tmorquiz = "tm"
@@ -68,7 +68,7 @@ class NextHandler(KeywordHandler):
             self.help()
         else:
             try:
-                msgt = MessageTracker.objects.get(self.msg.contact)
+                msgt = MessageTracker.objects.get(self.msg.contact.id)
             except:
                 self.respond("blah")
             else:
