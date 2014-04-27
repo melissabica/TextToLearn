@@ -97,7 +97,7 @@ class QuizHandler(KeywordHandler):
     def help(self):
         self.respond("Quiz is not available");
     
-    def handler():
+    def handler(self, text):
         try:
             tm = TrainingMaterial.objects.get(tag__iexact=text)
         except:
