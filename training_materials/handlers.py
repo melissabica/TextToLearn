@@ -74,7 +74,6 @@ class NextHandler(KeywordHandler):
                 self.respond("You are not a registered user")
             else:
                 if(msgt.tmorquiz == "tm"):
-                    msgt.tmorquiz = "tm"
                     msgt.msgnum = msgt.msgnum + 1
                     msgt.save()
                     if tm.messagenum == msgt.msgnum:
@@ -86,4 +85,28 @@ class NextHandler(KeywordHandler):
                         self.respond("%s" % tm.messages[160*(msgt.msgnum-1):160*msgt.msgnum])
                 else:
                     self.help()
-           
+
+class QuizHandler(KeywordHandler):
+    keyword = "quiz"
+    
+    def help(self):
+        self.respond("Quiz is not available");
+    
+    def handler():
+        try:
+            tm = TrainingMaterial.objects.get(tag__iexact=text)
+        except:
+            self.help()
+        else:
+            try:
+                msgt = MessageTracker.objects.get(contact = self.msg.contact.id)
+            except:
+                self.respond("You are not a registered user")
+            else:
+                if tm.question_1 is None:
+                    self.help()
+                else:
+                    msgt.tmorquiz = "quiz"
+                    msgt.msgnum = 1
+                    msgt.save()
+                    self.respond("%s" % tm.question_1)
