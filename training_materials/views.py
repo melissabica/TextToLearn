@@ -61,8 +61,10 @@ def training_materials_add(request, pk=None):
         else:
             tm_form = TMForm(request.POST)
         if tm_form.is_valid():
-            tm = tm_form.save()
-            tm.save()
+            tm = tm_form.save(commit=False)
+            message = tm_form.createMessages()
+            tm.messages = message[0]
+            tm.messagenum = message[1]
             #tm.save_m2m()
             messages.add_message(request, messages.INFO, "Saved training material.")
             return HttpResponseRedirect(reverse(training_materials))
@@ -107,10 +109,7 @@ def training_materials_assign(request, pk=None):
         else:
             tm_form = AssignForm(request.POST)
         if tm_form.is_valid():
-            tm = tm_form.save(commit=False)
-            message = tm_form.createMessages()
-            tm.messages = message[0]
-            tm.messagenum = message[1]
+            tm = tm_form.save()
             tm_form.send()
             tm.save()
             messages.add_message(request, messages.INFO, "Saved and sent training material.")

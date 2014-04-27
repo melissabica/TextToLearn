@@ -39,7 +39,7 @@ class TMForm(forms.ModelForm):
     
     class Meta:
         model = TrainingMaterial
-        exclude = ('assign','assigned_users',)
+        exclude = ('assign','assigned_users', 'messages', 'messagenum')
         # widgets = {
             # 'question_1': forms.Textarea(attrs={'rows':2, 'cols':20}, required=False),
         # }
