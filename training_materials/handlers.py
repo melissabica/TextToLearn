@@ -2,7 +2,7 @@
 
 from rapidsms.contrib.handlers import KeywordHandler
 
-from .models import TrainingMaterial
+from .models import TrainingMaterial, MessageTracker
 from django.db.models import F
 
 """class StartHandler(KeywordHandler):
@@ -40,12 +40,15 @@ class StartHandler(KeywordHandler):
         text = text.strip()
         # look for a choice that matches the attempted vote
         try:
-            tm = TrainingMaterial.objects.get(tag__iexact=text)
-        except Choice.DoesNotExist:
+            tm = TrainingMaterial.objects.get(tag__iexact=tag)
+        except tm.DoesNotExist:
             # Send help
             self.help()
         else:
-            # Count the vote. Use update to do it in a single query
-            # to avoid race conditions.
-            #Choice.objects.filter(name__iexact=text).update(votes=F('votes')+1)
-            self.respond("%s" % tm.text)
+            try:
+                contact = MessageTracker.objects.get(self.msg.contact)
+            except:
+                MessageTracker.objects.create(contact=contact, tmorquiz = "tm", msgnum = 1))
+            if tm.messagenum == 1:
+                self.respond("%s" % tm.messages)
+            self.respond("%s" % tm.messages[:160])

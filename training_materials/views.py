@@ -65,6 +65,7 @@ def training_materials_add(request, pk=None):
             message = tm_form.createMessages()
             tm.messages = message[0]
             tm.messagenum = message[1]
+            tm.save()
             #tm.save_m2m()
             messages.add_message(request, messages.INFO, "Saved training material.")
             return HttpResponseRedirect(reverse(training_materials))

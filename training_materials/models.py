@@ -29,7 +29,10 @@ class TrainingMaterial(models.Model):
     question_5 = models.TextField(max_length=140)
     answer_5 = models.TextField(max_length=140)
 
-
+class MessageTracker(models.Model):
+    contact = models.ForeignKey(Contact)
+    tmorquiz = models.CharField()
+    msgnum =  models.IntegerField()
     #forms.ModelMultipleChoiceField(queryset=Contact.objects.all())
                     #models.ForeignKey(Contact, null=True)
     
