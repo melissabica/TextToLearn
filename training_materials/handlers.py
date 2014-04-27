@@ -42,22 +42,22 @@ class StartHandler(KeywordHandler):
             # Send help
             self.help()
         else:
-            try: #has this user done training before?
-                msgt = MessageTracker.objects.get(contact =self.msg.contact.id)
-            except: #if not create an instance of messagetracker for them
-                msgt = MessageTracker.objects.create(contact=self.msg.contact, tmorquiz = "tm", msgnum = 1)
+            try: #is this user assigned to this training material?
+                tm.assigned_users.objects.get(contact = self.msg.contact.id)
+            except:
+                self.respond("You have not been assigned this training")
             else: 
-                try: #is this user assigned to this training material?
-                    tm.assigned_users.objects.get(contact = self.msg.contact.id)
-                except:
-                    self.respond("You have not been assigned this training")
+                try: #has this user done training before?
+                    msgt = MessageTracker.objects.get(contact =self.msg.contact.id)
+                except: #if not create an instance of messagetracker for them
+                    msgt = MessageTracker.objects.create(contact=self.msg.contact, tmorquiz = "tm", msgnum = 1)            
                 msgt.tmorquiz = "tm"
                 msgt.msgnum = 1
-            msgt.save()
-            if tm.messagenum == 1:
-                self.respond("%s" % tm.messages)
-            else:
-                self.respond("%s" % tm.messages[:160])
+                msgt.save()
+                if tm.messagenum == 1:
+                    self.respond("%s" % tm.messages)
+                else:
+                    self.respond("%s" % tm.messages[:160])
 
 class NextHandler(KeywordHandler):
     keyword = "next"
