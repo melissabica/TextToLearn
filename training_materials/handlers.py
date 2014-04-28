@@ -159,7 +159,7 @@ class AnswerHandler(PatternHandler):
                         else:
                             msgt.msgnum += 1
                             msgt.save()
-                            self.respond("%s%s" % (tof, tm.question_2)
+                            self.respond("%s%s" % (tof, tm.question_2))
                 
                     if msgt.msgnum == 2:
                         text = text.lower().strip()
@@ -176,7 +176,7 @@ class AnswerHandler(PatternHandler):
                         else:
                             msgt.msgnum += 1
                             msgt.save()
-                            self.respond("%s%s" % (tof, tm.question_3)
+                            self.respond("%s%s" % (tof, tm.question_3))
                 
                     if msgt.msgnum == 3:
                         text = text.lower().strip()
@@ -193,7 +193,7 @@ class AnswerHandler(PatternHandler):
                         else:
                             msgt.msgnum += 1
                             msgt.save()
-                            self.respond("%s%s" % (tof, tm.question_4)                            
+                            self.respond("%s%s" % (tof, tm.question_4))                            
 
                     if msgt.msgnum == 4:
                         text = text.lower().strip()
@@ -210,7 +210,7 @@ class AnswerHandler(PatternHandler):
                         else:
                             msgt.msgnum += 1
                             msgt.save()
-                            self.respond("%s%s" % (tof, tm.question_5)
+                            self.respond("%s%s" % (tof, tm.question_5))
                     
                     if msgt.msgnum == 5:
                         text = text.lower().strip()
@@ -223,8 +223,5 @@ class AnswerHandler(PatternHandler):
                             msgt.msgnum = 0
                             msgt.tmorquiz = ""
                             msgt.save()
-                            self.respond(tof)
-                                        
-
-        
+                            self.respond(tof)                 
         
