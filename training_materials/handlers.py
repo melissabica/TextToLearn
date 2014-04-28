@@ -123,10 +123,10 @@ class QuizHandler(KeywordHandler):
                     self.respond("%s" % tm.question_1)
                     
 class AnswerHandler(PatternHandler):
-    pattern = r"^.*"
+    pattern = r"^.*$"
     
     def handle(self, text):
-        try: #Registered User?
+"""        try: #Registered User?
             Contact.objects.get(id = self.msg.contact.id)
         except: #Not a contact in our system reject
             self.respond("You have not been registered in our system")
@@ -160,7 +160,7 @@ class AnswerHandler(PatternHandler):
                             msgt.msgnum += 1
                             msgt.save()
                             self.respond("%s%s" % (tof, tm.question_2))
-                
+                            
                     if msgt.msgnum == 2:
                         text = text.lower().strip()
                         tof = ""
@@ -177,7 +177,7 @@ class AnswerHandler(PatternHandler):
                             msgt.msgnum += 1
                             msgt.save()
                             self.respond("%s%s" % (tof, tm.question_3))
-                
+                            
                     if msgt.msgnum == 3:
                         text = text.lower().strip()
                         tof = ""
@@ -194,7 +194,7 @@ class AnswerHandler(PatternHandler):
                             msgt.msgnum += 1
                             msgt.save()
                             self.respond("%s%s" % (tof, tm.question_4))                            
-
+                            
                     if msgt.msgnum == 4:
                         text = text.lower().strip()
                         tof = ""
@@ -223,5 +223,5 @@ class AnswerHandler(PatternHandler):
                             msgt.msgnum = 0
                             msgt.tmorquiz = ""
                             msgt.save()
-                            self.respond(tof)                 
+                            self.respond(tof)  """               
         
