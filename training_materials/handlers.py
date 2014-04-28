@@ -42,21 +42,21 @@ class StartHandler(KeywordHandler):
             # Send help
             self.help()
         else:
-             #is this user assigned to this training material? implement
-            """if tm.assigned_users_set.objects.filter(id = self.msg.contact.id).exists():
+             #is this user assigned to this training material?
+            if not tm.assigned_users.filter(id = self.msg.contact.id).exists():
                 self.respond("You have not been assigned this training")
-            else: """
-            try: #has this user done training before?
-                msgt = MessageTracker.objects.get(contact =self.msg.contact.id)
-            except: #if not create an instance of messagetracker for them
-                msgt = MessageTracker.objects.create(contact=self.msg.contact, tmorquiz = "tm", msgnum = 1)            
-            msgt.tmorquiz = "tm"
-            msgt.msgnum = 1
-            msgt.save()
-            if tm.messagenum == 1:
-                self.respond("%s" % tm.messages)
-            else:
-                self.respond("%s" % tm.messages[:160])
+            else: 
+                try: #has this user done training before?
+                    msgt = MessageTracker.objects.get(contact =self.msg.contact.id)
+                except: #if not create an instance of messagetracker for them
+                    msgt = MessageTracker.objects.create(contact=self.msg.contact, tmorquiz = "tm", msgnum = 1)            
+                msgt.tmorquiz = "tm"
+                msgt.msgnum = 1
+                msgt.save()
+                if tm.messagenum == 1:
+                    self.respond("%s" % tm.messages)
+                else:
+                    self.respond("%s" % tm.messages[:160])
                 
 class NextHandler(KeywordHandler):
     keyword = "next"
@@ -89,7 +89,7 @@ class NextHandler(KeywordHandler):
                         self.respond("%s" % tm.messages[160*(msgt.msgnum-1):160*msgt.msgnum])
                 else:
                     self.help()
-"""
+
 class QuizHandler(KeywordHandler):
     keyword = "quiz"
     
@@ -101,21 +101,130 @@ class QuizHandler(KeywordHandler):
         try:
             tm = TrainingMaterial.objects.get(tag__iexact=text)
         except:
-            if text is "":
+            if text == '':
                 self.respond("You must enter QUIZ <TAG>")
             else:
-            self.help()
+                self.help()
         else:
             try:
                 msgt = MessageTracker.objects.get(contact = self.msg.contact.id)
             except:
                 self.respond("You are not a registered user")
             else:
-                if tm.question_1 is "":
+                if tm.question_1 == '':
                     self.help()
                 else:
                     msgt.tmorquiz = "quiz"
                     msgt.msgnum = 1
                     msgt.save()
+                    msgt.tmorquiz = "quiz"
+                    msgt.msgnum = 1
+                    msgt.save()
                     self.respond("%s" % tm.question_1)
-"""
+                    
+class AnswerHandler(PatternHandler):
+    pattern = r"^.*"
+    
+    def handle(self, text):
+        try: #Registered User?
+            Contact.objects.get(id = self.msg.contact.id)
+        except: #Not a contact in our system reject
+            self.respond("You have not been registered in our system")
+        try: #Have they started a training material?
+            msgt = MessageTracker.objects.get(contact = self.msg.contact.id)
+        except: #No, forward to next handler
+            return False
+        else: #have started a training
+            if msgt.tmorquiz != "quiz": #started quiz?
+                return False; #No pass to next handler
+            else: #started quiz
+                try: #did the training material vanish?
+                    tm = TrainingMaterial.objects.get(tag__iexact=msgt.tag)
+                except TrainingMaterial.DoesNotExist:
+                    self.respond("This shouldn't happen, but TM mysteriously vanished")
+                else:
+                    #Handle Quiz Answers
+                    if msgt.msgnum == 1:
+                        text = text.lower().strip()
+                        tof = ""
+                        if text == tm.answer_1:
+                            tof = "Correct.\n"
+                        else:
+                            tof = "Incorrect.\n"
+                        if tm.question_2 is "":
+                            msgt.msgnum = 0
+                            msgt.tmorquiz = ""
+                            msgt.save()
+                            self.respond(tof)
+                        else:
+                            msgt.msgnum += 1
+                            msgt.save()
+                            self.respond("%s%s" % (tof, tm.question_2)
+                
+                    if msgt.msgnum == 2:
+                        text = text.lower().strip()
+                        tof = ""
+                        if text == tm.answer_2:
+                            tof = "Correct.\n"
+                        else:
+                            tof = "Incorrect.\n"
+                        if tm.question_3 is "":
+                            msgt.msgnum = 0
+                            msgt.tmorquiz = ""
+                            msgt.save()
+                            self.respond(tof)
+                        else:
+                            msgt.msgnum += 1
+                            msgt.save()
+                            self.respond("%s%s" % (tof, tm.question_3)
+                
+                    if msgt.msgnum == 3:
+                        text = text.lower().strip()
+                        tof = ""
+                        if text == tm.answer_3:
+                            tof = "Correct.\n"
+                        else:
+                            tof = "Incorrect.\n"
+                        if tm.question_4 is "":
+                            msgt.msgnum = 0
+                            msgt.tmorquiz = ""
+                            msgt.save()
+                            self.respond(tof)
+                        else:
+                            msgt.msgnum += 1
+                            msgt.save()
+                            self.respond("%s%s" % (tof, tm.question_4)                            
+
+                    if msgt.msgnum == 4:
+                        text = text.lower().strip()
+                        tof = ""
+                        if text == tm.answer_4:
+                            tof = "Correct.\n"
+                        else:
+                            tof = "Incorrect.\n"
+                        if tm.question_5 is "":
+                            msgt.msgnum = 0
+                            msgt.tmorquiz = ""
+                            msgt.save()
+                            self.respond(tof)
+                        else:
+                            msgt.msgnum += 1
+                            msgt.save()
+                            self.respond("%s%s" % (tof, tm.question_5)
+                    
+                    if msgt.msgnum == 5:
+                        text = text.lower().strip()
+                        tof = ""
+                        if text == tm.answer_4:
+                            tof = "Correct.\n"
+                        else:
+                            tof = "Incorrect.\n"
+                        if tm.question_5 is "":
+                            msgt.msgnum = 0
+                            msgt.tmorquiz = ""
+                            msgt.save()
+                            self.respond(tof)
+                                        
+
+        
+        

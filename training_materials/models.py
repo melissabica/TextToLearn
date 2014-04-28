@@ -33,6 +33,7 @@ class MessageTracker(models.Model):
     contact = models.ForeignKey(Contact)
     tmorquiz = models.CharField(max_length=8)
     msgnum =  models.IntegerField()
+    tag = models.CharField(max_length=8)
     #forms.ModelMultipleChoiceField(queryset=Contact.objects.all())
                     #models.ForeignKey(Contact, null=True)
     
