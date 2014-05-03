@@ -39,28 +39,29 @@ class StartHandler(KeywordHandler):
             Contact.objects.get(id = self.msg.contact.id)
         except: #Not a contact in our system reject
             self.respond("You have not been registered in our system")
-        try: #valid tag?
-            tm = TrainingMaterial.objects.get(tag__iexact=text)
-        except TrainingMaterial.DoesNotExist:
-            # Send help
-            self.help()
         else:
-             #is this user assigned to this training material?
-            if not tm.assigned_users.filter(id = self.msg.contact.id).exists():
-                self.respond("You have not been assigned this training")
-            else: 
-                try: #has this user done training before?
-                    msgt = MessageTracker.objects.get(contact =self.msg.contact.id)
-                except: #if not create an instance of messagetracker for them
-                    msgt = MessageTracker.objects.create(contact=self.msg.contact, tmorquiz = "tm", msgnum = 1)            
-                msgt.tmorquiz = "tm"
-                msgt.msgnum = 1
-                msgt.save()
-                if tm.messagenum == 1:
-                    self.respond("%s" % tm.messages)
-                else:
-                    self.respond("%s" % tm.messages[:160])
-                
+            try: #valid tag?
+                tm = TrainingMaterial.objects.get(tag__iexact=text)
+            except TrainingMaterial.DoesNotExist:
+                # Send help
+                self.help()
+            else:
+                 #is this user assigned to this training material?
+                if not tm.assigned_users.filter(id = self.msg.contact.id).exists():
+                    self.respond("You have not been assigned this training")
+                else: 
+                    try: #has this user done training before?
+                        msgt = MessageTracker.objects.get(contact =self.msg.contact.id)
+                    except: #if not create an instance of messagetracker for them
+                        msgt = MessageTracker.objects.create(contact=self.msg.contact, tmorquiz = "tm", msgnum = 1)            
+                    msgt.tmorquiz = "tm"
+                    msgt.msgnum = 1
+                    msgt.save()
+                    if tm.messagenum == 1:
+                        self.respond("%s" % tm.messages)
+                    else:
+                        self.respond("%s" % tm.messages[:160])
+                    
 class NextHandler(KeywordHandler):
     keyword = "next"
     
