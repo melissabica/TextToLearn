@@ -35,7 +35,10 @@ class StartHandler(KeywordHandler):
 
     def handle(self, text):
         text = text.strip()
-        
+        try: #Registered User?
+            Contact.objects.get(id = self.msg.contact.id)
+        except: #Not a contact in our system reject
+            self.respond("You have not been registered in our system")
         try: #valid tag?
             tm = TrainingMaterial.objects.get(tag__iexact=text)
         except TrainingMaterial.DoesNotExist:
@@ -122,11 +125,15 @@ class QuizHandler(KeywordHandler):
                     msgt.save()
                     self.respond("%s" % tm.question_1)
                     
-class AnswerHandler(PatternHandler):
-    pattern = r"^.*$"
+class AnswerHandler(KeywordHandler):
+    keyword = "ans"
+
+    def help(self):
+        self.respond("Quiz is not available");
     
     def handle(self, text):
-"""        try: #Registered User?
+        self.respond("you answered a question")"""
+        try: #Registered User?
             Contact.objects.get(id = self.msg.contact.id)
         except: #Not a contact in our system reject
             self.respond("You have not been registered in our system")
@@ -145,7 +152,7 @@ class AnswerHandler(PatternHandler):
                 else:
                     #Handle Quiz Answers
                     if msgt.msgnum == 1:
-                        text = text.lower().strip()
+                        text = text.strip()
                         tof = ""
                         if text == tm.answer_1:
                             tof = "Correct.\n"
@@ -223,5 +230,5 @@ class AnswerHandler(PatternHandler):
                             msgt.msgnum = 0
                             msgt.tmorquiz = ""
                             msgt.save()
-                            self.respond(tof)  """               
-        
+                            self.respond(tof)               
+        """
