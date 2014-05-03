@@ -2,6 +2,10 @@
 {% load url from future %}
 {% load forms_tags %}
 
+{% block extra_stylesheets %}
+    <link type="text/css" rel="stylesheet" href="{{ STATIC_URL }}training_materials/stylesheets/training_materials.css" />
+{% endblock %}
+
 {% block page %}
     <div class="page_header">
         <h2>Assign Training Material</h2>
@@ -17,6 +21,26 @@
                 <h5 class="inline">Question 1:</h5>
                 <p> {{tm.question_1}} </p>
                 <p> {{tm.answer_1}} </p>
+            {% endif %}
+            {% if question_2 != "" %}
+                <h5 class="inline">Question 2:</h5>
+                <p> {{tm.question_2}} </p>
+                <p> {{tm.answer_2}} </p>
+            {% endif %}
+            {% if question_3 != "" %}
+                <h5 class="inline">Question 3:</h5>
+                <p> {{tm.question_3}} </p>
+                <p> {{tm.answer_3}} </p>
+            {% endif %}
+            {% if question_4 != "" %}
+                <h5 class="inline">Question 4:</h5>
+                <p> {{tm.question_4}} </p>
+                <p> {{tm.answer_4}} </p>
+            {% endif %}
+            {% if question_5 != "" %}
+                <h5 class="inline">Question 5:</h5>
+                <p> {{tm.question_5}} </p>
+                <p> {{tm.answer_5}} </p>
             {% endif %}
             <div class="submit">
                 <input type="submit" name="submit" class="btn btn-primary" value="Assign and Send Notification" />
