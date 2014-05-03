@@ -10,8 +10,11 @@
         <form action="" method="post">
             {% render_form tm_form %}
             {% csrf_token %}
-            {% block content %}
-            <h3> {{tm.title}} </h3>
+            <h4> Title: {{tm.title}} </h4>
+            <h4> Tag: {{tm.tag}} </h4>
+            <h4> {{tm.text}} </h4>
+            <h4> {{tm.question_1}} </h4>
+            <h4> {{tm.answer_1}} </h4>
             <div class="submit">
                 <input type="submit" name="submit" class="btn btn-primary" value="Assign and Send Notification" />
             </div>
