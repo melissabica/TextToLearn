@@ -124,7 +124,16 @@ class QuizHandler(KeywordHandler):
                     msgt.msgnum = 1
                     msgt.save()
                     self.respond("%s" % tm.question_1)
-                    
+
+class AnsHandler(KeywordHandler):
+    keyword = "ans"
+    
+    def help(self):
+        self.respond("Quiz is not available")
+    
+    def handle(self, text):
+        text = text.strip()
+        self.respond(text)
 """class AnswerHandler(KeywordHandler):
     keyword = "ans"
 
