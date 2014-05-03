@@ -125,14 +125,14 @@ class QuizHandler(KeywordHandler):
                     msgt.save()
                     self.respond("%s" % tm.question_1)
                     
-class AnswerHandler(KeywordHandler):
+"""class AnswerHandler(KeywordHandler):
     keyword = "ans"
 
     def help(self):
         self.respond("Quiz is not available");
     
     def handle(self, text):
-        self.respond("you answered a question")"""
+        self.help()
         try: #Registered User?
             Contact.objects.get(id = self.msg.contact.id)
         except: #Not a contact in our system reject
