@@ -81,7 +81,7 @@ class AssignForm(forms.ModelForm):
     #connections = AutoCompleteSelectMultipleField(lookup_class=ConnectionLookup)
     class Meta:
         model = TrainingMaterial
-        exclude = ('assign', 'messages', 'messagenum')
+        exclude = ('assign', 'messages', 'messagenum', 'title')
         widgets = {'assigned_users': forms.CheckboxSelectMultiple()}
     def send(self):
         notification = 'You have been assigned %s. To begin, reply with START %s.' % (self.cleaned_data['title'], self.cleaned_data['tag'])
