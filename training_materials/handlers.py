@@ -135,14 +135,10 @@ class AnsHandler(KeywordHandler):
     def handle(self, text):
         text = text.strip()
         self.respond(text)
-        try: #Registered User?
-            Contact.objects.get(id = self.msg.contact.id)
-        except: #Not a contact in our system reject
-            self.respond("You have not been registered in our system")
         try: #Have they started a training material?
             msgt = MessageTracker.objects.get(contact = self.msg.contact.id)
         except: #No, forward to next handler
-            return False
+            self.respond("you are not taking a quiz")
         else: #have started a training
             if msgt.tmorquiz != "quiz": #started quiz?
                 return False; #No pass to next handler
@@ -233,4 +229,3 @@ class AnsHandler(KeywordHandler):
                             msgt.tmorquiz = ""
                             msgt.save()
                             self.respond(tof)               
-        """
