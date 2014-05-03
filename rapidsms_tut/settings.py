@@ -240,6 +240,7 @@ RAPIDSMS_HANDLERS = (
     "training_materials.handlers.NextHandler",
     "training_materials.handlers.QuizHandler",
     "myhandlers.SumHandler",
+    "myhandlers.AnsHandler",
     #"handlers.ResultsHandler",
     #"voting.handlers.VoteHandler",
     

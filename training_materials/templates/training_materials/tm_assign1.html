@@ -3,7 +3,7 @@
 {% load forms_tags %}
 
 {% block extra_stylesheets %}
-    <link type="text/css" rel="stylesheet" href="{{ STATIC_URL }}training_materials/stylesheets/training_materials.css" />
+    <link type="text/css" rel="stylesheet" href="static/training_materials/stylesheets/training_materials.css" />
 {% endblock %}
 
 {% block page %}
@@ -17,27 +17,27 @@
             <h4> Title: {{tm.title}} </h4>
             <h4> Tag: {{tm.tag}} </h4>
             <p> {{tm.text}} </p>
-            {% if question_1 != "" %}
+            {% if tm.question_1 != "" %}
                 <h5 class="inline">Question 1:</h5>
                 <p> {{tm.question_1}} </p>
                 <p> {{tm.answer_1}} </p>
             {% endif %}
-            {% if question_2 != "" %}
+            {% if tm.question_2 != "" %}
                 <h5 class="inline">Question 2:</h5>
                 <p> {{tm.question_2}} </p>
                 <p> {{tm.answer_2}} </p>
             {% endif %}
-            {% if question_3 != "" %}
+            {% if tm.question_3 != "" %}
                 <h5 class="inline">Question 3:</h5>
                 <p> {{tm.question_3}} </p>
                 <p> {{tm.answer_3}} </p>
             {% endif %}
-            {% if question_4 != "" %}
+            {% if tm.question_4 != "" %}
                 <h5 class="inline">Question 4:</h5>
                 <p> {{tm.question_4}} </p>
                 <p> {{tm.answer_4}} </p>
             {% endif %}
-            {% if question_5 != "" %}
+            {% if tm.question_5 != "" %}
                 <h5 class="inline">Question 5:</h5>
                 <p> {{tm.question_5}} </p>
                 <p> {{tm.answer_5}} </p>
