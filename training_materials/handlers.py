@@ -134,7 +134,6 @@ class AnsHandler(KeywordHandler):
     
     def handle(self, text):
         text = text.strip()
-        self.respond(text)
         try: #Have they started a training material?
             msgt = MessageTracker.objects.get(contact = self.msg.contact.id)
         except: #No, forward to next handler
