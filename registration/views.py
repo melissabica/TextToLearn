@@ -122,12 +122,12 @@ def contact_bulk_add(request):
         "bulk_form": bulk_form,
     })
 
-def contact_messages(request):
+def contact_messages(request, pk=None):
     if pk:
         contact = get_object_or_404(Contact, pk=pk)
     else:
         contact = Contact()
-    qset = Message.objects.filter(contact = contact)
+    qset = Message.objects.filter(contact = contact.id)
     qset = qset.select_related('contact', 'connection__backend')
     template = "django_tables2/bootstrap-tables.html"
 
