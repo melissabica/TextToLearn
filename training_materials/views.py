@@ -20,6 +20,14 @@ from rapidsms.router import send
 from django_tables2 import RequestConfig
 
 
+from django.template import Library
+
+register = Library()
+
+@register.filter
+def get_range( value ):
+  return range( value )
+
 @login_required
 def training_materials(request):
     qset = TrainingMaterial.objects.all()
