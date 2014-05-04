@@ -19,15 +19,15 @@ class TrainingMaterial(models.Model):
     messages = models.TextField()
     messagenum = models.IntegerField() 
     #QUIZ
-    question_1 = models.TextField(max_length=140)
+    question_1 = models.TextField(max_length=120)
     answer_1 = models.TextField(max_length=140)
-    question_2 = models.TextField(max_length=140)
+    question_2 = models.TextField(max_length=120)
     answer_2 = models.TextField(max_length=140)
-    question_3 = models.TextField(max_length=140)
+    question_3 = models.TextField(max_length=120)
     answer_3 = models.TextField(max_length=140)
-    question_4 = models.TextField(max_length=140)
+    question_4 = models.TextField(max_length=120)
     answer_4 = models.TextField(max_length=140)
-    question_5 = models.TextField(max_length=140)
+    question_5 = models.TextField(max_length=120)
     answer_5 = models.TextField(max_length=140)
 
 class MessageTracker(models.Model):
