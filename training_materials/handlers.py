@@ -162,8 +162,8 @@ class AnsHandler(KeywordHandler):
                             msgt.msgnum += 1
                             msgt.save()
                             self.respond("%s%s" % (tof, tm.question_2))
-                            
-                    if msgt.msgnum == 2:
+                    
+                    elif msgt.msgnum == 2:
                         text = text.lower().strip()
                         tof = ""
                         if text == tm.answer_2:
@@ -180,7 +180,7 @@ class AnsHandler(KeywordHandler):
                             msgt.save()
                             self.respond("%s%s" % (tof, tm.question_3))
                             
-                    if msgt.msgnum == 3:
+                    elif msgt.msgnum == 3:
                         text = text.lower().strip()
                         tof = ""
                         if text == tm.answer_3:
@@ -197,7 +197,7 @@ class AnsHandler(KeywordHandler):
                             msgt.save()
                             self.respond("%s%s" % (tof, tm.question_4))                            
                             
-                    if msgt.msgnum == 4:
+                    elif msgt.msgnum == 4:
                         text = text.lower().strip()
                         tof = ""
                         if text == tm.answer_4:
@@ -214,15 +214,14 @@ class AnsHandler(KeywordHandler):
                             msgt.save()
                             self.respond("%s%s" % (tof, tm.question_5))
                     
-                    if msgt.msgnum == 5:
+                    elif msgt.msgnum == 5:
                         text = text.lower().strip()
                         tof = ""
                         if text == tm.answer_4:
                             tof = "Correct.\n"
                         else:
                             tof = "Incorrect.\n"
-                        if tm.question_5 is "":
-                            msgt.msgnum = 0
-                            msgt.tmorquiz = ""
-                            msgt.save()
-                            self.respond(tof)               
+                        msgt.msgnum = 0
+                        msgt.tmorquiz = ""
+                        msgt.save()
+                        self.respond(tof)               
