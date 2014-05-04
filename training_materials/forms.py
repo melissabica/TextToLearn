@@ -68,13 +68,14 @@ class TMForm(forms.ModelForm):
 class AssignForm(forms.ModelForm):
     #type = forms.models.modelform_factory(TrainingMaterial)
 
+    class Meta:
+        model = TrainingMaterial
+        fields = ("assigned_users")
+        #exclude = ('assign','messages','messagenum','title','tag','text','question_1','answer_1','question_2','answer_2','question_3','answer_3','question_4','answer_4','question_5','answer_5')
+        #widgets = {'assigned_users': forms.CheckboxSelectMultiple()}
     def __init__(self, *args, **kwargs):  
         super(AssignForm, self).__init__(*args, **kwargs)
-        self.fields["assigned_users"].widget = CheckboxSelectMultiple()  
-    """class Meta:
-        model = TrainingMaterial
-        exclude = ('assign','messages','messagenum','title','tag','text','question_1','answer_1','question_2','answer_2','question_3','answer_3','question_4','answer_4','question_5','answer_5')
-        widgets = {'assigned_users': forms.CheckboxSelectMultiple()}"""
+        self.fields["assigned_users"].widget = forms.CheckboxSelectMultiple()  
     def send(self):
         notification = 'You have been assigned %s. To begin, reply with START %s.' % (self.cleaned_data['title'], self.cleaned_data['tag'])
         #self.cleaned_data['text']
