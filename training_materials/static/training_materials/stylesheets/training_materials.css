@@ -31,5 +31,5 @@
     .col-1 col { width: 1%; }
     .col-1 col:last-child { width: auto; }
     
-.inline{display:inline; color:red;} 
+.inline{display:inline;} 
 
