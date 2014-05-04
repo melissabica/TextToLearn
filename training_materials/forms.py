@@ -57,7 +57,10 @@ class TMForm(forms.ModelForm):
             l -= msgLen
             i += 1
         message += text[msgLen*i:]
-        message += " (end)"
+        if question_1 == "":
+            message += " (end)"
+        else:
+            message += "-Reply QUIZ %s" % tag
         return (message, i+1)
         
 
