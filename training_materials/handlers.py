@@ -154,7 +154,7 @@ class AnsHandler(KeywordHandler):
                         else:
                             tof = ""
                             self.respond("Incorrect.\n Correct answer: %s" % tm.answer_1)
-                        if tm.question_2 is "":
+                        if tm.question_2 == "":
                             msgt.msgnum = 0
                             msgt.tmorquiz = ""
                             msgt.tag = ""
