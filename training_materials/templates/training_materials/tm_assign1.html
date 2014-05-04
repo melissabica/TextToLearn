@@ -13,8 +13,12 @@
             <hr>
             <h4> Title: {{tm.title}} </h4>
             <h4> Tag: {{tm.tag}} </h4>
-            <p> {{tm.text}} </p>
+            <h4> Messages </h4>
+            {% for i in tm.messagenum|get_range %}
+                <p> {{tm.text[160*i:160*i+160]}} </p>
+            {% endfor %}
             {% if tm.question_1 != "" %}
+                <h4> Quiz </h4>
                 <h5 class="inline">Question 1</h5>
                 <p class="inline"> {{tm.question_1}} </p>
                 <br>
@@ -53,6 +57,7 @@
                 <h5 class="inline">Answer</h5>
                 <p class="inline"> {{tm.answer_5}} </p>
             {% endif %}
+            <br><br>
             <div class="submit">
                 <input type="submit" name="submit" class="btn btn-primary" value="Assign and Send Notification" />
             </div>
