@@ -11,7 +11,7 @@ from django.shortcuts import render, get_object_or_404
 from django_tables2 import RequestConfig
 from tables import TrainingMaterialTable
 from models import TrainingMaterial
-from forms import TMForm, AssignForm
+from forms import TMForm, AssignForm, ValidationError
 from rapidsms import settings
 
 from django_tables2 import RequestConfig
@@ -65,7 +65,7 @@ def training_materials_add(request, pk=None):
             tm.tag = tm_form.cleaned_data['tag'].upper().replace(" ", "") #tag w/o whitespace, uppercase
             #Additional validation
             if TrainingMaterial.objects.get(tag = tm.tag):
-                raise forms.ValidationError("Tag must be unique.")
+                raise ValidationError("Tag must be unique.")
             tm.save()
             message = tm_form.createMessages()
             tm.messages = message[0] #block of formatted texts
