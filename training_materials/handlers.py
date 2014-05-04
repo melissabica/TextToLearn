@@ -147,22 +147,23 @@ class AnsHandler(KeywordHandler):
                 else:
                     #Handle Quiz Answers
                     if msgt.msgnum == 1:
-                        text = text.strip()
+                        text = text.lower().strip()
                         tof = ""
                         if text == tm.answer_1:
                             tof = "Correct.\n"
                         else:
-                            tof = "Incorrect.\n"
+                            tof = ""
+                            self.respond("Incorrect.\n Correct answer: %s" % tm.answer_1)
                         if tm.question_2 is "":
                             msgt.msgnum = 0
                             msgt.tmorquiz = ""
                             msgt.tag = ""
                             msgt.save()
-                            self.respond(tof)
+                            self.respond("%s(quiz complete)" % tof) 
                         else:
                             msgt.msgnum += 1
                             msgt.save()
-                            self.respond("%s%s" % (tof, tm.question_2))
+                            self.respond("%s%s-Reply ANS youranswer" % (tof, tm.question_2))
                     
                     elif msgt.msgnum == 2:
                         text = text.lower().strip()
@@ -180,7 +181,7 @@ class AnsHandler(KeywordHandler):
                         else:
                             msgt.msgnum += 1
                             msgt.save()
-                            self.respond("%s%s" % (tof, tm.question_3))
+                            self.respond("%s%s-Reply ANS youranswer" % (tof, tm.question_3))
                             
                     elif msgt.msgnum == 3:
                         text = text.lower().strip()
@@ -198,7 +199,7 @@ class AnsHandler(KeywordHandler):
                         else:
                             msgt.msgnum += 1
                             msgt.save()
-                            self.respond("%s%s" % (tof, tm.question_4))                            
+                            self.respond("%s%s-Reply ANS youranswer" % (tof, tm.question_4))                            
                             
                     elif msgt.msgnum == 4:
                         text = text.lower().strip()
@@ -216,7 +217,7 @@ class AnsHandler(KeywordHandler):
                         else:
                             msgt.msgnum += 1
                             msgt.save()
-                            self.respond("%s%s" % (tof, tm.question_5))
+                            self.respond("%s%s-Reply ANS youranswer" % (tof, tm.question_5))
                     
                     elif msgt.msgnum == 5:
                         text = text.lower().strip()
@@ -229,4 +230,4 @@ class AnsHandler(KeywordHandler):
                         msgt.tmorquiz = ""
                         msgt.tag = ""
                         msgt.save()
-                        self.respond(tof)               
+                        self.respond("%s(complete)" % tof)               
