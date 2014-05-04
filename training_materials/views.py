@@ -14,7 +14,7 @@ from models import TrainingMaterial
 from forms import TMForm, AssignForm
 from rapidsms import settings
 from rapidsms.models import Contact, Connection
-
+from .lookups import ConnectionLookup
 
 from django_tables2 import RequestConfig
 
@@ -98,7 +98,7 @@ def send(tm, users):
     connections = []
     #assigned_users = tm_form.cleaned_data['assigned_users']
     for user in users:
-        connections.append(user.default_connection)
+        connections.append(user)
     #connections = self.cleaned_data['assigned_users']
     return send(notification, connections)
 
