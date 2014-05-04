@@ -4,7 +4,7 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 
-from rapidsms.contrib.messagelog.tables import MessageTable
+from tables import MessageTable
 from rapidsms.contrib.messagelog.models import Message
 from rapidsms import settings
 

@@ -6,6 +6,7 @@ from rapidsms.contrib.messagelog.models import Message
 
 
 class MessageTable(tables.Table):
+    contact = tables.LinkColumn('registration_contact_add', args=[tables.utils.A('pk')])
 
     class Meta:
         model = Message
