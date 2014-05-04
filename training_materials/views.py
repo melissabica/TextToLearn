@@ -149,6 +149,7 @@ def training_materials_assign(request, pk=None):
     return render(request, 'training_materials/tm_assign1.html', {
         "tm": tm,
         "tm_form": tm_form,
+        "range": tm.messagenum,
     })
     
 
