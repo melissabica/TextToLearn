@@ -239,8 +239,8 @@ RAPIDSMS_HANDLERS = (
     "training_materials.handlers.StartHandler",
     "training_materials.handlers.NextHandler",
     "training_materials.handlers.QuizHandler",
+    "training_materials.handlers.AnsHandler",
     "myhandlers.SumHandler",
-    "myhandlers.AnsHandler",
     #"handlers.ResultsHandler",
     #"voting.handlers.VoteHandler",
     
