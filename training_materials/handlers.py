@@ -172,12 +172,12 @@ class AnsHandler(KeywordHandler):
                             tof = "Correct.\n"
                         else:
                             tof = "Incorrect.\n"
-                        if tm.question_3 is "":
+                        if tm.question_3 == "":
                             msgt.msgnum = 0
                             msgt.tmorquiz = ""
                             msgt.tag = ""
                             msgt.save()
-                            self.respond(tof)
+                            self.respond("%s(quiz complete)" % tof) 
                         else:
                             msgt.msgnum += 1
                             msgt.save()
@@ -190,12 +190,12 @@ class AnsHandler(KeywordHandler):
                             tof = "Correct.\n"
                         else:
                             tof = "Incorrect.\n"
-                        if tm.question_4 is "":
+                        if tm.question_4 == "":
                             msgt.msgnum = 0
                             msgt.tmorquiz = ""
                             msgt.tag = ""
                             msgt.save()
-                            self.respond(tof)
+                            self.respond("%s(quiz complete)" % tof) 
                         else:
                             msgt.msgnum += 1
                             msgt.save()
@@ -208,12 +208,12 @@ class AnsHandler(KeywordHandler):
                             tof = "Correct.\n"
                         else:
                             tof = "Incorrect.\n"
-                        if tm.question_5 is "":
+                        if tm.question_5 == "":
                             msgt.msgnum = 0
                             msgt.tmorquiz = ""
                             msgt.tag = ""
                             msgt.save()
-                            self.respond(tof)
+                            self.respond("%s(quiz complete)" % tof) 
                         else:
                             msgt.msgnum += 1
                             msgt.save()
@@ -230,4 +230,4 @@ class AnsHandler(KeywordHandler):
                         msgt.tmorquiz = ""
                         msgt.tag = ""
                         msgt.save()
-                        self.respond("%s(complete)" % tof)               
+                        self.respond("%s(quiz complete)" % tof) 
