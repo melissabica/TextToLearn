@@ -41,4 +41,12 @@ class MessageTracker(models.Model):
 	    return ', '.join([a.name for a in self.assigned_users.all()])
     def __unicode__(self):
         return "%s" % (self.title)
-
+"""
+class TMProgress(models.Model):
+    contact = models.ForeignKey(Contact)
+    training = ""
+    completed_training = text #"True/False"
+    completed_quiz =
+    quiz_score = #"x/y"
+   """ 
+    
