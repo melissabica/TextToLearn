@@ -62,8 +62,9 @@ class TMForm(forms.ModelForm):
         else:
             message += "-Reply QUIZ %s" % tag
         return (message, i+1)
-        
-
+    def extraValidation(self):
+        if TrainingMaterial.objects.get(tag = self.cleaned_data['tag'].upper().replace(" ", "")):
+            raise forms.ValidationError("Tag must be unique.")
 
 class AssignForm(forms.ModelForm):
     type = forms.models.modelform_factory(TrainingMaterial)
