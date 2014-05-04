@@ -15,6 +15,7 @@ from forms import TMForm, AssignForm
 from rapidsms import settings
 from rapidsms.models import Contact, Connection
 from .lookups import ConnectionLookup
+from rapidsms.router import send
 
 from django_tables2 import RequestConfig
 
@@ -91,7 +92,7 @@ def training_materials_preview(request, pk=None):
         "tm": tm,
     })
 
-def send(tm, users):
+"""def send(tm, users):
     notification = 'You have been assigned %s. To begin, reply with START %s.' % (tm.title, tm.title)
     #self.cleaned_data['text']
     connections = []
@@ -99,7 +100,7 @@ def send(tm, users):
     for user in users:
         connections.append(user)
     #connections = self.cleaned_data['assigned_users']
-    return send(notification, connections)
+    return send(notification, connections)"""
 
 	
 @login_required
@@ -135,7 +136,7 @@ def training_materials_assign(request, pk=None):
             for user in assigned_users:
                 connections.append(user.default_connection)
             #connections = self.cleaned_data['assigned_users']
-            #return send(notification, connections)
+            send(notification, connections)
             #send(tm, assigned_users)
             tm.save()
             messages.add_message(request, messages.INFO, "Saved and sent training material.")
