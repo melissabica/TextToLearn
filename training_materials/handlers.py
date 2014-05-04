@@ -120,9 +120,7 @@ class QuizHandler(KeywordHandler):
                 else:
                     msgt.tmorquiz = "quiz"
                     msgt.msgnum = 1
-                    msgt.save()
-                    msgt.tmorquiz = "quiz"
-                    msgt.msgnum = 1
+                    msgt.tag = text
                     msgt.save()
                     self.respond("%s" % tm.question_1)
 
