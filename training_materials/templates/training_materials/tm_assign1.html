@@ -1,10 +1,6 @@
-{% extends "training_materials/base.html" %}
+{% extends "training_materials/index.html" %}
 {% load url from future %}
 {% load forms_tags %}
-
-{% block extra_stylesheets %}
-    <link type="text/css" rel="stylesheet" href="static/training_materials/stylesheets/training_materials.css" />
-{% endblock %}
 
 {% block page %}
     <div class="page_header">
@@ -19,7 +15,7 @@
             <p> {{tm.text}} </p>
             {% if tm.question_1 != "" %}
                 <h5 class="inline">Question 1:</h5>
-                <p> {{tm.question_1}} </p>
+                <p class="inline"> {{tm.question_1}} </p>
                 <p> {{tm.answer_1}} </p>
             {% endif %}
             {% if tm.question_2 != "" %}
