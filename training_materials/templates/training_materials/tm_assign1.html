@@ -15,7 +15,7 @@
             <h4> Tag: {{tm.tag}} </h4>
             <h4> Messages </h4>
             {% for i in range %}
-                <p> {{tm.messages|slice:":160"}} </p>
+                <p> {{tm.messages|slice:"(1*160):((1*160)+160)"}} </p>
             {% endfor %}
             {% if tm.question_1 != "" %}
                 <h4> Quiz </h4>
