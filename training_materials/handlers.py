@@ -156,6 +156,7 @@ class AnsHandler(KeywordHandler):
                         if tm.question_2 is "":
                             msgt.msgnum = 0
                             msgt.tmorquiz = ""
+                            msgt.tag = ""
                             msgt.save()
                             self.respond(tof)
                         else:
@@ -173,6 +174,7 @@ class AnsHandler(KeywordHandler):
                         if tm.question_3 is "":
                             msgt.msgnum = 0
                             msgt.tmorquiz = ""
+                            msgt.tag = ""
                             msgt.save()
                             self.respond(tof)
                         else:
@@ -190,6 +192,7 @@ class AnsHandler(KeywordHandler):
                         if tm.question_4 is "":
                             msgt.msgnum = 0
                             msgt.tmorquiz = ""
+                            msgt.tag = ""
                             msgt.save()
                             self.respond(tof)
                         else:
@@ -207,6 +210,7 @@ class AnsHandler(KeywordHandler):
                         if tm.question_5 is "":
                             msgt.msgnum = 0
                             msgt.tmorquiz = ""
+                            msgt.tag = ""
                             msgt.save()
                             self.respond(tof)
                         else:
@@ -223,5 +227,6 @@ class AnsHandler(KeywordHandler):
                             tof = "Incorrect.\n"
                         msgt.msgnum = 0
                         msgt.tmorquiz = ""
+                        msgt.tag = ""
                         msgt.save()
                         self.respond(tof)               
