@@ -4,7 +4,7 @@
 
 from rapidsms.models import Contact
 import django_tables2 as tables
-
+from rapidsms.contrib.messagelog.models import Message
 
 class ContactTable(tables.Table):
     identities = tables.Column(empty_values=(), orderable=False)
