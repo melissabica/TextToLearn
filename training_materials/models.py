@@ -10,7 +10,7 @@ from rapidsms.models import Contact, Connection
 class TrainingMaterial(models.Model):
     assigned_users = models.ManyToManyField(Contact)
     title = models.CharField(max_length=32)
-    tag = models.CharField(max_length=8)
+    tag = models.CharField(max_length=8, unique = True)
     text = models.TextField()
     date = models.DateTimeField(auto_now=True)
     assign = models.CharField(max_length=8, default='Assign', editable=False)
