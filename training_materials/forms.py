@@ -60,7 +60,7 @@ class TMForm(forms.ModelForm):
         if self.cleaned_data['question_1'] == "":
             message += " (end)"
         else:
-            message += "-Reply QUIZ %s" % tag
+            message += "-Reply QUIZ %s" % self.cleaned_data['tag']
         return (message, i+1)
 
 
