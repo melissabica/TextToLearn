@@ -137,3 +137,4 @@ def contact_messages(request):
 
     return render(request, "messagelog/index.html", {
         "messages_table": messages_table,
+    })
