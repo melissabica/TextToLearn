@@ -138,7 +138,7 @@ class AnsHandler(KeywordHandler):
             self.respond("you are not taking a quiz")
         else: #have started a training
             if msgt.tmorquiz != "quiz": #started quiz?
-                return False; #No pass to next handler
+                self.respond("you are not taking a quiz") #No pass to next handler
             else: #started quiz
                 try: #did the training material vanish?
                     tm = TrainingMaterial.objects.get(tag__iexact=msgt.tag)
