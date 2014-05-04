@@ -66,26 +66,16 @@ class TMForm(forms.ModelForm):
 
 
 class AssignForm(forms.ModelForm):
-    c = 20
-    r = 2
-    type = forms.models.modelform_factory(TrainingMaterial)
-    
-    question_1 = forms.CharField(widget=forms.Textarea(attrs={'cols': c, 'rows': r}), required=False)
-    question_2 = forms.CharField(widget=forms.Textarea(attrs={'cols': c, 'rows': r}), required=False)
-    question_3 = forms.CharField(widget=forms.Textarea(attrs={'cols': c, 'rows': r}), required=False)
-    question_4 = forms.CharField(widget=forms.Textarea(attrs={'cols': c, 'rows': r}), required=False)
-    question_5 = forms.CharField(widget=forms.Textarea(attrs={'cols': c, 'rows': r}), required=False)
-    
-    answer_1 = forms.CharField(widget=forms.Textarea(attrs={'cols': c, 'rows': r}), required=False)
-    answer_2 = forms.CharField(widget=forms.Textarea(attrs={'cols': c, 'rows': r}), required=False)
-    answer_3 = forms.CharField(widget=forms.Textarea(attrs={'cols': c, 'rows': r}), required=False)
-    answer_4 = forms.CharField(widget=forms.Textarea(attrs={'cols': c, 'rows': r}), required=False)
-    answer_5 = forms.CharField(widget=forms.Textarea(attrs={'cols': c, 'rows': r}), required=False)
-    #connections = AutoCompleteSelectMultipleField(lookup_class=ConnectionLookup)
+    #type = forms.models.modelform_factory(TrainingMaterial)
+
     class Meta:
         model = TrainingMaterial
-        exclude = ('assign', 'messages', 'messagenum', 'title')
-        widgets = {'assigned_users': forms.CheckboxSelectMultiple()}
+        fields = ("assigned_users")
+        #exclude = ('assign','messages','messagenum','title','tag','text','question_1','answer_1','question_2','answer_2','question_3','answer_3','question_4','answer_4','question_5','answer_5')
+        #widgets = {'assigned_users': forms.CheckboxSelectMultiple()}
+    def __init__(self, *args, **kwargs):  
+        super(AssignForm, self).__init__(*args, **kwargs)
+        self.fields["assigned_users"].widget = forms.CheckboxSelectMultiple()  
     def send(self):
         notification = 'You have been assigned %s. To begin, reply with START %s.' % (self.cleaned_data['title'], self.cleaned_data['tag'])
         #self.cleaned_data['text']
