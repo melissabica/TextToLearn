@@ -36,7 +36,7 @@ class StartHandler(KeywordHandler):
     def handle(self, text):
         text = text.strip()
         try: #Registered User?
-            self.msg.contact
+            self.msg.contact.id
         except: #Not a contact in our system reject
             self.respond("You have not been registered in our system")
         else:
