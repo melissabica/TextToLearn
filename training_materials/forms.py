@@ -48,19 +48,16 @@ class TMForm(forms.ModelForm):
         text = self.cleaned_data['text']
         message = ""
         l = len(text)
-        if(l < msgLen):
-            #if(self.cleaned_data['question_1'] != "")
-            message = text
-        while(l > msgLen):
+        while(l > msgLen): #Message is longer than msgLen
             message +=text[msgLen*i:msgLen+msgLen*i]
             message += " -Reply NEXT %s" % self.cleaned_data['tag']
             l -= msgLen
             i += 1
-        message += text[msgLen*i:]
+        message += text[msgLen*i:] #Last text of long message or only text of short message
         if self.cleaned_data['question_1'] == "":
             message += " (end)"
         else:
-            message += "-Reply QUIZ %s" % self.cleaned_data['tag']
+            message += " -Reply QUIZ %s" % self.cleaned_data['tag']
         return (message, i+1)
 
 
