@@ -90,12 +90,11 @@ def training_materials_preview(request, pk=None):
         "tm": tm,
     })
 
-def send(tm):
+def send(tm, users):
     notification = 'You have been assigned %s. To begin, reply with START %s.' % (tm.title, tm.title)
     #self.cleaned_data['text']
     connections = []
     #assigned_users = tm_form.cleaned_data['assigned_users']
-    users = tm.assigned_users
     for user in users:
         connections.append(user.default_connection)
     #connections = self.cleaned_data['assigned_users']
@@ -127,8 +126,8 @@ def training_materials_assign(request, pk=None):
             tm_form = AssignForm(request.POST)
         if tm_form.is_valid():
             tm = tm_form.save()
-            tm.assigned_users = tm_form.cleaned_data['assigned_users']
-            send(tm)
+            assigned_users = tm_form.cleaned_data['assigned_users']
+            send(tm, assigned_users)
             tm.save()
             messages.add_message(request, messages.INFO, "Saved and sent training material.")
             return HttpResponseRedirect(reverse(training_materials))
