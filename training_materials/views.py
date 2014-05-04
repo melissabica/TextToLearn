@@ -13,6 +13,8 @@ from tables import TrainingMaterialTable
 from models import TrainingMaterial
 from forms import TMForm, AssignForm
 from rapidsms import settings
+from rapidsms.models import Contact, Connection
+
 
 from django_tables2 import RequestConfig
 
