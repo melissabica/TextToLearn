@@ -22,6 +22,6 @@ def message_log(request):
     paginate = {"per_page": settings.PAGINATOR_OBJECTS_PER_PAGE}
     RequestConfig(request, paginate=paginate).configure(messages_table)
 
-    return render(request, "messagelog/index.html", {
+    return render(request, "registration/index.html", {
         "messages_table": messages_table,
     })
