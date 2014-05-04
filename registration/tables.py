@@ -21,3 +21,13 @@ class ContactTable(tables.Table):
 
     def render_identities(self, value, record):
         return ', '.join([x.identity for x in record.connection_set.all()])
+
+class MessageTable(tables.Table):
+
+    class Meta:
+        model = Message
+        exclude = ('id', )
+        order_by = ('-date', )
+        attrs = {
+            'class': 'table table-striped table-bordered table-condensed'
+        }
