@@ -43,14 +43,14 @@ class TMForm(forms.ModelForm):
             # 'question_1': forms.Textarea(attrs={'rows':2, 'cols':20}, required=False),
         # }
     def createMessages(self):
-        msgLen = 160 - len(self.cleaned_data['tag']) - len(" -Reply NEXT ")
+        msgLen = 160 - len(self.cleaned_data['tag']) - len(" -Reply NEXT \n")
         i = 0
         text = self.cleaned_data['text']
         message = ""
         l = len(text)
         while(l > msgLen): #Message is longer than msgLen
             message +=text[msgLen*i:msgLen+msgLen*i]
-            message += " -Reply NEXT %s" % self.cleaned_data['tag']
+            message += " -Reply NEXT %s\n" % self.cleaned_data['tag']
             l -= msgLen
             i += 1
         message += text[msgLen*i:] #Last text of long message or only text of short message

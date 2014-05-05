@@ -60,7 +60,7 @@ class StartHandler(KeywordHandler):
                     if tm.messagenum == 1:
                         self.respond("%s" % tm.messages)
                     else:
-                        self.respond("%s" % tm.messages[:160])
+                        self.respond("%s" % tm.messages[:160].strip())
                 
 class NextHandler(KeywordHandler):
     keyword = "next"
@@ -90,7 +90,7 @@ class NextHandler(KeywordHandler):
                         msgt.msgnum = 0
                         msgt.save()
                     else:
-                        self.respond("%s" % tm.messages[160*(msgt.msgnum-1):160*msgt.msgnum])
+                        self.respond("%s" % tm.messages[160*(msgt.msgnum-1):160*msgt.msgnum].strip())
                 else:
                     self.help()
 
