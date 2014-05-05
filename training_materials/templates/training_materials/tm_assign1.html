@@ -14,7 +14,7 @@
             <h4> Title: {{tm.title}} </h4>
             <h4> Tag: {{tm.tag}} </h4>
             <h4> Messages </h4>
-            <pre> {{tm.messages}} </pre>
+            {{tm.messages|linebreaks}}
             {% if tm.question_1 != "" %}
                 <h4> Quiz </h4>
                 <h5 class="inline">Question 1</h5>
