@@ -67,7 +67,8 @@ def training_materials_add(request, pk=None):
                 tm.delete()
                 messages.add_message(request, messages.INFO, "Deleted training material")
                 return HttpResponseRedirect(reverse(training_materials))
-            #if request.POST["submit"] == "Preview Training Material":
+            if request.POST["submit"] == "Preview":
+                return HttpResonseRedirect(reverse(training_materials_preview))
             tm_form = TMForm(request.POST, instance=tm)
         else:
             tm_form = TMForm(request.POST)
