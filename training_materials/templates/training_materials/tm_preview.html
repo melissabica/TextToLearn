@@ -9,6 +9,52 @@
     <div class="span8">
         <form action="" method="post">
             {% csrf_token %}
+            <h4> Title: {{tm.title}} </h4>
+            <h4> Tag: {{tm.tag}} </h4>
+            <h4> Messages </h4>
+            {{tm.messages|linebreaks}}
+            {% if tm.question_1 != "" %}
+                <h4> Quiz </h4>
+                <h5 class="inline">Question 1</h5>
+                <p class="inline"> {{tm.question_1}} </p>
+                <br>
+                <h5 class="inline">Answer</h5>
+                <p class="inline"> {{tm.answer_1}} </p>
+            {% endif %}
+            <br><br>
+            {% if tm.question_2 != "" %}
+                <h5 class="inline">Question 2</h5>
+                <p class="inline"> {{tm.question_2}} </p>
+                <br>
+                <h5 class="inline">Answer</h5>
+                <p class="inline"> {{tm.answer_2}} </p>
+            {% endif %}
+            <br><br>
+            {% if tm.question_3 != "" %}
+                <h5 class="inline">Question 3</h5>
+                <p class="inline"> {{tm.question_3}} </p>
+                <br>
+                <h5 class="inline">Answer</h5>
+                <p class="inline"> {{tm.answer_3}} </p>
+            {% endif %}
+            <br><br>
+            {% if tm.question_4 != "" %}
+                <h5 class="inline">Question 4</h5>
+                <p class="inline"> {{tm.question_4}} </p>
+                <br>
+                <h5 class="inline">Answer</h5>
+                <p class="inline"> {{tm.answer_4}} </p>
+            {% endif %}
+            <br><br>
+            {% if tm.question_5 != "" %}
+                <h5 class="inline">Question 5</h5>
+                <p class="inline"> {{tm.question_5}} </p>
+                <br>
+                <h5 class="inline">Answer</h5>
+                <p class="inline"> {{tm.answer_5}} </p>
+            {% endif %}
+            <br><br>
+
             <div class="submit">
                 <input type="submit" name="submit" class="btn btn-primary" value="Back to Edit" />
             </div>
