@@ -138,4 +138,5 @@ def contact_messages(request, pk=None):
 
     return render(request, "registration/index.html", {
         "messages_table": messages_table,
+        "contact":contact,
     })
