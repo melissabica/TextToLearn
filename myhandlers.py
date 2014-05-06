@@ -5,8 +5,8 @@ from rapidsms.contrib.handlers import PatternHandler
 from training_materials.models import TrainingMaterial
 
 help_text = {
-    'training': 'To start, reply START training. Example, START INTRO. To continue, reply NEXT training. To see your training, reply PROGRESS',
-    'quiz': 'To start, reply QUIZ training. Example, QUIZ INTRO. To continue, respond only with quiz answers. Do not use other commands during quiz',
+    'training': 'To start, reply START TAG. Example, START INTRO. To continue, reply NEXT TAG.',
+    'quiz': 'To start, reply QUIZ TAG. Example, QUIZ INTRO. To continue, reply ANS youranswer.',
 }
 """
 class TMHandler(KeywordHandler):
@@ -22,7 +22,7 @@ class HelpHandler(KeywordHandler):
         """Invoked if someone just sends `HELP`.  We also call this
         from `handle` if we don't recognize the arguments to HELP.
         """
-        self.respond("Reply HELP TRAINING or HELP QUIZ for instructions. To see your training, reply PROGRESS")
+        self.respond("Reply HELP TRAINING or HELP QUIZ for instructions.")
 
     def handle(self, text):
         """Invoked if someone sends `HELP <any text>`"""
