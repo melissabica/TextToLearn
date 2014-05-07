@@ -68,13 +68,7 @@ def training_materials_add(request, pk=None):
                 messages.add_message(request, messages.INFO, "Deleted training material")
                 return HttpResponseRedirect(reverse(training_materials))
             if request.POST["submit"] == "Preview":
-                tm = tm_form.save(commit=False)
-                tm.tag = tm_form.cleaned_data['tag'].upper().replace(" ", "") #tag w/o whitespace, uppercase
-                message = tm_form.createMessages()
-                tm.messages = message[0] #block of formatted texts
-                tm.messagenum = message[1] #total number of formatted texts in TM
-                tm.save()
-                return HttpResponseRedirect(reverse(training_materials_preview, args=(pk)))
+                return HttpResponseRedirect(reverse(training_materials_preview, args=['pk']))
             tm_form = TMForm(request.POST, instance=tm)
         else:
             tm_form = TMForm(request.POST)
@@ -101,8 +95,7 @@ def training_materials_preview(request, pk=None):
     else:
         tm = TrainingMaterial()
     if request.POST["submit"] == "Back to Edit":
-        return HttpResponseRedirect(reverse(training_materials_add, args=(pk)))
-
+        return HttpResponseRedirect(reverse(training_materials_add, args =['pk']))
     return render(request, 'training_materials/tm_preview.html', {
         "tm": tm,
     })
@@ -159,7 +152,7 @@ def training_materials_assign(request, pk=None):
     return render(request, 'training_materials/tm_assign1.html', {
         "tm": tm,
         "tm_form": tm_form,
-        "range": range(tm.messagenum), #"x"*tm.messagenum,
+        "range": range(tm.messagenum),#"x"*tm.messagenum,
     })
     
 
