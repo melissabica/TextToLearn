@@ -16,6 +16,8 @@ from rapidsms.contrib.registration.forms import (
     BulkRegistrationForm,
     ContactForm, ConnectionFormSet)
 from rapidsms import settings
+from rapidsms.router import send
+
 
 
 @login_required
