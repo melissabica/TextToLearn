@@ -71,7 +71,7 @@ def contact(request, pk=None):
                 contact.save()
                 connection_formset.save()
                 notification = "Hello %s, you have been registered for Text to Learn. For instructions reply HELP TRAINING or HELP QUIZ at any time" % contact.name
-                send(notification, contact.connection)
+                send(notification, contact.default_connection)
                 messages.add_message(request, messages.INFO, "Saved contact.")
                 return HttpResponseRedirect(reverse(registration))
     return render(request, 'registration/contact_form.html', {
