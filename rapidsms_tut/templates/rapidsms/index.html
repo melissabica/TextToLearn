@@ -12,11 +12,20 @@
         <h1>Welcome to Text to Learn</h1>
         <p>Text to Learn is a training tool developed for social enterprises in emerging markets. It uses SMS to distribute training materials to users' mobile phones, and it provides social enterprises with a web-based dashboard to upload and send training materials, manage users, and create SMS-based quizzes to assess users' progress.<p>
 
-        {% load staticfiles %}
+        <!--{% load staticfiles %}
         <img src="{% static "rapidsms_tut/Logo_main.png" %}" alt="Text to Learn logo"/>
-        <img src="http://strongwillstrongwont.tumblr.com/image/84984661014" alt="Text to Learn logo"/>
+        <img src="http://strongwillstrongwont.tumblr.com/image/84984661014" alt="Text to Learn logo"/> -->
 
-        <h4>Getting Started<h4>
-
+        <h3> Navigating the Website </h3>
+        <h4>Training Materials</h4>
+        <p> Upload and manage training materials here. Training materials consist of a title, tag (which is used by trainees to respond to texts), main training text, and optional quiz of up to five questions. Once a training material has been saved, it can be assigned to users from the main list, which will send them a notification text message. </p>
+        <h4>Manage Users</h4>
+        <p> Users can be added and edited here. All that is needed to register a user for the system is a name and phone number. When a new user is added, they will receive a confirmation text message. </p>
+        <h4>Message Tester</h4>
+        <p> This is a simulation of a phone interacting with the system. Use this when a mobile phone is not available, or to test training materials and quizzes. </p>
+        <h4>Message Log</h4>
+        <p> This is a record of every text message sent and received by the system. Messages can be filtered by user by clicking on their name in the list. </p>
+        
+        
     </div>
 {% endblock %}
