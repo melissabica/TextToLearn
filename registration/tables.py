@@ -26,7 +26,7 @@ class MessageTable(tables.Table):
 
     class Meta:
         model = Message
-        exclude = ('id', )
+        exclude = ('id', 'connection', 'contact')
         order_by = ('-date', )
         attrs = {
             'class': 'table table-striped table-bordered table-condensed'
