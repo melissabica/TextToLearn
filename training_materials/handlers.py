@@ -149,7 +149,7 @@ class AnsHandler(KeywordHandler):
                     if msgt.msgnum == 1:
                         text = text.lower().strip()
                         tof = ""
-                        if text == tm.answer_1:
+                        if text == tm.answer_1.lower():
                             tof = "Correct.\n"
                         else:
                             tof = ""
@@ -168,7 +168,7 @@ class AnsHandler(KeywordHandler):
                     elif msgt.msgnum == 2:
                         text = text.lower().strip()
                         tof = ""
-                        if text == tm.answer_2:
+                        if text == tm.answer_2.lower():
                             tof = "Correct.\n"
                         else:
                             tof = ""
@@ -187,7 +187,7 @@ class AnsHandler(KeywordHandler):
                     elif msgt.msgnum == 3:
                         text = text.lower().strip()
                         tof = ""
-                        if text == tm.answer_3:
+                        if text == tm.answer_3.lower():
                             tof = "Correct.\n"
                         else:
                             tof = ""
@@ -206,7 +206,7 @@ class AnsHandler(KeywordHandler):
                     elif msgt.msgnum == 4:
                         text = text.lower().strip()
                         tof = ""
-                        if text == tm.answer_4:
+                        if text == tm.answer_4.lower():
                             tof = "Correct.\n"
                         else:
                             tof = ""
@@ -225,7 +225,7 @@ class AnsHandler(KeywordHandler):
                     elif msgt.msgnum == 5:
                         text = text.lower().strip()
                         tof = ""
-                        if text == tm.answer_4:
+                        if text == tm.answer_4.lower():
                             tof = "Correct.\n"
                         else:
                             tof = ""
