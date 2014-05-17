@@ -16,10 +16,9 @@
             {% csrf_token %}
             <div class="submit">
                 <input type="submit" name="submit" class="btn btn-primary" value="Save" />
-                <input type="submit" name="submit" class="btn btn-primary" value="Preview" />
-
 
                 {% if request.get_full_path != "/training_materials/training_materials/add/" %}
+                    <input type="submit" name="submit" class="btn btn-primary" value="Preview" />
                     <input type="submit" name="submit" class="btn btn-primary" value="Delete" />
                 {% endif %}
             </div>

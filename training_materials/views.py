@@ -94,6 +94,8 @@ def training_materials_preview(request, pk=None):
         tm = get_object_or_404(TrainingMaterial, pk=pk)
     else:
         tm = TrainingMaterial()
+    """if request.POST["submit"] == "Back to Edit":
+        return HttpResponseRedirect(reverse(training_materials_add, args =(pk)))"""
     return render(request, 'training_materials/tm_preview.html', {
         "tm": tm,
     })
@@ -150,7 +152,7 @@ def training_materials_assign(request, pk=None):
     return render(request, 'training_materials/tm_assign1.html', {
         "tm": tm,
         "tm_form": tm_form,
-        "range": range(tm.messagenum), #"x"*tm.messagenum,
+        "range": range(tm.messagenum),#"x"*tm.messagenum,
     })
     
 
