@@ -1,8 +1,13 @@
 \chapter{Societal Issues}
 
 \section*{Ethical}
+Our project's goal is to aid social enterprises by utilizing a widely accessible platform, mobile phones, to distribute information, particularly training materials. Information can be difficult to distribute in the developing world due to poor infrastructure. Getting new information to customers and employees of social enterprises far from centralized offices is crucial, but difficult. After each of our two team members worked with social enterprises over the past summer, we both recognized the importance of effective and accessible training within this type of organization. Applications of our project more generally could aid in education by giving anyone with a mobile phone the ability to learn from the materials.
+
+Several ethical concerns could arise from the use of our product by both employers who distribute materials and employees who access the information. From the distributor end, employers could potentially misuse our system to distribute false information. Furthermore, employers could give access to others to our system to upload information. If our security is poor, others could gain access without the permission from the organization, which could affect the authenticity of uploaded training materials. Additionally, since our product is also meant to be used as an evaluation tool through the SMS quiz feature, there is potential for unethical usage from the trainee end as well. If training is being used by a social enterprise to certify employees on certain training information rather than simple reinforcement of material, the trainees could cheat much more easily than by more traditional evaluation methods. We will need to consider implementing authentication and security features into our system to address these concerns about the ethics of using our product.
 
 \section*{Social}
+Since we are building a product meant to be used in the developing world, specific ethical concerns arise related to social responsibility and appropriateness. Our customer base has very different requirements than a customer from a developed country would have. It is important for us to be culturally aware of our customers and potential users of the product. We will be able to do this by keeping in communication with these potential users, which will be possible for us after working and making contacts with people from developing countries over the summer. We will make sure that our technology is appropriate, usable, and affordable for the specific clients we are working with, in addition to meeting the specific functional and nonfunctional requirements they have asked for.
+
 
 \section*{Political}
 
@@ -17,6 +22,16 @@
 \section*{Environmental Impact}
 
 \section*{Usability}
+\subsection*{Distributor End}
+
+What the distributor, or trainer, sees is the part of the product we have the most control over. They will upload training materials and quizzes through a website. On this website they will manage their user base by adding phone numbers of employees they wish to register to receive their uploaded documents. They can also view results of quizzes and materials accessed by their trainees. 
+
+Since our product is meant to be used by social enterprises in the developing world, the technical level of the user may vary greatly, and as a consequence we designed our product with this in mind. The website includes easy-to-use forms to cut and paste in training materials for the trainees to read. Navigating the website is intuitive and simple through clearly named and well-placed buttons and links. Since this could be used in many different countries, it is important to consider easy ways to change language content in our design to make the website as accessible as possible.
+
+\subsection*{Receiver End}
+
+The receiver end of our product consists of SMS messages containing the text of uploaded documents from distributors. The main aesthetic goal for the receivers is simplicity, as we intend for our system to be usable on the simplest type of mobile phones. The text messages will have to comply with basic SMS message lengths, which is typically around 140-160 characters. Because most training documents will be longer than this, we will implement functionality for receivers to easily continue receiving text messages until they have received the entire document. This function will likely be implemented by having the receiver press 1 to receive the next text message. If there are any quizzes accompanying the training documents, they can press 2 to receive to receive the quiz in a separate text message. All of these instructions will be included concisely at the end of each message to ensure that users will always receive entire training documents.
+
 
 \section*{Lifelong Learning}
 

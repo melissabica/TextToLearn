@@ -17,10 +17,10 @@
 \contentsline {section}{\numberline {5.1}Project Schedule}{15}
 \contentsline {section}{\numberline {5.2}Risk Management}{15}
 \contentsline {chapter}{\numberline {6}Societal Issues}{16}
-\contentsline {chapter}{\numberline {7}Conclusions}{17}
-\contentsline {section}{\numberline {7.1}Summary}{17}
-\contentsline {section}{\numberline {7.2}Lessons Learned}{17}
-\contentsline {section}{\numberline {7.3}Future Improvements}{17}
+\contentsline {chapter}{\numberline {7}Conclusions}{19}
+\contentsline {section}{\numberline {7.1}Summary}{19}
+\contentsline {section}{\numberline {7.2}Lessons Learned}{19}
+\contentsline {section}{\numberline {7.3}Future Improvements}{19}
 \contentsline {chapter}{\numberline {8}Appendices}{I}
 \contentsline {section}{\numberline {8.1}Project Schedule}{I}
 \contentsline {section}{\numberline {8.2}Setup and Installation}{II}
