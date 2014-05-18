@@ -2,23 +2,23 @@
 
 
 \section{Requirements}
-From discussions with a social entrepreneur, CEO of Anudip Dr. Radha Basu, and from our own experiences working with social enterprises, we have compiled the following list of requirements for this project: \\[-0.7\baselineskip]
+From discussions with a social entrepreneur, founder and CEO of Anudip Dr. Radha Basu, and by reflecting on our own experiences working abroad with social enterprises, we have compiled the following requirements for this project. Functional requirements are quantitative and describe the actual functions our system needs to be able to perform, while nonfunctional requirements are qualitative and describe the way in which the functional requirements are implemented. \\[-0.7\baselineskip]
 
 \underline{Functional}\\
 \textit{Critical}
 \begin{itemize}
-\item Distributors are able to make training materials available to trainees digitally.
-\item Distributors are able to test trainees’ knowledge of training materials.
-\item Distributors are able to view results of quizzes.
-\item Distributors are able to enable/disable quizzes.
-\item Distributors are able to register/unregister trainees for use of system.
+\item Trainers are able to make training materials available to trainees digitally.
+\item Trainers are able to test trainees’ knowledge of training materials.
+\item Trainers are able to view results of quizzes.
+\item Trainers are able to enable/disable quizzes.
+\item Trainers are able to register/unregister trainees for use of system.
 \item Trainees are able to access training materials.
 \item Trainees are able to receive training materials in small pieces.
 \end{itemize}
 
 \textit{Recommended}
 \begin{itemize}
-\item Distributors are able to send notifications when new training materials are added.
+\item Trainers are able to send notifications when new training materials are added.
 \item Trainees are able to automatically receive results from quiz.
 \item Trainees are able to view their progress.
 \item Trainees are able to access notifications/training materials multiple times.
@@ -26,7 +26,7 @@ From discussions with a social entrepreneur, CEO of Anudip Dr. Radha Basu, and f
 
 \textit{Suggested}
 \begin{itemize}
-\item Distributors are able to set a time limit on the completion of quizzes.\\[-0.5\baselineskip]
+\item Trainers are able to set a time limit on the completion of quizzes.\\[-0.5\baselineskip]
 \end{itemize}
 
 \underline{Non-Functional}\\*
@@ -51,10 +51,10 @@ From discussions with a social entrepreneur, CEO of Anudip Dr. Radha Basu, and f
 \end{itemize}
 
 \section{Use Cases}
-For our implementation, we have come up with several key use cases for the two types of users of our system: distributors (or trainers) and trainees. The following figures visually describe the main functions for each type of user. The primary use cases are also described in greater detail below.
+For our implementation, we have come up with several key use cases for the two types of users of our system: trainers and trainees. The following figures visually describe the main functions for each type of user. The primary use cases are also described in greater detail below.
 
 \underline{Case 1 - Upload Materials}\\*
-\textit{Actor:} Distributor\\*
+\textit{Actor:} Trainer\\*
 \textit{Goal:} Materials with related quiz are ready to distribute.\\*
 \textit{Preconditions:} Have materials in a plaintext format, be a registered user, and internet connection.\\*
 \textit{Postconditions:} Materials are uploaded and a quiz is created.\\*
@@ -72,7 +72,7 @@ For our implementation, we have come up with several key use cases for the two t
 \end{enumerate}
 
 \underline{Case 2 - Add Users}\\*
-\textit{Actor:} Distributor\\*
+\textit{Actor:} Trainer\\*
 \textit{Goal:} Grant access to training materials to their employees.\\*
 \textit{Preconditions:} Be a registered user, know the phone-number the employee will be using.\\*
 \textit{Postconditions:} A registered user can download training materials.\\*
@@ -89,7 +89,7 @@ For our implementation, we have come up with several key use cases for the two t
 \end{enumerate}
 
 \underline{Case 3 - Manage/Edit Training Materials}\\*
-\textit{Actor:} Distributor\\*
+\textit{Actor:} Trainer\\*
 \textit{Goal:} Ability to view and edit all uploaded training materials, quizzes, and related SMS messages.\\*
 \textit{Preconditions:} Be a registered user, have previously uploaded training materials, and internet connection.\\*
 \textit{Postconditions:} Training materials can be edited.\\*
