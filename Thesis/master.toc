@@ -7,22 +7,22 @@
 \contentsline {chapter}{\numberline {3}Design and Implementation}{7}
 \contentsline {section}{\numberline {3.1}Trainer Interface: The Website}{7}
 \contentsline {section}{\numberline {3.2}Trainee Interaction: The Phone}{7}
-\contentsline {section}{\numberline {3.3}System Design}{7}
-\contentsline {section}{\numberline {3.4}Technologies Used}{8}
-\contentsline {section}{\numberline {3.5}Design Rationale}{8}
-\contentsline {chapter}{\numberline {4}Testing and Documentation}{10}
-\contentsline {section}{\numberline {4.1}Testing}{10}
-\contentsline {section}{\numberline {4.2}Documentation}{10}
-\contentsline {chapter}{\numberline {5}Project Management}{11}
-\contentsline {section}{\numberline {5.1}Project Schedule}{11}
-\contentsline {section}{\numberline {5.2}Risk Management}{11}
-\contentsline {chapter}{\numberline {6}Societal Issues}{12}
-\contentsline {chapter}{\numberline {7}Conclusions}{13}
-\contentsline {section}{\numberline {7.1}Summary}{13}
-\contentsline {section}{\numberline {7.2}Lessons Learned}{13}
-\contentsline {section}{\numberline {7.3}Future Improvements}{13}
-\contentsline {chapter}{\numberline {8}Appendices}{14}
-\contentsline {section}{\numberline {8.1}Project Schedule}{14}
-\contentsline {section}{\numberline {8.2}Setup and Installation}{14}
-\contentsline {section}{\numberline {8.3}User Manual}{14}
-\contentsline {section}{\numberline {8.4}Source Code}{14}
+\contentsline {section}{\numberline {3.3}System Design}{9}
+\contentsline {section}{\numberline {3.4}Technologies Used}{9}
+\contentsline {section}{\numberline {3.5}Design Rationale}{10}
+\contentsline {chapter}{\numberline {4}Testing and Documentation}{11}
+\contentsline {section}{\numberline {4.1}Testing}{11}
+\contentsline {section}{\numberline {4.2}Documentation}{11}
+\contentsline {chapter}{\numberline {5}Project Management}{12}
+\contentsline {section}{\numberline {5.1}Project Schedule}{12}
+\contentsline {section}{\numberline {5.2}Risk Management}{12}
+\contentsline {chapter}{\numberline {6}Societal Issues}{13}
+\contentsline {chapter}{\numberline {7}Conclusions}{14}
+\contentsline {section}{\numberline {7.1}Summary}{14}
+\contentsline {section}{\numberline {7.2}Lessons Learned}{14}
+\contentsline {section}{\numberline {7.3}Future Improvements}{14}
+\contentsline {chapter}{\numberline {8}Appendices}{15}
+\contentsline {section}{\numberline {8.1}Project Schedule}{15}
+\contentsline {section}{\numberline {8.2}Setup and Installation}{15}
+\contentsline {section}{\numberline {8.3}User Manual}{15}
+\contentsline {section}{\numberline {8.4}Source Code}{15}
