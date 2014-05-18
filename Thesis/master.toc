@@ -1,19 +1,28 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}
 \contentsline {section}{\numberline {1.1}Background}{1}
-\contentsline {chapter}{\numberline {2}Project Description}{3}
-\contentsline {section}{\numberline {2.1}Project Overview}{3}
-\contentsline {section}{\numberline {2.2}Requirements}{3}
-\contentsline {section}{\numberline {2.3}Use Cases}{4}
-\contentsline {section}{\numberline {2.4}User Interface}{5}
-\contentsline {section}{\numberline {2.5}System Design}{5}
-\contentsline {section}{\numberline {2.6}Technologies Used}{6}
-\contentsline {section}{\numberline {2.7}Design Rationale}{6}
-\contentsline {section}{\numberline {2.8}Testing}{7}
-\contentsline {section}{\numberline {2.9}User Manual}{7}
-\contentsline {chapter}{\numberline {3}Project Management}{8}
-\contentsline {section}{\numberline {3.1}Project Schedule}{8}
-\contentsline {section}{\numberline {3.2}Risk Management}{8}
-\contentsline {chapter}{\numberline {4}Societal Issues}{9}
-\contentsline {chapter}{\numberline {5}Conclusions}{10}
-\contentsline {section}{\numberline {5.1}Lessons Learned}{10}
-\contentsline {section}{\numberline {5.2}Future Work}{10}
+\contentsline {section}{\numberline {1.2}Project Overview}{2}
+\contentsline {chapter}{\numberline {2}System Requirements}{3}
+\contentsline {section}{\numberline {2.1}Requirements}{3}
+\contentsline {section}{\numberline {2.2}Use Cases}{4}
+\contentsline {chapter}{\numberline {3}Design and Implementation}{7}
+\contentsline {section}{\numberline {3.1}Trainer Interface: The Website}{7}
+\contentsline {section}{\numberline {3.2}Trainee Interaction: The Phone}{7}
+\contentsline {section}{\numberline {3.3}System Design}{7}
+\contentsline {section}{\numberline {3.4}Technologies Used}{8}
+\contentsline {section}{\numberline {3.5}Design Rationale}{8}
+\contentsline {chapter}{\numberline {4}Testing and Documentation}{10}
+\contentsline {section}{\numberline {4.1}Testing}{10}
+\contentsline {section}{\numberline {4.2}Documentation}{10}
+\contentsline {chapter}{\numberline {5}Project Management}{11}
+\contentsline {section}{\numberline {5.1}Project Schedule}{11}
+\contentsline {section}{\numberline {5.2}Risk Management}{11}
+\contentsline {chapter}{\numberline {6}Societal Issues}{12}
+\contentsline {chapter}{\numberline {7}Conclusions}{13}
+\contentsline {section}{\numberline {7.1}Summary}{13}
+\contentsline {section}{\numberline {7.2}Lessons Learned}{13}
+\contentsline {section}{\numberline {7.3}Future Improvements}{13}
+\contentsline {chapter}{\numberline {8}Appendices}{14}
+\contentsline {section}{\numberline {8.1}Project Schedule}{14}
+\contentsline {section}{\numberline {8.2}Setup and Installation}{14}
+\contentsline {section}{\numberline {8.3}User Manual}{14}
+\contentsline {section}{\numberline {8.4}Source Code}{14}
