@@ -6,7 +6,11 @@
 % \usepackage{natbib}	% for better citation styles
 \usepackage{parskip}
 \usepackage{graphicx}
-\graphicspath{ {./Screenshots/} }
+\usepackage{float}
+%Force table captions to be above
+\floatstyle{plaintop}
+\restylefloat{table}
+\graphicspath{ {./Screenshots/} {./Diagrams/} }
 
 
 
@@ -48,9 +52,10 @@
 \include{projectmgmt}
 \include{societalissues}
 \include{conclusions}
-
+\include{appendices}
 
 \backmatter
-\include{appendices}
+\appendix
+
 
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.4.6)  17 MAY 2014 23:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.4.6)  17 MAY 2014 23:57
 entering extended mode
 **master.tex
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\master.tex
@@ -183,6 +183,16 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen111
 \Gin@req@width=\dimen112
 )
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count96
+\float@exts=\toks16
+\float@box=\box26
+\@float@everytoks=\toks17
+\@floatcapt=\box27
+)
+\@float@every@table=\toks18
+
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\master.aux
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\abstract.aux)
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\acknowledgements.aux)
@@ -194,42 +204,42 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\societalissues.aux)
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\conclusions.aux)
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\appendices.aux))
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 30.
-LaTeX Font Info:    Try loading font information for OML+txmi on input line 30.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 33.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 33.
 
 
 (C:\Users\MelissaB\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 30.
-LaTeX Font Info:    Try loading font information for OMS+txsy on input line 30.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 33.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 33.
 
 
 (C:\Users\MelissaB\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 30.
-LaTeX Font Info:    Try loading font information for OMX+txex on input line 30.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 33.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 33.
 
 
 (C:\Users\MelissaB\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 30.
-LaTeX Font Info:    Try loading font information for U+txexa on input line 30.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 33.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 33.
 
 (C:\Users\MelissaB\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 30.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 33.
 
 (C:\Users\MelissaB\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
@@ -264,33 +274,33 @@ File: ot1txr.fd 2000/12/15 v3.1
 
 (C:\Users\MelissaB\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count96
+\scratchcounter=\count97
 \scratchdimen=\dimen113
-\scratchbox=\box26
-\nofMPsegments=\count97
-\nofMParguments=\count98
-\everyMPshowfont=\toks16
-\MPscratchCnt=\count99
+\scratchbox=\box28
+\nofMPsegments=\count98
+\nofMParguments=\count99
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count100
 \MPscratchDim=\dimen114
-\MPnumerator=\count100
-\makeMPintoPDFobject=\count101
-\everyMPtoPDFconversion=\toks17
+\MPnumerator=\count101
+\makeMPintoPDFobject=\count102
+\everyMPtoPDFconversion=\toks20
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 31.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 34.
  (C:\Users\MelissaB\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 31.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 34.
 
 (C:\Users\MelissaB\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 31.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 34.
 
 (C:\Users\MelissaB\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 31.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 34.
 
 (C:\Users\MelissaB\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
@@ -366,14 +376,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
 
+<./Diagrams/use_case_trainer.png, id=35, 566.918pt x 297.913pt>
+File: ./Diagrams/use_case_trainer.png Graphic file (type png)
+
+<use ./Diagrams/use_case_trainer.png>
+Package pdftex.def Info: ./Diagrams/use_case_trainer.png used on input line 58.
+
+(pdftex.def)             Requested size: 340.15341pt x 178.74916pt.
+ [4]
+<./Diagrams/use_case_trainee.png, id=40, 558.085pt x 270.00874pt>
+File: ./Diagrams/use_case_trainee.png Graphic file (type png)
+
+<use ./Diagrams/use_case_trainee.png>
+Package pdftex.def Info: ./Diagrams/use_case_trainee.png used on input line 64.
+
+(pdftex.def)             Requested size: 334.85359pt x 162.00648pt.
 Missing character: There is no ‚ in font txr!
 Missing character: There is no Ä in font txr!
 Missing character: There is no ú in font txr!
 Missing character: There is no ‚ in font txr!
 Missing character: There is no Ä in font txr!
 Missing character: There is no ù in font txr!
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
+ [5 <C:/Users/MelissaB/Documents/GitHub/texttolearn/Thesis/Diagrams/use_case_tr
+ainer.png> <C:/Users/MelissaB/Documents/GitHub/texttolearn/Thesis/Diagrams/use_
+case_trainee.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
 
  []
 
@@ -393,7 +420,7 @@ Missing character: There is no ‚ in font txr!
 Missing character: There is no Ä in font txr!
 Missing character: There is no ô in font txr!
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
 
  []
 
@@ -403,7 +430,6 @@ Missing character: There is no ú in font txr!
 Missing character: There is no ‚ in font txr!
 Missing character: There is no Ä in font txr!
 Missing character: There is no ù in font txr!
-[5]
 Missing character: There is no ‚ in font txr!
 Missing character: There is no Ä in font txr!
 Missing character: There is no ú in font txr!
@@ -416,57 +442,80 @@ Missing character: There is no ú in font txr!
 Missing character: There is no ‚ in font txr!
 Missing character: There is no Ä in font txr!
 Missing character: There is no ù in font txr!
-
-Underfull \hbox (badness 10000) in paragraph at lines 107--108
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
 
  []
 
-) [6] (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\designimpl.tex
+) [7] (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\designimpl.tex
 Chapter 3.
-<./Screenshots/home.png, id=44, 1923.43594pt x 1002.74625pt>
+<./Screenshots/home.png, id=53, 1923.43594pt x 1002.74625pt>
 File: ./Screenshots/home.png Graphic file (type png)
 
 <use ./Screenshots/home.png>
 Package pdftex.def Info: ./Screenshots/home.png used on input line 8.
 (pdftex.def)             Requested size: 288.50294pt x 150.40544pt.
 
-<./Screenshots/add_contact.png, id=45, 1897.84032pt x 1030.60031pt>
+<./Screenshots/add_contact.png, id=54, 1897.84032pt x 1030.60031pt>
 File: ./Screenshots/add_contact.png Graphic file (type png)
 
 <use ./Screenshots/add_contact.png>
 Package pdftex.def Info: ./Screenshots/add_contact.png used on input line 14.
 (pdftex.def)             Requested size: 284.66377pt x 154.58337pt.
+ [8
 
-<./Screenshots/list_tm.png, id=46, 1927.2pt x 913.91437pt>
+
+
+ <C:/Users/MelissaB/Documents/GitHub/texttolearn/Thesis/Screenshots/home.png>]
+<./Screenshots/list_tm.png, id=58, 1927.2pt x 913.91437pt>
 File: ./Screenshots/list_tm.png Graphic file (type png)
 
 <use ./Screenshots/list_tm.png>
 Package pdftex.def Info: ./Screenshots/list_tm.png used on input line 20.
 (pdftex.def)             Requested size: 289.06754pt x 137.08124pt.
 
-<./Screenshots/assign_tm.png, id=47, 462.528pt x 337.7418pt>
+<./Screenshots/assign_tm.png, id=59, 462.528pt x 337.7418pt>
 File: ./Screenshots/assign_tm.png Graphic file (type png)
 
 <use ./Screenshots/assign_tm.png>
 Package pdftex.def Info: ./Screenshots/assign_tm.png used on input line 26.
 (pdftex.def)             Requested size: 286.76439pt x 209.39775pt.
 
-<./Screenshots/message_log.png, id=49, 1927.2pt x 1022.31938pt>
+<./Screenshots/message_log.png, id=60, 1927.2pt x 1022.31938pt>
 File: ./Screenshots/message_log.png Graphic file (type png)
 
 <use ./Screenshots/message_log.png>
 Package pdftex.def Info: ./Screenshots/message_log.png used on input line 32.
 (pdftex.def)             Requested size: 289.06754pt x 153.34128pt.
- [7
+ [9 <C:/Users/MelissaB/Documents/GitHub/texttolearn/Thesis/Screenshots/add_cont
+act.png> <C:/Users/MelissaB/Documents/GitHub/texttolearn/Thesis/Screenshots/lis
+t_tm.png> <C:/Users/MelissaB/Documents/GitHub/texttolearn/Thesis/Screenshots/as
+sign_tm.png>]
+<./Diagrams/trainer.png, id=65, 682.2288pt x 292.9344pt>
+File: ./Diagrams/trainer.png Graphic file (type png)
 
+<use ./Diagrams/trainer.png>
+Package pdftex.def Info: ./Diagrams/trainer.png used on input line 47.
+(pdftex.def)             Requested size: 341.11356pt x 146.46684pt.
+ [10 <C:/Users/MelissaB/Documents/GitHub/texttolearn/Thesis/Screenshots/message
+_log.png>]
+<./Diagrams/trainee_request.png, id=69, 682.2288pt x 292.9344pt>
+File: ./Diagrams/trainee_request.png Graphic file (type png)
 
+<use ./Diagrams/trainee_request.png>
+Package pdftex.def Info: ./Diagrams/trainee_request.png used on input line 55.
+(pdftex.def)             Requested size: 341.11356pt x 146.46684pt.
 
- <C:/Users/MelissaB/Documents/GitHub/texttolearn/Thesis/Screenshots/home.png>] 
-[8 <C:/Users/MelissaB/Documents/GitHub/texttolearn/Thesis/Screenshots/add_conta
-ct.png> <C:/Users/MelissaB/Documents/GitHub/texttolearn/Thesis/Screenshots/list
-_tm.png> <C:/Users/MelissaB/Documents/GitHub/texttolearn/Thesis/Screenshots/ass
-ign_tm.png>] [9 <C:/Users/MelissaB/Documents/GitHub/texttolearn/Thesis/Screensh
-ots/message_log.png>]
+<./Diagrams/trainee.png, id=70, 682.2288pt x 292.9344pt>
+File: ./Diagrams/trainee.png Graphic file (type png)
+
+<use ./Diagrams/trainee.png>
+Package pdftex.def Info: ./Diagrams/trainee.png used on input line 61.
+(pdftex.def)             Requested size: 341.11356pt x 146.46684pt.
+ [11 <C:/Users/MelissaB/Documents/GitHub/texttolearn/Thesis/Diagrams/trainer.pn
+g> <C:/Users/MelissaB/Documents/GitHub/texttolearn/Thesis/Diagrams/trainee_requ
+est.png> <C:/Users/MelissaB/Documents/GitHub/texttolearn/Thesis/Diagrams/traine
+e.png>]
 Missing character: There is no ‚ in font txr!
 Missing character: There is no Ä in font txr!
 Missing character: There is no ú in font txr!
@@ -476,40 +525,67 @@ Missing character: There is no ù in font txr!
 Missing character: There is no ‚ in font txr!
 Missing character: There is no Ä in font txr!
 Missing character: There is no ô in font txr!
-) [10]
+) [12] [13]
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\doctesting.tex
 Chapter 4.
-) [11
+) [14
 
 
 
 ] (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\projectmgmt.tex
 Chapter 5.
-) [12
+) [15
 
 
 
 ]
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\societalissues.tex
 Chapter 6.
-) [13
+) [16
 
 
 
 ] (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\conclusions.tex
 Chapter 7.
-) [14
+) [17
 
 
 
 ] (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\appendices.tex
 Chapter 8.
-) [15
+<./Diagrams/schedule_fall.png, id=96, 594.5412pt x 158.5122pt>
+File: ./Diagrams/schedule_fall.png Graphic file (type png)
+
+<use ./Diagrams/schedule_fall.png>
+Package pdftex.def Info: ./Diagrams/schedule_fall.png used on input line 7.
+(pdftex.def)             Requested size: 416.176pt x 110.95778pt.
+
+<./Diagrams/schedule_winter.png, id=97, 594.0594pt x 308.352pt>
+File: ./Diagrams/schedule_winter.png Graphic file (type png)
+
+<use ./Diagrams/schedule_winter.png>
+Package pdftex.def Info: ./Diagrams/schedule_winter.png used on input line 13.
+(pdftex.def)             Requested size: 415.83875pt x 215.84492pt.
+File: ./Diagrams/schedule_fall.png Graphic file (type png)
+ <use ./Diagrams/schedule_fall.png>
+Package pdftex.def Info: ./Diagrams/schedule_fall.png used on input line 19.
+(pdftex.def)             Requested size: 416.176pt x 110.95778pt.
+
+[1
 
 
 
+ <C:/Users/MelissaB/Documents/GitHub/texttolearn/Thesis/Diagrams/schedule_fall.
+png> <C:/Users/MelissaB/Documents/GitHub/texttolearn/Thesis/Diagrams/schedule_w
+inter.png>] <./Diagrams/risks.png, id=103, 632.6034pt x 277.9986pt>
+File: ./Diagrams/risks.png Graphic file (type png)
 
-] (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\master.aux
+<use ./Diagrams/risks.png>
+Package pdftex.def Info: ./Diagrams/risks.png used on input line 25.
+(pdftex.def)             Requested size: 442.81935pt x 194.59769pt.
+) [2 <C:/Users/MelissaB/Documents/GitHub/texttolearn/Thesis/Diagrams/risks.png>
+]
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\master.aux
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\abstract.aux)
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\acknowledgements.aux)
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\introduction.aux)
@@ -521,13 +597,13 @@ Chapter 8.
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\conclusions.aux)
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\appendices.aux)) ) 
 Here is how much of TeX's memory you used:
- 2588 strings out of 493921
- 38661 string characters out of 3144868
- 88232 words of memory out of 3000000
- 5769 multiletter control sequences out of 15000+200000
+ 2691 strings out of 493921
+ 40628 string characters out of 3144868
+ 89826 words of memory out of 3000000
+ 5859 multiletter control sequences out of 15000+200000
  25747 words of font info for 63 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 29i,6n,22p,1134b,220s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,6n,22p,1134b,227s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Pr
 ogram Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Users/MelissaB
 /AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/Melis
@@ -535,9 +611,9 @@ saB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/txsy.pfb><C:/Program
 Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)
 /MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9
 /fonts/type1/urw/times/utmri8a.pfb>
-Output written on master.pdf (21 pages, 450539 bytes).
+Output written on master.pdf (25 pages, 921357 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
+ 127 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
