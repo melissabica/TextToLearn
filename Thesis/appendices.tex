@@ -45,45 +45,48 @@ You should now be able to push using “dotcloud push” in the terminal. This p
 For adding custom domains see the following dotCloud documentation: http://docs.dotcloud.com/guides/domains/
 
 \subsection*{Using your own Tropo backend}
-You will need to modify code. You will need to get your account authorized before you can send outgoing messages. For help setting up your Tropo account  or trouble shooting the installation see this rapidSMS tutorial: http://rapidsms.readthedocs.org/en/latest/tutorial/tutorial04.html#tutorial04
+You will need to modify code. You will need to get your account authorized before you can send outgoing messages. For help setting up your Tropo account  or trouble shooting the installation see this rapidSMS tutorial: http://rapidsms.readthedocs.org/en/latest/tutorial/tutorial04.html\#tutorial04
 
 To complete this next part have your outgoing messaging token and Tropo phone number ready. 
 
-1. In the rapidsms_tut folder open the settings.py file
-2. At nearly the bottom of the file, look for "INSTALLED_BACKENDS = {" in this section you should find 
-begin{verbatim}
-    "my-tropo-backend": {
-        "ENGINE": "rtropo.outgoing.TropoBackend",
-        'config': {
-            'messaging_token': '[insert_token]',
-            'number': '[+1-555-555-5555']’,
-        },
-    },
-end{verbatim}
-3. Change the string under ‘messaging token’ to your messaging token
-4. Change the ‘number’ to you number, make sure you start with a ‘+’ followed by your country code
+\begin{enumerate}
+	\item In the rapidsms\_tut folder open the settings.py file
+	\item At nearly the bottom of the file, look for "INSTALLED\_BACKENDS = " in this section you should find 
+	\begin{verbatim}
+	    "my-tropo-backend": {
+	        "ENGINE": "rtropo.outgoing.TropoBackend",
+	        'config': {
+	            'messaging\_token': '[insert_token]',
+	            'number': '[+1-555-555-5555']’,
+	        },
+	    },
+	\end{verbatim}
+	\item Change the string under ‘messaging token’ to your messaging token
+	\item Change the ‘number’ to you number, make sure you start with a ‘+’ followed by your country code
+\end{enumerate}
 
-Removing Tropo
+\subsection*{Removing Tropo}
 WARNING: Following these steps after you have created contacts with “my-tropo-backend” may result in critical errors. Be sure to delete any contacts with this backend first.
 
-You will need to edit three files rapidsms_tut/settings.py, rapidsms_tut/urls.py, and requirements/base.py.
+You will need to edit three files rapidsms\_tut/settings.py, rapidsms\_tut/urls.py, and requirements/base.py.
 
 settings.py
-1. As in the previous section open settings.py in the rapidsms_tut folder
-2. Delete the lines of code show in step 2 of the previous section
+\begin{enumerate}
+	\item As in the previous section open settings.py in the rapidsms\_tut folder
+	\item Delete the lines of code show in step 2 of the previous section
 
-urls.py
-3. Open urls.py (also in the rapidsms_tut folder)
-4. Delete the following lines of code:
-    url(r'^tropo/',
-      message_received,
-      kwargs={'backend_name': 'my-tropo-backend'}),
-base.py
-5. From the main folder navigate to the ‘requirements’ folder and open base.txt
-6. Delete the line rapidsms-tropo>=0.2.0
+\subsubsection*{urls.py}
+ 	\item Open urls.py (also in the rapidsms\_tut folder)
+	\item Delete the following lines of code:
+    url(r'\^tropo/',
+      message\_received,
+      kwargs={'backend\_name': 'my-tropo-backend'}),
+\subsubsection*{base.py}
+	\item From the main folder navigate to the ‘requirements’ folder and open base.txt
+	\item Delete the line rapidsms-tropo>=0.2.0
 
-7. After saving all these files, you should be able to “dotcloud push” and “my-tropo-backend” will no longer be available.
-
+	\item After saving all these files, you should be able to “dotcloud push” and “my-tropo-backend” will no longer be available.
+\end{enumerate}
 
 
 
