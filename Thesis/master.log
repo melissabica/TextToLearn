@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.4.6)  16 MAY 2014 14:19
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.4.6)  19 MAY 2014 10:44
 entering extended mode
 **master.tex
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\master.tex
@@ -155,49 +155,91 @@ LaTeX Info: Redefining \not on input line 1043.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\parskip.sty"
 Package: parskip 2001/04/09 non-zero parskip adjustments
 )
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count95
+))
+\Gin@req@height=\dimen111
+\Gin@req@width=\dimen112
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count96
+\float@exts=\toks16
+\float@box=\box26
+\@float@everytoks=\toks17
+\@floatcapt=\box27
+)
+\@float@every@table=\toks18
+
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\master.aux
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\abstract.aux)
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\acknowledgements.aux)
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\introduction.aux)
-(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\projectdesc.aux)
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\requirements.aux)
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\designimpl.aux)
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\doctesting.aux)
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\projectmgmt.aux)
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\societalissues.aux)
-(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\conclusions.aux))
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 27.
-LaTeX Font Info:    Try loading font information for OML+txmi on input line 27.
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\conclusions.aux)
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\appendices.aux))
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 34.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 34.
 
 
 (C:\Users\MelissaB\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 27.
-LaTeX Font Info:    Try loading font information for OMS+txsy on input line 27.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 34.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 34.
 
 
 (C:\Users\MelissaB\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 27.
-LaTeX Font Info:    Try loading font information for OMX+txex on input line 27.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 34.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 34.
 
 
 (C:\Users\MelissaB\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 27.
-LaTeX Font Info:    Try loading font information for U+txexa on input line 27.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 34.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 34.
 
 (C:\Users\MelissaB\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 27.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 34.
 
 (C:\Users\MelissaB\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
@@ -230,21 +272,35 @@ File: ot1txr.fd 2000/12/15 v3.1
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+txmia on input line 28.
-(C:\Users\MelissaB\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\utxmia.fd
+(C:\Users\MelissaB\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count97
+\scratchdimen=\dimen113
+\scratchbox=\box28
+\nofMPsegments=\count98
+\nofMParguments=\count99
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count100
+\MPscratchDim=\dimen114
+\MPnumerator=\count101
+\makeMPintoPDFobject=\count102
+\everyMPtoPDFconversion=\toks20
+)
+LaTeX Font Info:    Try loading font information for U+txmia on input line 35.
+ (C:\Users\MelissaB\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 28.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 35.
 
 (C:\Users\MelissaB\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 28.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 35.
 
 (C:\Users\MelissaB\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 28.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 35.
 
 (C:\Users\MelissaB\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
@@ -260,13 +316,17 @@ Missing character: There is no ô in font txr!
 
 [3
 
-]) (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\master.toc)
+])
+No file acknowledgements.tex.
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\master.toc)
 \tf@toc=\write3
+ [4
 
-[4
 
 
-] (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\master.lof)
+
+]
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\master.lof)
 \tf@lof=\write4
  [5
 
@@ -286,22 +346,23 @@ Chapter 1.
 Missing character: There is no ‚ in font txr!
 Missing character: There is no Ä in font txr!
 Missing character: There is no ô in font txr!
-) [2] (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\projectdesc.tex
-Chapter 2.
 Missing character: There is no ‚ in font txr!
 Missing character: There is no Ä in font txr!
 Missing character: There is no ô in font txr!
+) [2]
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\requirements.tex
+Chapter 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--8
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+txr on input line 12.
+LaTeX Font Info:    Try loading font information for OMS+txr on input line 10.
 (C:\Users\MelissaB\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\omstxr.fd
 File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <10> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 12.
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 10.
 Missing character: There is no ‚ in font txr!
 Missing character: There is no Ä in font txr!
 Missing character: There is no ô in font txr!
@@ -311,107 +372,24 @@ Missing character: There is no ô in font txr!
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
 
-Missing character: There is no ‚ in font txr!
-Missing character: There is no Ä in font txr!
-Missing character: There is no ú in font txr!
-Missing character: There is no ‚ in font txr!
-Missing character: There is no Ä in font txr!
-Missing character: There is no ù in font txr!
-[4]
-Missing character: There is no ‚ in font txr!
-Missing character: There is no Ä in font txr!
-Missing character: There is no ú in font txr!
-Missing character: There is no ‚ in font txr!
-Missing character: There is no Ä in font txr!
-Missing character: There is no ù in font txr!
-Missing character: There is no ‚ in font txr!
-Missing character: There is no Ä in font txr!
-Missing character: There is no ú in font txr!
-Missing character: There is no ‚ in font txr!
-Missing character: There is no Ä in font txr!
-Missing character: There is no ù in font txr!
-Missing character: There is no ‚ in font txr!
-Missing character: There is no Ä in font txr!
-Missing character: There is no ô in font txr!
-Missing character: There is no ‚ in font txr!
-Missing character: There is no Ä in font txr!
-Missing character: There is no ú in font txr!
-Missing character: There is no ‚ in font txr!
-Missing character: There is no Ä in font txr!
-Missing character: There is no ù in font txr!
-Missing character: There is no ‚ in font txr!
-Missing character: There is no Ä in font txr!
-Missing character: There is no ú in font txr!
-Missing character: There is no ‚ in font txr!
-Missing character: There is no Ä in font txr!
-Missing character: There is no ù in font txr!
-Missing character: There is no ‚ in font txr!
-Missing character: There is no Ä in font txr!
-Missing character: There is no ú in font txr!
-Missing character: There is no ‚ in font txr!
-Missing character: There is no Ä in font txr!
-Missing character: There is no ù in font txr!
- [5]
-Missing character: There is no ‚ in font txr!
-Missing character: There is no Ä in font txr!
-Missing character: There is no ô in font txr!
-Missing character: There is no ‚ in font txr!
-Missing character: There is no Ä in font txr!
-Missing character: There is no ú in font txr!
-Missing character: There is no ‚ in font txr!
-Missing character: There is no Ä in font txr!
-Missing character: There is no ù in font txr!
-Missing character: There is no ‚ in font txr!
-Missing character: There is no Ä in font txr!
-Missing character: There is no ô in font txr!
- [6]) [7]
-(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\projectmgmt.tex
-Chapter 3.
-) [8
+<./Diagrams/use_case_trainer.png, id=35, 566.918pt x 297.913pt>
+File: ./Diagrams/use_case_trainer.png Graphic file (type png)
 
+<use ./Diagrams/use_case_trainer.png>
+Package pdftex.def Info: ./Diagrams/use_case_trainer.png used on input line 58.
 
+(pdftex.def)             Requested size: 340.15341pt x 178.74916pt.
+ [4]
+<./Diagrams/use_case_trainee.png, id=40, 558.085pt x 270.00874pt>
+File: ./Diagrams/use_case_trainee.png Graphic file (type png)
 
-] (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\societalissues.tex
-Chapter 4.
-) [9
+<use ./Diagrams/use_case_trainee.png>
+Package pdftex.def Info: ./Diagrams/use_case_trainee.png used on input line 64.
 
-
-
-] (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\conclusions.tex
-Chapter 5.
-) [10
-
-
-
-] (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\master.aux
-(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\abstract.aux)
-(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\introduction.aux)
-(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\projectdesc.aux)
-(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\projectmgmt.aux)
-(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\societalissues.aux)
-(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\conclusions.aux)) ) 
-Here is how much of TeX's memory you used:
- 1667 strings out of 493921
- 24551 string characters out of 3144868
- 70501 words of memory out of 3000000
- 4907 multiletter control sequences out of 15000+200000
- 25747 words of font info for 63 fonts, out of 3000000 for 9000
- 841 hyphenation exceptions out of 8191
- 29i,6n,22p,1128b,192s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Users/Melissa
-B/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/Meli
-ssaB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/txsy.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.
-9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on master.pdf (16 pages, 68927 bytes).
-PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+(pdftex.def)             Requested size: 334.85359pt x 162.00648pt.
+Missing character: There is no ‚ in font txr!
+Missing character: There

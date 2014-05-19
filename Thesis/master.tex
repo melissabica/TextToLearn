@@ -5,6 +5,13 @@
 \usepackage{txfonts}	% for using the Times-Roman font
 % \usepackage{natbib}	% for better citation styles
 \usepackage{parskip}
+\usepackage{graphicx}
+\usepackage{float}
+%Force table captions to be above
+\floatstyle{plaintop}
+\restylefloat{table}
+\graphicspath{ {./Screenshots/} {./Diagrams/} }
+
 
 
 
@@ -31,6 +38,7 @@
 
 \maketitle
 \include{abstract}
+\include{acknowledgements}
 
 \tableofcontents
 \listoffigures
@@ -38,12 +46,16 @@
 
 \mainmatter
 \include{introduction}
-\include{projectdesc}
+\include{requirements}
+\include{designimpl}
+\include{doctesting}
 \include{projectmgmt}
 \include{societalissues}
 \include{conclusions}
-
+\include{appendices}
 
 \backmatter
+\appendix
+
 
 \end{document}
