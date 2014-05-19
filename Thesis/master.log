@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.4.6)  19 MAY 2014 10:55
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.4.6)  19 MAY 2014 11:22
 entering extended mode
 **master.tex
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\master.tex
@@ -193,7 +193,17 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 )
 \@float@every@table=\toks18
 
-(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\master.aux)
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\master.aux
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\abstract.aux)
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\acknowledgements.aux)
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\introduction.aux)
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\requirements.aux)
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\designimpl.aux)
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\doctesting.aux)
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\projectmgmt.aux)
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\societalissues.aux)
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\conclusions.aux)
+(C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\appendices.aux))
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 34.
 LaTeX Font Info:    Try loading font information for OML+txmi on input line 34.
 
@@ -456,42 +466,62 @@ Package pdftex.def Info: ./Screenshots/message_log.png used on input line 32.
  [9 <C:/Users/MelissaB/Documents/GitHub/texttolearn/Thesis/Screenshots/add_cont
 act.png> <C:/Users/MelissaB/Documents/GitHub/texttolearn/Thesis/Screenshots/lis
 t_tm.png> <C:/Users/MelissaB/Documents/GitHub/texttolearn/Thesis/Screenshots/as
-sign_tm.png>] [10 <C:/Users/MelissaB/Documents/GitHub/texttolearn/Thesis/Screen
-shots/message_log.png>]
-<./Diagrams/trainer.png, id=68, 682.2288pt x 292.9344pt>
+sign_tm.png>]
+LaTeX Font Info:    Try loading font information for OML+txr on input line 59.
+
+(C:\Users\MelissaB\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\omltxr.fd
+File: omltxr.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Font shape `OML/txr/m/n' in size <10> not available
+(Font)              Font shape `OML/txmi/m/it' tried instead on input line 59.
+Missing character: There is no ‚ in font txr!
+Missing character: There is no Ä in font txr!
+Missing character: There is no ¶ in font txr!
+Missing character: There is no ‚ in font txr!
+Missing character: There is no Ä in font txr!
+Missing character: There is no ¶ in font txr!
+Missing character: There is no ‚ in font txr!
+Missing character: There is no Ä in font txr!
+Missing character: There is no ¶ in font txr!
+Missing character: There is no ‚ in font txr!
+Missing character: There is no Ä in font txr!
+Missing character: There is no ¶ in font txr!
+
+[10 <C:/Users/MelissaB/Documents/GitHub/texttolearn/Thesis/Screenshots/message_
+log.png>] <./Diagrams/trainer.png, id=69, 682.2288pt x 292.9344pt>
 File: ./Diagrams/trainer.png Graphic file (type png)
 
 <use ./Diagrams/trainer.png>
-Package pdftex.def Info: ./Diagrams/trainer.png used on input line 63.
+Package pdftex.def Info: ./Diagrams/trainer.png used on input line 88.
 (pdftex.def)             Requested size: 341.11356pt x 146.46684pt.
 
-<./Diagrams/trainee_request.png, id=69, 682.2288pt x 292.9344pt>
+<./Diagrams/trainee_request.png, id=70, 682.2288pt x 292.9344pt>
 File: ./Diagrams/trainee_request.png Graphic file (type png)
 
 <use ./Diagrams/trainee_request.png>
-Package pdftex.def Info: ./Diagrams/trainee_request.png used on input line 71.
+Package pdftex.def Info: ./Diagrams/trainee_request.png used on input line 96.
 (pdftex.def)             Requested size: 341.11356pt x 146.46684pt.
-
-<./Diagrams/trainee.png, id=70, 682.2288pt x 292.9344pt>
+ [11 <C:/Users/MelissaB/Documents/GitHub/texttolearn/Thesis/Diagrams/trainer.pn
+g>]
+<./Diagrams/trainee.png, id=75, 682.2288pt x 292.9344pt>
 File: ./Diagrams/trainee.png Graphic file (type png)
 
 <use ./Diagrams/trainee.png>
-Package pdftex.def Info: ./Diagrams/trainee.png used on input line 77.
+Package pdftex.def Info: ./Diagrams/trainee.png used on input line 102.
 (pdftex.def)             Requested size: 341.11356pt x 146.46684pt.
- [11 <C:/Users/MelissaB/Documents/GitHub/texttolearn/Thesis/Diagrams/trainer.pn
-g> <C:/Users/MelissaB/Documents/GitHub/texttolearn/Thesis/Diagrams/trainee_requ
-est.png> <C:/Users/MelissaB/Documents/GitHub/texttolearn/Thesis/Diagrams/traine
-e.png>]
 Missing character: There is no ‚ in font txr!
 Missing character: There is no Ä in font txr!
 Missing character: There is no ú in font txr!
 Missing character: There is no ‚ in font txr!
 Missing character: There is no Ä in font txr!
 Missing character: There is no ù in font txr!
+ [12 <C:/Users/MelissaB/Documents/GitHub/texttolearn/Thesis/Diagrams/trainee_re
+quest.png> <C:/Users/MelissaB/Documents/GitHub/texttolearn/Thesis/Diagrams/trai
+nee.png>]
 Missing character: There is no ‚ in font txr!
 Missing character: There is no Ä in font txr!
 Missing character: There is no ô in font txr!
-) [12] [13]
+) [13]
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\doctesting.tex
 Chapter 4.
 ) [14
@@ -520,14 +550,14 @@ Chapter 7.
 
 ] (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\appendices.tex
 Chapter 8.
-<./Diagrams/schedule_fall.png, id=103, 594.5412pt x 158.5122pt>
+<./Diagrams/schedule_fall.png, id=104, 594.5412pt x 158.5122pt>
 File: ./Diagrams/schedule_fall.png Graphic file (type png)
 
 <use ./Diagrams/schedule_fall.png>
 Package pdftex.def Info: ./Diagrams/schedule_fall.png used on input line 7.
 (pdftex.def)             Requested size: 416.176pt x 110.95778pt.
 
-<./Diagrams/schedule_winter.png, id=104, 594.0594pt x 308.352pt>
+<./Diagrams/schedule_winter.png, id=105, 594.0594pt x 308.352pt>
 File: ./Diagrams/schedule_winter.png Graphic file (type png)
 
 <use ./Diagrams/schedule_winter.png>
@@ -544,7 +574,7 @@ Package pdftex.def Info: ./Diagrams/schedule_fall.png used on input line 19.
 
  <C:/Users/MelissaB/Documents/GitHub/texttolearn/Thesis/Diagrams/schedule_fall.
 png> <C:/Users/MelissaB/Documents/GitHub/texttolearn/Thesis/Diagrams/schedule_w
-inter.png>] <./Diagrams/risks.png, id=110, 632.6034pt x 277.9986pt>
+inter.png>] <./Diagrams/risks.png, id=111, 632.6034pt x 277.9986pt>
 File: ./Diagrams/risks.png Graphic file (type png)
 
 <use ./Diagrams/risks.png>
@@ -564,23 +594,24 @@ Package pdftex.def Info: ./Diagrams/risks.png used on input line 25.
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\conclusions.aux)
 (C:\Users\MelissaB\Documents\GitHub\texttolearn\Thesis\appendices.aux)) ) 
 Here is how much of TeX's memory you used:
- 2665 strings out of 493921
- 39136 string characters out of 3144868
- 85381 words of memory out of 3000000
- 5851 multiletter control sequences out of 15000+200000
- 28264 words of font info for 67 fonts, out of 3000000 for 9000
+ 2716 strings out of 493921
+ 41029 string characters out of 3144868
+ 89826 words of memory out of 3000000
+ 5878 multiletter control sequences out of 15000+200000
+ 28504 words of font info for 68 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 29i,9n,22p,1134b,227s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,9n,22p,1134b,276s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Pr
 ogram Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Users/MelissaB
-/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/Melis
-saB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/txsy.pfb><C:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9
-/fonts/type1/urw/times/utmri8a.pfb>
-Output written on master.pdf (27 pages, 927071 bytes).
+/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/rtxmi.pfb><C:/Users/Meli
+ssaB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/M
+elissaB/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/txsy.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (
+x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on master.pdf (27 pages, 932882 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
+ 137 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

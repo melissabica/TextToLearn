@@ -7,9 +7,9 @@
 \contentsline {chapter}{\numberline {3}Design and Implementation}{8}
 \contentsline {section}{\numberline {3.1}Trainer Interface: The Website}{8}
 \contentsline {section}{\numberline {3.2}Trainee Interaction: The Phone}{10}
-\contentsline {section}{\numberline {3.3}System Design}{10}
+\contentsline {section}{\numberline {3.3}System Design}{11}
 \contentsline {section}{\numberline {3.4}Technologies Used}{12}
-\contentsline {section}{\numberline {3.5}Design Rationale}{12}
+\contentsline {section}{\numberline {3.5}Design Rationale}{13}
 \contentsline {chapter}{\numberline {4}Testing and Documentation}{14}
 \contentsline {section}{\numberline {4.1}Testing}{14}
 \contentsline {section}{\numberline {4.2}Documentation}{14}

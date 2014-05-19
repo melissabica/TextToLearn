@@ -35,21 +35,46 @@ The following are screenshots of the website we designed and built for the train
 
 
 \section{Trainee Interaction: The Phone}
-Trainees, or the users that are registered for Text to Learn, interact with the system through their mobile phones via SMS text messaging. Once their phone number has been registered by a trainer, they are able to text the Text to Learn phone number. At any time, a user can get help for using our system using the \textit{HELP} command.
-
+Trainees, or the users that are registered for Text to Learn, interact with the system through their mobile phones via SMS text messaging. Once their phone number has been registered by a trainer, they are able to text the Text to Learn phone number. At any time, a user can get help for using our system using the \textit{HELP} command. The help commands are listed in the table below:
 
 \begin{table}[H]
-
-    \begin{tabular}{ | p{5cm} | p{7cm} |}
-    \hline
-    \textbf{Status} & \textbf{Text Received by Trainee} \\ \hline
-    Once assigned a training material & You have been assigned <training material name>. To begin, reply with START <TM tag>.  \\ \hline
-    After starting a training material & 9C  \\ \hline
-    At final message of training material with a quiz & 10C \\ \hline
-    At final message of training material without a quiz & 9C  \\ \hline
-    At final message of quiz & 9C  \\ \hline
+	\centering
+	\begin{tabular}{ | l | p{7cm} |}
+		\hline
+		\textbf{Text Sent by Trainee} & \textbf{Text Received by Trainee in Response} \\ \hline
+		HELP & Reply HELP TRAINING or HELP QUIZ for instructions. \\ \hline
+		HELP TRAINING & To start, reply START TAG. Example, START INTRO. To continue, reply NEXT TAG. \\ \hline
+		HELP QUIZ & To start, reply QUIZ TAG. Example, QUIZ INTRO. To continue, reply ANS youranswer. \\ \hline
 	\end{tabular}
-	\caption{Table taken from}
+	\caption{Help messages}
+\end{table}
+
+While the trainee is reading a training material or taking a quiz, there are three text commands that can be used (in addition to \textit{HELP}, which can be used at any time): \textit{START}, \textit{NEXT}, and \textit{QUIZ}. These are each followed by the unique tag associated with the current training material. The training material and quiz text commands are described in the table below:
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{ | p{5cm} | p{7cm} |}
+		\hline
+		\textbf{Status} & \textbf{Text Received by Trainee} \\ \hline
+		Once assigned a training material & You have been assigned \textless training material title\textgreater. To begin, reply with START \textless tag\textgreater.  \\ \hline
+		After starting a training material & ...training material text… -Reply NEXT \textless tag\textgreater \\ \hline
+		At final message of training material with a quiz & ...training material text… -Reply QUIZ \textless tag\textgreater  \\ \hline
+		At final message of training material without a quiz & ...training material text… (end) \\ \hline
+		At final message of quiz & ...final quiz question feedback… (quiz complete)  \\ \hline
+	\end{tabular}
+	\caption{Text messages used during training materials and quizzes}
+\end{table}
+
+If any other command that is not listed above is sent to the Text to Learn phone number, then a default message will be sent back as a response:
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{ | p{5cm} | p{7cm} |}
+		\hline
+		\textbf{Status} & \textbf{Default Text Received by Trainee} \\ \hline
+		If an invalid message is received by Text to Learn & Invalid message. Reply HELP TRAINING or HELP QUIZ for instructions. \\ \hline
+	\end{tabular}
+	\caption{Default text message for invalid commands}
 \end{table}
 	
 
