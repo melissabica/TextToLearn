@@ -28,6 +28,64 @@
 
 
 \section{Setup and Installation}
+This project is currently configured to be hosted on dotCloud with a Python server and PostgreSQL database and connects to a Tropo SMS backend. This manual will detail how to switch to your own subscription of dotCloud and Tropo and what to delete if you wish to replace Tropo with your own service.
+
+\subsection*{General}
+You will need Python on your system, Python 2.7 is recommended. https://www.python.org/download/releases/2.7
+You will also ideally be using something unix based (Mac or Linux) if you are on a Windows machine try using Cygwin, but this has had mixed results.
+
+\subsection*{Using your own dotCloud Credentials}
+In order to deploy to dotCloud you will need to have python already installed on your computer. The code for this project was gotten from this github project, please see their documentation if you need additional instructions: https://github.com/caktus/rapidsms-deploy-dotcloud
+
+Once you have Python 2.7 installed navigate to that folder through the terminal (or Cygwin) and follow the instructions in dotCloud installation instructions. http://docs.dotcloud.com/firststeps/install/
+This will ask for your personal credentials, no changes to the code should be necessary.
+
+You should now be able to push using “dotcloud push” in the terminal. This process may take some time
+
+For adding custom domains see the following dotCloud documentation: http://docs.dotcloud.com/guides/domains/
+
+\subsection*{Using your own Tropo backend}
+You will need to modify code. You will need to get your account authorized before you can send outgoing messages. For help setting up your Tropo account  or trouble shooting the installation see this rapidSMS tutorial: http://rapidsms.readthedocs.org/en/latest/tutorial/tutorial04.html#tutorial04
+
+To complete this next part have your outgoing messaging token and Tropo phone number ready. 
+
+1. In the rapidsms_tut folder open the settings.py file
+2. At nearly the bottom of the file, look for "INSTALLED_BACKENDS = {" in this section you should find 
+begin{verbatim}
+    "my-tropo-backend": {
+        "ENGINE": "rtropo.outgoing.TropoBackend",
+        'config': {
+            'messaging_token': '[insert_token]',
+            'number': '[+1-555-555-5555']’,
+        },
+    },
+end{verbatim}
+3. Change the string under ‘messaging token’ to your messaging token
+4. Change the ‘number’ to you number, make sure you start with a ‘+’ followed by your country code
+
+Removing Tropo
+WARNING: Following these steps after you have created contacts with “my-tropo-backend” may result in critical errors. Be sure to delete any contacts with this backend first.
+
+You will need to edit three files rapidsms_tut/settings.py, rapidsms_tut/urls.py, and requirements/base.py.
+
+settings.py
+1. As in the previous section open settings.py in the rapidsms_tut folder
+2. Delete the lines of code show in step 2 of the previous section
+
+urls.py
+3. Open urls.py (also in the rapidsms_tut folder)
+4. Delete the following lines of code:
+    url(r'^tropo/',
+      message_received,
+      kwargs={'backend_name': 'my-tropo-backend'}),
+base.py
+5. From the main folder navigate to the ‘requirements’ folder and open base.txt
+6. Delete the line rapidsms-tropo>=0.2.0
+
+7. After saving all these files, you should be able to “dotcloud push” and “my-tropo-backend” will no longer be available.
+
+
+
 
 \section{User Manual}
 
